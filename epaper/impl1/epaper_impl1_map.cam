@@ -1,0 +1,73 @@
+[ START MERGED ]
+myLeModule.le.CN gp_c[4]
+[ END MERGED ]
+[ START CLIPPED ]
+GND
+VCC
+myCtrlModule/VCC
+myCkvModule/VCC
+mySpvModule/VCC
+myLeModule/VCC
+mySphModule/VCC
+myPll/CLKINTFB
+myPll/REFCLK
+myPll/INTLOCK
+myPll/LOCK
+myPll/CLKOS3
+myPll/CLKOS2
+myPll/CLKOS
+myCtrlModule/frame_1_cry_0_0_S1
+myCtrlModule/frame_1_cry_0_0_S0
+myCtrlModule/N_3
+myCtrlModule/frame_1_cry_6_0_S1
+myCtrlModule/frame_1_cry_6_0_COUT
+myCkvModule/un4_counter_cry_31_0_COUT_0
+myCkvModule/un4_counter_cry_0_0_S1_0
+myCkvModule/un4_counter_cry_0_0_S0_0
+myCkvModule/N_1
+mySpvModule/un4_counter_cry_31_0_COUT
+mySpvModule/un4_counter_cry_0_0_S1
+mySpvModule/un4_counter_cry_0_0_S0
+mySpvModule/N_1
+myLeModule/un6_counter_cry_31_0_COUT_0
+myLeModule/un6_counter_cry_0_0_S1_0
+myLeModule/un6_counter_cry_0_0_S0_0
+myLeModule/N_1
+mySphModule/un6_counter_cry_31_0_COUT
+mySphModule/un6_counter_cry_0_0_S1
+mySphModule/un6_counter_cry_0_0_S0
+mySphModule/N_1
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Sun Jan 22 00:18:49 2023
+
+SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=ENABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=62 TRANSFR=OFF CONFIG_IOVOLTAGE=3.3 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=ON CONFIG_MODE=JTAG INBUF=OFF ;
+LOCATE COMP "led[1]" SITE "C2" ;
+LOCATE COMP "gp[0]" SITE "B11" ;
+LOCATE COMP "btn[4]" SITE "V1" ;
+LOCATE COMP "clk_25mhz" SITE "G2" ;
+LOCATE COMP "led[7]" SITE "H3" ;
+LOCATE COMP "led[6]" SITE "E1" ;
+LOCATE COMP "led[5]" SITE "E2" ;
+LOCATE COMP "led[4]" SITE "D1" ;
+LOCATE COMP "led[3]" SITE "D2" ;
+LOCATE COMP "led[2]" SITE "C1" ;
+LOCATE COMP "led[0]" SITE "B2" ;
+LOCATE COMP "gp[12]" SITE "G3" ;
+LOCATE COMP "gp[11]" SITE "F4" ;
+LOCATE COMP "gp[10]" SITE "C4" ;
+LOCATE COMP "gp[9]" SITE "A2" ;
+LOCATE COMP "gp[8]" SITE "A4" ;
+LOCATE COMP "gp[7]" SITE "A6" ;
+LOCATE COMP "gp[6]" SITE "C6" ;
+LOCATE COMP "gp[5]" SITE "C8" ;
+LOCATE COMP "gp[4]" SITE "A7" ;
+LOCATE COMP "gp[3]" SITE "B9" ;
+LOCATE COMP "gp[2]" SITE "A9" ;
+LOCATE COMP "gp[1]" SITE "A10" ;
+FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
+FREQUENCY NET "myPll/buf_CLKI" 25.000000 MHz ;
+FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

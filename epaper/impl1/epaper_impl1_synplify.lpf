@@ -1,0 +1,23 @@
+#
+# Logical Preferences generated for Lattice by Synplify map202003lat, Build 172R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "myPll/clk_100mhz" 200.0 MHz;
+#FREQUENCY NET "clckDiv/clk_divOut" 200.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+#MULTICYCLE FROM CLKNET "clckDiv/clk_divOut"  TO CLKNET "clckDiv/clk_divOut"  2X;
+
+
+# Block Path Constraints 
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

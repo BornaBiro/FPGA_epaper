@@ -1,0 +1,4 @@
+ckid0_0:@|S:myCtrlModule.uclk_clkOutMainModule.OUT@|E:mySphModule.counter[32:0]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:myCtrlModule.startFlag_2.OUT@|E:myCtrlModule.frame[9]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_2:@|S:clckDiv.out.Q[0]@|E:spvPosEdge.sig_dly@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
+ckid0_4:@|S:myPll.PLLInst_0.CLKOP@|E:clckDiv.counter[3:0]@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4

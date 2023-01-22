@@ -1,0 +1,91 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     167.00        100.0
+                                 IOLGC	       3.00        100.0
+                                  LUT4	     162.00        100.0
+                                 IOREG	          3        100.0
+                                 IOBUF	         23        100.0
+                                PFUREG	        145        100.0
+                                RIPPLE	         73        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             spvModule	          1        19.8
+                             sphModule	          1        18.0
+                                   pll	          1         0.6
+                            posEdgeDet	          1         0.6
+                      mainEpaperModule	          1        24.0
+                           latchModule	          1        18.0
+                          clockDivider	          1         1.8
+                             ckvModule	          1        17.4
+---------------------------------------------------
+Report for cell sphModule
+   Instance path: top/mySphModule
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      30.00        18.0
+                                  LUT4	      23.00        14.2
+                                PFUREG	         33        22.8
+                                RIPPLE	         17        23.3
+---------------------------------------------------
+Report for cell latchModule
+   Instance path: top/myLeModule
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      30.00        18.0
+                                  LUT4	      25.00        15.4
+                                PFUREG	         33        22.8
+                                RIPPLE	         17        23.3
+---------------------------------------------------
+Report for cell spvModule
+   Instance path: top/mySpvModule
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      33.00        19.8
+                                  LUT4	      30.00        18.5
+                                PFUREG	         34        23.4
+                                RIPPLE	         17        23.3
+---------------------------------------------------
+Report for cell ckvModule
+   Instance path: top/myCkvModule
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      29.00        17.4
+                                  LUT4	      22.00        13.6
+                                PFUREG	         33        22.8
+                                RIPPLE	         17        23.3
+---------------------------------------------------
+Report for cell mainEpaperModule
+   Instance path: top/myCtrlModule
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      40.00        24.0
+                                  LUT4	      57.00        35.2
+                                PFUREG	          8         5.5
+                                RIPPLE	          5         6.8
+---------------------------------------------------
+Report for cell posEdgeDet
+   Instance path: top/spvPosEdge
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.6
+                                  LUT4	       1.00         0.6
+                                PFUREG	          1         0.7
+---------------------------------------------------
+Report for cell clockDivider
+   Instance path: top/clckDiv
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.00         1.8
+                                  LUT4	       3.00         1.9
+                                PFUREG	          3         2.1
+---------------------------------------------------
+Report for cell pll
+   Instance path: top/myPll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.6
+                                  LUT4	       1.00         0.6
+                                 IOBUF	          1         4.3

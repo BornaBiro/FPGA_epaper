@@ -1,0 +1,42 @@
+[Device]
+Family=ecp5u
+PartType=LFE5U-12F
+PartName=LFE5U-12F-6BG381I
+SpeedGrade=6
+Package=CABGA381
+OperatingCondition=IND
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=SDR
+CoreRevision=6.0
+ModuleName=sdr
+SourceFormat=verilog
+ParameterFileVersion=1.0
+Date=01/14/2023
+Time=22:42:31
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+mode=Receive
+trioddr=0
+io_type=LVCMOS25
+width=16
+freq_in=200
+bandwidth=3200
+interface=GIREG_RX.SCLK
+negedge=DISABLED
+del=Bypass
+fdel=
+
+[Command]
+cmd_line= -w -n sdr -lang verilog -synth synplify -bus_exp 7 -bb -arch sa5p00 -type iol -mode Receive -io_type LVCMOS25 -width 16 -freq_in 200 -aligned -del -1 -gear 1

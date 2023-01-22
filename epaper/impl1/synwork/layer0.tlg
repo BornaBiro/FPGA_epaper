@@ -1,0 +1,91 @@
+Selecting top level module top
+@N: CG364 :"C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v":278:7:278:8|Synthesizing module IB in library work.
+Running optimization stage 1 on IB .......
+@N: CG364 :"C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v":757:7:757:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+@N: CG364 :"C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v":761:7:761:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+@N: CG364 :"C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+Running optimization stage 1 on EHXPLLL .......
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\pll\pll.v":8:7:8:9|Synthesizing module pll in library work.
+Running optimization stage 1 on pll .......
+@W: CL168 :"E:\Projects\FPGA\Learning\epaper\pll\pll.v":22:8:22:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\clocks.v":4:7:4:18|Synthesizing module clockDivider in library work.
+Running optimization stage 1 on clockDivider .......
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\clocks.v":34:7:34:16|Synthesizing module posEdgeDet in library work.
+Running optimization stage 1 on posEdgeDet .......
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":79:7:79:22|Synthesizing module mainEpaperModule in library work.
+Opening data file waveformFile.txt from directory E:\Projects\FPGA\Learning\epaper
+@W: CG532 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":84:1:84:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur
+Running optimization stage 1 on mainEpaperModule .......
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":4:7:4:15|Synthesizing module ckvModule in library work.
+Running optimization stage 1 on ckvModule .......
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":22:7:22:15|Synthesizing module spvModule in library work.
+Running optimization stage 1 on spvModule .......
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":39:7:39:17|Synthesizing module latchModule in library work.
+Running optimization stage 1 on latchModule .......
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":54:7:54:15|Synthesizing module sphModule in library work.
+Running optimization stage 1 on sphModule .......
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\topModule.v":19:7:19:9|Synthesizing module top in library work.
+@W: CG360 :"E:\Projects\FPGA\Learning\epaper\topModule.v":23:12:23:26|Removing wire epaperDataWires, as there is no assignment to it.
+Running optimization stage 1 on top .......
+Running optimization stage 2 on top .......
+@W: CL247 :"E:\Projects\FPGA\Learning\epaper\topModule.v":19:40:19:42|Input port bit 3 of btn[4:3] is unused
+
+Running optimization stage 2 on sphModule .......
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":54:36:54:40|Input reset is unused.
+Running optimization stage 2 on latchModule .......
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":39:38:39:42|Input reset is unused.
+Running optimization stage 2 on spvModule .......
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":22:36:22:40|Input reset is unused.
+Running optimization stage 2 on ckvModule .......
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":4:36:4:40|Input reset is unused.
+Running optimization stage 2 on mainEpaperModule .......
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[7] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[8] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[9] is always 0.
+@W: CL279 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on posEdgeDet .......
+Running optimization stage 2 on clockDivider .......
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[2] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[3] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[4] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[5] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[6] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[7] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[8] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[9] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[10] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[11] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[12] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[13] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[14] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[15] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[16] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[17] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[18] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[19] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[20] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[21] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[22] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[23] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[24] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[25] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[26] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[27] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[28] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[29] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[30] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[31] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[32] is always 0.
+@W: CL279 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Pruning register bits 32 to 2 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on pll .......
+Running optimization stage 2 on EHXPLLL .......
+Running optimization stage 2 on VLO .......
+Running optimization stage 2 on VHI .......
+Running optimization stage 2 on IB .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: E:\Projects\FPGA\Learning\epaper\impl1\synwork\layer0.rt.csv
+

@@ -1,0 +1,7 @@
+@W: CL168 :"E:\Projects\FPGA\Learning\epaper\pll\pll.v":22:8:22:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CG532 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":84:1:84:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur
+@W: CG360 :"E:\Projects\FPGA\Learning\epaper\topModule.v":23:12:23:26|Removing wire epaperDataWires, as there is no assignment to it.
+@W: CL247 :"E:\Projects\FPGA\Learning\epaper\topModule.v":19:40:19:42|Input port bit 3 of btn[4:3] is unused
+@W: CL279 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Pruning register bits 32 to 2 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

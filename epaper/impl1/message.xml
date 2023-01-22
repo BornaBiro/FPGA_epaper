@@ -1,0 +1,3094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(17): Semantic error in &quot;LOCATE COMP &quot;ftdi_rxd&quot; SITE &quot;L4&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_rxd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(18): Semantic error in &quot;LOCATE COMP &quot;ftdi_txd&quot; SITE &quot;M1&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_txd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(19): Semantic error in &quot;LOCATE COMP &quot;ftdi_nrts&quot; SITE &quot;M3&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_nrts</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(20): Semantic error in &quot;LOCATE COMP &quot;ftdi_ndtr&quot; SITE &quot;N1&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_ndtr</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(21): Semantic error in &quot;LOCATE COMP &quot;ftdi_txden&quot; SITE &quot;L3&quot; ;&quot;: </Dynamic>
+            <Dynamic>ftdi_txden</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(22): Semantic error in &quot;IOBUF PORT &quot;ftdi_rxd&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_rxd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(23): Semantic error in &quot;IOBUF PORT &quot;ftdi_txd&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_txd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(24): Semantic error in &quot;IOBUF PORT &quot;ftdi_nrts&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_nrts</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(25): Semantic error in &quot;IOBUF PORT &quot;ftdi_ndtr&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_ndtr</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(26): Semantic error in &quot;IOBUF PORT &quot;ftdi_txden&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>ftdi_txden</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(47): Semantic error in &quot;LOCATE COMP &quot;btn[0]&quot; SITE &quot;D6&quot; ;&quot;: </Dynamic>
+            <Dynamic>btn[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(48): Semantic error in &quot;LOCATE COMP &quot;btn[1]&quot; SITE &quot;R1&quot; ;&quot;: </Dynamic>
+            <Dynamic>btn[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(49): Semantic error in &quot;LOCATE COMP &quot;btn[2]&quot; SITE &quot;T1&quot; ;&quot;: </Dynamic>
+            <Dynamic>btn[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(52): Semantic error in &quot;LOCATE COMP &quot;btn[5]&quot; SITE &quot;U1&quot; ;&quot;: </Dynamic>
+            <Dynamic>btn[5]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(53): Semantic error in &quot;LOCATE COMP &quot;btn[6]&quot; SITE &quot;H16&quot; ;&quot;: </Dynamic>
+            <Dynamic>btn[6]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(54): Semantic error in &quot;IOBUF PORT &quot;btn[0]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>btn[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(55): Semantic error in &quot;IOBUF PORT &quot;btn[1]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>btn[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(56): Semantic error in &quot;IOBUF PORT &quot;btn[2]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>btn[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(57): Semantic error in &quot;IOBUF PORT &quot;btn[3]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>btn[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(59): Semantic error in &quot;IOBUF PORT &quot;btn[5]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>btn[5]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>59</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(60): Semantic error in &quot;IOBUF PORT &quot;btn[6]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>btn[6]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>60</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(63): Semantic error in &quot;LOCATE COMP &quot;sw[0]&quot; SITE &quot;E8&quot; ;&quot;: </Dynamic>
+            <Dynamic>sw[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>63</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(64): Semantic error in &quot;LOCATE COMP &quot;sw[1]&quot; SITE &quot;D8&quot; ;&quot;: </Dynamic>
+            <Dynamic>sw[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(65): Semantic error in &quot;LOCATE COMP &quot;sw[2]&quot; SITE &quot;D7&quot; ;&quot;: </Dynamic>
+            <Dynamic>sw[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(66): Semantic error in &quot;LOCATE COMP &quot;sw[3]&quot; SITE &quot;E7&quot; ;&quot;: </Dynamic>
+            <Dynamic>sw[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(67): Semantic error in &quot;IOBUF PORT &quot;sw[0]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sw[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>67</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(68): Semantic error in &quot;IOBUF PORT &quot;sw[1]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sw[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>68</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(69): Semantic error in &quot;IOBUF PORT &quot;sw[2]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sw[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>69</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(70): Semantic error in &quot;IOBUF PORT &quot;sw[3]&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sw[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>70</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(73): Semantic error in &quot;LOCATE COMP &quot;oled_clk&quot; SITE &quot;P4&quot; ;&quot;: </Dynamic>
+            <Dynamic>oled_clk</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>73</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(74): Semantic error in &quot;LOCATE COMP &quot;oled_mosi&quot; SITE &quot;P3&quot; ;&quot;: </Dynamic>
+            <Dynamic>oled_mosi</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>74</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(75): Semantic error in &quot;LOCATE COMP &quot;oled_dc&quot; SITE &quot;P1&quot; ;&quot;: </Dynamic>
+            <Dynamic>oled_dc</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(76): Semantic error in &quot;LOCATE COMP &quot;oled_resn&quot; SITE &quot;P2&quot; ;&quot;: </Dynamic>
+            <Dynamic>oled_resn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>76</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(77): Semantic error in &quot;LOCATE COMP &quot;oled_csn&quot; SITE &quot;N2&quot; ;&quot;: </Dynamic>
+            <Dynamic>oled_csn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(78): Semantic error in &quot;IOBUF PORT &quot;oled_clk&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>oled_clk</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>78</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(79): Semantic error in &quot;IOBUF PORT &quot;oled_mosi&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>oled_mosi</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>79</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(80): Semantic error in &quot;IOBUF PORT &quot;oled_dc&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>oled_dc</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(81): Semantic error in &quot;IOBUF PORT &quot;oled_resn&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>oled_resn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>81</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(82): Semantic error in &quot;IOBUF PORT &quot;oled_csn&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>oled_csn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(85): Semantic error in &quot;LOCATE COMP &quot;flash_csn&quot; SITE &quot;R2&quot; ;&quot;: </Dynamic>
+            <Dynamic>flash_csn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>85</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(86): Semantic error in &quot;LOCATE COMP &quot;flash_mosi&quot; SITE &quot;W2&quot; ;&quot;: </Dynamic>
+            <Dynamic>flash_mosi</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(87): Semantic error in &quot;LOCATE COMP &quot;flash_miso&quot; SITE &quot;V2&quot; ;&quot;: </Dynamic>
+            <Dynamic>flash_miso</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(88): Semantic error in &quot;LOCATE COMP &quot;flash_holdn&quot; SITE &quot;W1&quot; ;&quot;: </Dynamic>
+            <Dynamic>flash_holdn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(89): Semantic error in &quot;LOCATE COMP &quot;flash_wpn&quot; SITE &quot;Y2&quot; ;&quot;: </Dynamic>
+            <Dynamic>flash_wpn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(98): Semantic error in &quot;IOBUF PORT &quot;flash_csn&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>flash_csn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>98</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(99): Semantic error in &quot;IOBUF PORT &quot;flash_mosi&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>flash_mosi</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>99</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(100): Semantic error in &quot;IOBUF PORT &quot;flash_miso&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>flash_miso</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>100</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(101): Semantic error in &quot;IOBUF PORT &quot;flash_holdn&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>flash_holdn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>101</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(102): Semantic error in &quot;IOBUF PORT &quot;flash_wpn&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>flash_wpn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>102</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(113): Semantic error in &quot;LOCATE COMP &quot;sd_clk&quot; SITE &quot;H2&quot; ;&quot;: </Dynamic>
+            <Dynamic>sd_clk</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>113</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(114): Semantic error in &quot;LOCATE COMP &quot;sd_cmd&quot; SITE &quot;J1&quot; ;&quot;: </Dynamic>
+            <Dynamic>sd_cmd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>114</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(115): Semantic error in &quot;LOCATE COMP &quot;sd_d[0]&quot; SITE &quot;J3&quot; ;&quot;: </Dynamic>
+            <Dynamic>sd_d[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>115</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(116): Semantic error in &quot;LOCATE COMP &quot;sd_d[1]&quot; SITE &quot;H1&quot; ;&quot;: </Dynamic>
+            <Dynamic>sd_d[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>116</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(117): Semantic error in &quot;LOCATE COMP &quot;sd_d[2]&quot; SITE &quot;K1&quot; ;&quot;: </Dynamic>
+            <Dynamic>sd_d[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>117</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(118): Semantic error in &quot;LOCATE COMP &quot;sd_d[3]&quot; SITE &quot;K2&quot; ;&quot;: </Dynamic>
+            <Dynamic>sd_d[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>118</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(119): Semantic error in &quot;LOCATE COMP &quot;sd_wp&quot; SITE &quot;P5&quot; ;&quot;: </Dynamic>
+            <Dynamic>sd_wp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>119</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(120): Semantic error in &quot;LOCATE COMP &quot;sd_cdn&quot; SITE &quot;N5&quot; ;&quot;: </Dynamic>
+            <Dynamic>sd_cdn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>120</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(121): Semantic error in &quot;IOBUF PORT &quot;sd_clk&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sd_clk</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>121</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(122): Semantic error in &quot;IOBUF PORT &quot;sd_cmd&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sd_cmd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>122</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(123): Semantic error in &quot;IOBUF PORT &quot;sd_d[0]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sd_d[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>123</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(124): Semantic error in &quot;IOBUF PORT &quot;sd_d[1]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sd_d[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>124</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(125): Semantic error in &quot;IOBUF PORT &quot;sd_d[2]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sd_d[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>125</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(126): Semantic error in &quot;IOBUF PORT &quot;sd_d[3]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sd_d[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>126</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(127): Semantic error in &quot;IOBUF PORT &quot;sd_wp&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sd_wp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>127</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(128): Semantic error in &quot;IOBUF PORT &quot;sd_cdn&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sd_cdn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>128</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(131): Semantic error in &quot;LOCATE COMP &quot;adc_csn&quot; SITE &quot;R17&quot; ;&quot;: </Dynamic>
+            <Dynamic>adc_csn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>131</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(132): Semantic error in &quot;LOCATE COMP &quot;adc_mosi&quot; SITE &quot;R16&quot; ;&quot;: </Dynamic>
+            <Dynamic>adc_mosi</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>132</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(133): Semantic error in &quot;LOCATE COMP &quot;adc_miso&quot; SITE &quot;U16&quot; ;&quot;: </Dynamic>
+            <Dynamic>adc_miso</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>133</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(134): Semantic error in &quot;LOCATE COMP &quot;adc_sclk&quot; SITE &quot;P17&quot; ;&quot;: </Dynamic>
+            <Dynamic>adc_sclk</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>134</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(135): Semantic error in &quot;IOBUF PORT &quot;adc_csn&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>adc_csn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>135</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(136): Semantic error in &quot;IOBUF PORT &quot;adc_mosi&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>adc_mosi</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>136</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(137): Semantic error in &quot;IOBUF PORT &quot;adc_miso&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>adc_miso</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>137</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(138): Semantic error in &quot;IOBUF PORT &quot;adc_sclk&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>adc_sclk</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(146): Semantic error in &quot;LOCATE COMP &quot;audio_l[3]&quot; SITE &quot;B3&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_l[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>146</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(147): Semantic error in &quot;LOCATE COMP &quot;audio_l[2]&quot; SITE &quot;C3&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_l[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>147</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(148): Semantic error in &quot;LOCATE COMP &quot;audio_l[1]&quot; SITE &quot;D3&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_l[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>148</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(149): Semantic error in &quot;LOCATE COMP &quot;audio_l[0]&quot; SITE &quot;E4&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_l[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>149</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(150): Semantic error in &quot;LOCATE COMP &quot;audio_r[3]&quot; SITE &quot;C5&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_r[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>150</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(151): Semantic error in &quot;LOCATE COMP &quot;audio_r[2]&quot; SITE &quot;D5&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_r[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>151</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(152): Semantic error in &quot;LOCATE COMP &quot;audio_r[1]&quot; SITE &quot;B5&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_r[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>152</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(153): Semantic error in &quot;LOCATE COMP &quot;audio_r[0]&quot; SITE &quot;A3&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_r[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>153</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(154): Semantic error in &quot;LOCATE COMP &quot;audio_v[3]&quot; SITE &quot;E5&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_v[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>154</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(155): Semantic error in &quot;LOCATE COMP &quot;audio_v[2]&quot; SITE &quot;F5&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_v[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>155</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(156): Semantic error in &quot;LOCATE COMP &quot;audio_v[1]&quot; SITE &quot;F2&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_v[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>156</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(157): Semantic error in &quot;LOCATE COMP &quot;audio_v[0]&quot; SITE &quot;H5&quot; ;&quot;: </Dynamic>
+            <Dynamic>audio_v[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>157</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(158): Semantic error in &quot;IOBUF PORT &quot;audio_l[3]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_l[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>158</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(159): Semantic error in &quot;IOBUF PORT &quot;audio_l[2]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_l[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>159</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(160): Semantic error in &quot;IOBUF PORT &quot;audio_l[1]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_l[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>160</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(161): Semantic error in &quot;IOBUF PORT &quot;audio_l[0]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_l[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>161</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(162): Semantic error in &quot;IOBUF PORT &quot;audio_r[3]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_r[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>162</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(163): Semantic error in &quot;IOBUF PORT &quot;audio_r[2]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_r[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>163</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(164): Semantic error in &quot;IOBUF PORT &quot;audio_r[1]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_r[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>164</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(165): Semantic error in &quot;IOBUF PORT &quot;audio_r[0]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_r[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>165</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(166): Semantic error in &quot;IOBUF PORT &quot;audio_v[3]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_v[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>166</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(167): Semantic error in &quot;IOBUF PORT &quot;audio_v[2]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_v[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>167</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(168): Semantic error in &quot;IOBUF PORT &quot;audio_v[1]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_v[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>168</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(169): Semantic error in &quot;IOBUF PORT &quot;audio_v[0]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>audio_v[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>169</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(173): Semantic error in &quot;LOCATE COMP &quot;wifi_en&quot; SITE &quot;F1&quot; ;&quot;: </Dynamic>
+            <Dynamic>wifi_en</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>173</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(174): Semantic error in &quot;LOCATE COMP &quot;wifi_rxd&quot; SITE &quot;K3&quot; ;&quot;: </Dynamic>
+            <Dynamic>wifi_rxd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>174</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(175): Semantic error in &quot;LOCATE COMP &quot;wifi_txd&quot; SITE &quot;K4&quot; ;&quot;: </Dynamic>
+            <Dynamic>wifi_txd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>175</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(176): Semantic error in &quot;LOCATE COMP &quot;wifi_gpio0&quot; SITE &quot;L2&quot; ;&quot;: </Dynamic>
+            <Dynamic>wifi_gpio0</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>176</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(177): Semantic error in &quot;LOCATE COMP &quot;wifi_gpio5&quot; SITE &quot;N4&quot; ;&quot;: </Dynamic>
+            <Dynamic>wifi_gpio5</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>177</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(178): Semantic error in &quot;LOCATE COMP &quot;wifi_gpio16&quot; SITE &quot;L1&quot; ;&quot;: </Dynamic>
+            <Dynamic>wifi_gpio16</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>178</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(179): Semantic error in &quot;LOCATE COMP &quot;wifi_gpio17&quot; SITE &quot;N3&quot; ;&quot;: </Dynamic>
+            <Dynamic>wifi_gpio17</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>179</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(181): Semantic error in &quot;IOBUF PORT &quot;wifi_en&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>wifi_en</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>181</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(182): Semantic error in &quot;IOBUF PORT &quot;wifi_rxd&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>wifi_rxd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>182</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(183): Semantic error in &quot;IOBUF PORT &quot;wifi_txd&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>wifi_txd</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>183</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(184): Semantic error in &quot;IOBUF PORT &quot;wifi_gpio0&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>wifi_gpio0</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>184</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(185): Semantic error in &quot;IOBUF PORT &quot;wifi_gpio16&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>wifi_gpio16</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>185</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(186): Semantic error in &quot;IOBUF PORT &quot;wifi_gpio17&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>wifi_gpio17</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>186</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(190): Semantic error in &quot;LOCATE COMP &quot;ant_433mhz&quot; SITE &quot;G1&quot; ;&quot;: </Dynamic>
+            <Dynamic>ant_433mhz</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>190</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(191): Semantic error in &quot;IOBUF PORT &quot;ant_433mhz&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>ant_433mhz</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>191</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(194): Semantic error in &quot;LOCATE COMP &quot;usb_fpga_dp&quot; SITE &quot;E16&quot; ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_dp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>194</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(195): Semantic error in &quot;LOCATE COMP &quot;usb_fpga_dn&quot; SITE &quot;F16&quot; ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_dn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>195</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(196): Semantic error in &quot;IOBUF PORT &quot;usb_fpga_dp&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=16 ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_dp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>196</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(197): Semantic error in &quot;IOBUF PORT &quot;usb_fpga_dn&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=16 ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_dn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>197</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(198): Semantic error in &quot;LOCATE COMP &quot;usb_fpga_bd_dp&quot; SITE &quot;D15&quot; ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_bd_dp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>198</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(199): Semantic error in &quot;LOCATE COMP &quot;usb_fpga_bd_dn&quot; SITE &quot;E15&quot; ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_bd_dn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>199</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(200): Semantic error in &quot;IOBUF PORT &quot;usb_fpga_bd_dp&quot; PULLMODE=NONE IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_bd_dp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>200</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(201): Semantic error in &quot;IOBUF PORT &quot;usb_fpga_bd_dn&quot; PULLMODE=NONE IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_bd_dn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>201</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(202): Semantic error in &quot;LOCATE COMP &quot;usb_fpga_pu_dp&quot; SITE &quot;B12&quot; ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_pu_dp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>202</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(203): Semantic error in &quot;LOCATE COMP &quot;usb_fpga_pu_dn&quot; SITE &quot;C12&quot; ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_pu_dn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>203</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(204): Semantic error in &quot;IOBUF PORT &quot;usb_fpga_pu_dp&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=16 ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_pu_dp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>204</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(205): Semantic error in &quot;IOBUF PORT &quot;usb_fpga_pu_dn&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=16 ;&quot;: </Dynamic>
+            <Dynamic>usb_fpga_pu_dn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>205</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(221): Semantic error in &quot;LOCATE COMP &quot;sdram_clk&quot; SITE &quot;F19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_clk</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>221</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(222): Semantic error in &quot;LOCATE COMP &quot;sdram_cke&quot; SITE &quot;F20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_cke</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>222</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(223): Semantic error in &quot;LOCATE COMP &quot;sdram_csn&quot; SITE &quot;P20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_csn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>223</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(224): Semantic error in &quot;LOCATE COMP &quot;sdram_wen&quot; SITE &quot;T20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_wen</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>224</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(225): Semantic error in &quot;LOCATE COMP &quot;sdram_rasn&quot; SITE &quot;R20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_rasn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>225</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(226): Semantic error in &quot;LOCATE COMP &quot;sdram_casn&quot; SITE &quot;T19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_casn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>226</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(227): Semantic error in &quot;LOCATE COMP &quot;sdram_a[0]&quot; SITE &quot;M20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>227</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(228): Semantic error in &quot;LOCATE COMP &quot;sdram_a[1]&quot; SITE &quot;M19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>228</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(229): Semantic error in &quot;LOCATE COMP &quot;sdram_a[2]&quot; SITE &quot;L20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>229</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(230): Semantic error in &quot;LOCATE COMP &quot;sdram_a[3]&quot; SITE &quot;L19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>230</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(231): Semantic error in &quot;LOCATE COMP &quot;sdram_a[4]&quot; SITE &quot;K20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[4]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>231</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(232): Semantic error in &quot;LOCATE COMP &quot;sdram_a[5]&quot; SITE &quot;K19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[5]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>232</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(233): Semantic error in &quot;LOCATE COMP &quot;sdram_a[6]&quot; SITE &quot;K18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[6]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>233</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(234): Semantic error in &quot;LOCATE COMP &quot;sdram_a[7]&quot; SITE &quot;J20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[7]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>234</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(235): Semantic error in &quot;LOCATE COMP &quot;sdram_a[8]&quot; SITE &quot;J19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[8]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>235</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(236): Semantic error in &quot;LOCATE COMP &quot;sdram_a[9]&quot; SITE &quot;H20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[9]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>236</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(237): Semantic error in &quot;LOCATE COMP &quot;sdram_a[10]&quot; SITE &quot;N19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[10]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>237</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(238): Semantic error in &quot;LOCATE COMP &quot;sdram_a[11]&quot; SITE &quot;G20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[11]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>238</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(239): Semantic error in &quot;LOCATE COMP &quot;sdram_a[12]&quot; SITE &quot;G19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[12]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>239</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(240): Semantic error in &quot;LOCATE COMP &quot;sdram_ba[0]&quot; SITE &quot;P19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_ba[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>240</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(241): Semantic error in &quot;LOCATE COMP &quot;sdram_ba[1]&quot; SITE &quot;N20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_ba[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>241</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(242): Semantic error in &quot;LOCATE COMP &quot;sdram_dqm[0]&quot; SITE &quot;U19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_dqm[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>242</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(243): Semantic error in &quot;LOCATE COMP &quot;sdram_dqm[1]&quot; SITE &quot;E20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_dqm[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>243</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(244): Semantic error in &quot;LOCATE COMP &quot;sdram_d[0]&quot; SITE &quot;J16&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>244</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(245): Semantic error in &quot;LOCATE COMP &quot;sdram_d[1]&quot; SITE &quot;L18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>245</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(246): Semantic error in &quot;LOCATE COMP &quot;sdram_d[2]&quot; SITE &quot;M18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>246</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(247): Semantic error in &quot;LOCATE COMP &quot;sdram_d[3]&quot; SITE &quot;N18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>247</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(248): Semantic error in &quot;LOCATE COMP &quot;sdram_d[4]&quot; SITE &quot;P18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[4]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>248</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(249): Semantic error in &quot;LOCATE COMP &quot;sdram_d[5]&quot; SITE &quot;T18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[5]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>249</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(250): Semantic error in &quot;LOCATE COMP &quot;sdram_d[6]&quot; SITE &quot;T17&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[6]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>250</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(251): Semantic error in &quot;LOCATE COMP &quot;sdram_d[7]&quot; SITE &quot;U20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[7]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>251</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(252): Semantic error in &quot;LOCATE COMP &quot;sdram_d[8]&quot; SITE &quot;E19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[8]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>252</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(253): Semantic error in &quot;LOCATE COMP &quot;sdram_d[9]&quot; SITE &quot;D20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[9]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>253</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(254): Semantic error in &quot;LOCATE COMP &quot;sdram_d[10]&quot; SITE &quot;D19&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[10]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>254</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(255): Semantic error in &quot;LOCATE COMP &quot;sdram_d[11]&quot; SITE &quot;C20&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[11]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>255</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(256): Semantic error in &quot;LOCATE COMP &quot;sdram_d[12]&quot; SITE &quot;E18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[12]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>256</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(257): Semantic error in &quot;LOCATE COMP &quot;sdram_d[13]&quot; SITE &quot;F18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[13]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>257</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(258): Semantic error in &quot;LOCATE COMP &quot;sdram_d[14]&quot; SITE &quot;J18&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[14]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>258</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(259): Semantic error in &quot;LOCATE COMP &quot;sdram_d[15]&quot; SITE &quot;J17&quot; ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[15]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>259</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(260): Semantic error in &quot;IOBUF PORT &quot;sdram_clk&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_clk</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>260</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(261): Semantic error in &quot;IOBUF PORT &quot;sdram_cke&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_cke</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>261</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(262): Semantic error in &quot;IOBUF PORT &quot;sdram_csn&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_csn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>262</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(263): Semantic error in &quot;IOBUF PORT &quot;sdram_wen&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_wen</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>263</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(264): Semantic error in &quot;IOBUF PORT &quot;sdram_rasn&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_rasn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>264</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(265): Semantic error in &quot;IOBUF PORT &quot;sdram_casn&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_casn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>265</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(266): Semantic error in &quot;IOBUF PORT &quot;sdram_a[0]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>266</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(267): Semantic error in &quot;IOBUF PORT &quot;sdram_a[1]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>267</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(268): Semantic error in &quot;IOBUF PORT &quot;sdram_a[2]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>268</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(269): Semantic error in &quot;IOBUF PORT &quot;sdram_a[3]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>269</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(270): Semantic error in &quot;IOBUF PORT &quot;sdram_a[4]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[4]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>270</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(271): Semantic error in &quot;IOBUF PORT &quot;sdram_a[5]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[5]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>271</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(272): Semantic error in &quot;IOBUF PORT &quot;sdram_a[6]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[6]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>272</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(273): Semantic error in &quot;IOBUF PORT &quot;sdram_a[7]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[7]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>273</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(274): Semantic error in &quot;IOBUF PORT &quot;sdram_a[8]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[8]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>274</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(275): Semantic error in &quot;IOBUF PORT &quot;sdram_a[9]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[9]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>275</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(276): Semantic error in &quot;IOBUF PORT &quot;sdram_a[10]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[10]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>276</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(277): Semantic error in &quot;IOBUF PORT &quot;sdram_a[11]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[11]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>277</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(278): Semantic error in &quot;IOBUF PORT &quot;sdram_a[12]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_a[12]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>278</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(279): Semantic error in &quot;IOBUF PORT &quot;sdram_ba[0]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_ba[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>279</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(280): Semantic error in &quot;IOBUF PORT &quot;sdram_ba[1]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_ba[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>280</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(281): Semantic error in &quot;IOBUF PORT &quot;sdram_dqm[0]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_dqm[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>281</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(282): Semantic error in &quot;IOBUF PORT &quot;sdram_dqm[1]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_dqm[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>282</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(283): Semantic error in &quot;IOBUF PORT &quot;sdram_d[0]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>283</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(284): Semantic error in &quot;IOBUF PORT &quot;sdram_d[1]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>284</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(285): Semantic error in &quot;IOBUF PORT &quot;sdram_d[2]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>285</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(286): Semantic error in &quot;IOBUF PORT &quot;sdram_d[3]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>286</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(287): Semantic error in &quot;IOBUF PORT &quot;sdram_d[4]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[4]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>287</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(288): Semantic error in &quot;IOBUF PORT &quot;sdram_d[5]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[5]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>288</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(289): Semantic error in &quot;IOBUF PORT &quot;sdram_d[6]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[6]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>289</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(290): Semantic error in &quot;IOBUF PORT &quot;sdram_d[7]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[7]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>290</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(291): Semantic error in &quot;IOBUF PORT &quot;sdram_d[8]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[8]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>291</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(292): Semantic error in &quot;IOBUF PORT &quot;sdram_d[9]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[9]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>292</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(293): Semantic error in &quot;IOBUF PORT &quot;sdram_d[10]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[10]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>293</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(294): Semantic error in &quot;IOBUF PORT &quot;sdram_d[11]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[11]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>294</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(295): Semantic error in &quot;IOBUF PORT &quot;sdram_d[12]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[12]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>295</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(296): Semantic error in &quot;IOBUF PORT &quot;sdram_d[13]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[13]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>296</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(297): Semantic error in &quot;IOBUF PORT &quot;sdram_d[14]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[14]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>297</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(298): Semantic error in &quot;IOBUF PORT &quot;sdram_d[15]&quot; PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>sdram_d[15]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>298</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(301): Semantic error in &quot;LOCATE COMP &quot;gpdi_dp[0]&quot; SITE &quot;A16&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dp[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>301</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(302): Semantic error in &quot;LOCATE COMP &quot;gpdi_dn[0]&quot; SITE &quot;B16&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dn[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>302</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(303): Semantic error in &quot;LOCATE COMP &quot;gpdi_dp[1]&quot; SITE &quot;A14&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dp[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>303</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(304): Semantic error in &quot;LOCATE COMP &quot;gpdi_dn[1]&quot; SITE &quot;C14&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dn[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>304</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(305): Semantic error in &quot;LOCATE COMP &quot;gpdi_dp[2]&quot; SITE &quot;A12&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dp[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>305</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(306): Semantic error in &quot;LOCATE COMP &quot;gpdi_dn[2]&quot; SITE &quot;A13&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dn[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>306</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(307): Semantic error in &quot;LOCATE COMP &quot;gpdi_dp[3]&quot; SITE &quot;A17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dp[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>307</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(308): Semantic error in &quot;LOCATE COMP &quot;gpdi_dn[3]&quot; SITE &quot;B18&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dn[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>308</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(309): Semantic error in &quot;LOCATE COMP &quot;gpdi_ethp&quot; SITE &quot;A19&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_ethp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>309</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(310): Semantic error in &quot;LOCATE COMP &quot;gpdi_ethn&quot; SITE &quot;B20&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_ethn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>310</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(311): Semantic error in &quot;LOCATE COMP &quot;gpdi_cec&quot; SITE &quot;A18&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_cec</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>311</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(312): Semantic error in &quot;LOCATE COMP &quot;gpdi_sda&quot; SITE &quot;B19&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_sda</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>312</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(313): Semantic error in &quot;LOCATE COMP &quot;gpdi_scl&quot; SITE &quot;E12&quot; ;&quot;: </Dynamic>
+            <Dynamic>gpdi_scl</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>313</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(314): Semantic error in &quot;IOBUF PORT &quot;gpdi_dp[0]&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dp[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>314</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(315): Semantic error in &quot;IOBUF PORT &quot;gpdi_dn[0]&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dn[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>315</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(316): Semantic error in &quot;IOBUF PORT &quot;gpdi_dp[1]&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dp[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>316</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(317): Semantic error in &quot;IOBUF PORT &quot;gpdi_dn[1]&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dn[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>317</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(318): Semantic error in &quot;IOBUF PORT &quot;gpdi_dp[2]&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dp[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>318</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(319): Semantic error in &quot;IOBUF PORT &quot;gpdi_dn[2]&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dn[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>319</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(320): Semantic error in &quot;IOBUF PORT &quot;gpdi_dp[3]&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dp[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>320</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(321): Semantic error in &quot;IOBUF PORT &quot;gpdi_dn[3]&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_dn[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>321</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(322): Semantic error in &quot;IOBUF PORT &quot;gpdi_ethp&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_ethp</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>322</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(323): Semantic error in &quot;IOBUF PORT &quot;gpdi_ethn&quot; IO_TYPE=LVCMOS33D DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_ethn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>323</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(324): Semantic error in &quot;IOBUF PORT &quot;gpdi_cec&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_cec</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>324</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(325): Semantic error in &quot;IOBUF PORT &quot;gpdi_sda&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_sda</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>325</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(326): Semantic error in &quot;IOBUF PORT &quot;gpdi_scl&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gpdi_scl</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>326</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(335): Semantic error in &quot;LOCATE COMP &quot;gn[0]&quot; SITE &quot;C11&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>335</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(337): Semantic error in &quot;LOCATE COMP &quot;gn[1]&quot; SITE &quot;A11&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>337</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(339): Semantic error in &quot;LOCATE COMP &quot;gn[2]&quot; SITE &quot;B10&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>339</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(341): Semantic error in &quot;LOCATE COMP &quot;gn[3]&quot; SITE &quot;C10&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>341</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(343): Semantic error in &quot;LOCATE COMP &quot;gn[4]&quot; SITE &quot;A8&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[4]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>343</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(345): Semantic error in &quot;LOCATE COMP &quot;gn[5]&quot; SITE &quot;B8&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[5]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>345</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(347): Semantic error in &quot;LOCATE COMP &quot;gn[6]&quot; SITE &quot;C7&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[6]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>347</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(349): Semantic error in &quot;IOBUF PORT &quot;gn[0]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[0]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>349</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(351): Semantic error in &quot;IOBUF PORT &quot;gn[1]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[1]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>351</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(353): Semantic error in &quot;IOBUF PORT &quot;gn[2]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[2]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>353</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(355): Semantic error in &quot;IOBUF PORT &quot;gn[3]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[3]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>355</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(357): Semantic error in &quot;IOBUF PORT &quot;gn[4]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[4]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>357</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(359): Semantic error in &quot;IOBUF PORT &quot;gn[5]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[5]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>359</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(361): Semantic error in &quot;IOBUF PORT &quot;gn[6]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[6]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>361</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(363): Semantic error in &quot;LOCATE COMP &quot;gn[7]&quot; SITE &quot;B6&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[7]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>363</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(365): Semantic error in &quot;LOCATE COMP &quot;gn[8]&quot; SITE &quot;A5&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[8]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>365</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(367): Semantic error in &quot;LOCATE COMP &quot;gn[9]&quot; SITE &quot;B1&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[9]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>367</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(369): Semantic error in &quot;LOCATE COMP &quot;gn[10]&quot; SITE &quot;B4&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[10]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>369</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(371): Semantic error in &quot;LOCATE COMP &quot;gn[11]&quot; SITE &quot;E3&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[11]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>371</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(373): Semantic error in &quot;LOCATE COMP &quot;gn[12]&quot; SITE &quot;F3&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[12]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>373</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(374): Semantic error in &quot;LOCATE COMP &quot;gp[13]&quot; SITE &quot;H4&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[13]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>374</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(375): Semantic error in &quot;LOCATE COMP &quot;gn[13]&quot; SITE &quot;G5&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[13]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>375</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(377): Semantic error in &quot;IOBUF PORT &quot;gn[7]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[7]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>377</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(379): Semantic error in &quot;IOBUF PORT &quot;gn[8]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[8]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>379</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(381): Semantic error in &quot;IOBUF PORT &quot;gn[9]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[9]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>381</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(383): Semantic error in &quot;IOBUF PORT &quot;gn[10]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[10]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>383</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(385): Semantic error in &quot;IOBUF PORT &quot;gn[11]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[11]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>385</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(387): Semantic error in &quot;IOBUF PORT &quot;gn[12]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[12]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>387</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(388): Semantic error in &quot;IOBUF PORT &quot;gp[13]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[13]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>388</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(389): Semantic error in &quot;IOBUF PORT &quot;gn[13]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[13]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>389</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(390): Semantic error in &quot;LOCATE COMP &quot;gp[14]&quot; SITE &quot;U18&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[14]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>390</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(391): Semantic error in &quot;LOCATE COMP &quot;gn[14]&quot; SITE &quot;U17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[14]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>391</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(392): Semantic error in &quot;LOCATE COMP &quot;gp[15]&quot; SITE &quot;N17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[15]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>392</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(393): Semantic error in &quot;LOCATE COMP &quot;gn[15]&quot; SITE &quot;P16&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[15]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>393</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(394): Semantic error in &quot;LOCATE COMP &quot;gp[16]&quot; SITE &quot;N16&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[16]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>394</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(395): Semantic error in &quot;LOCATE COMP &quot;gn[16]&quot; SITE &quot;M17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[16]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>395</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(396): Semantic error in &quot;LOCATE COMP &quot;gp[17]&quot; SITE &quot;L16&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[17]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>396</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(397): Semantic error in &quot;LOCATE COMP &quot;gn[17]&quot; SITE &quot;L17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[17]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>397</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(398): Semantic error in &quot;LOCATE COMP &quot;gp[18]&quot; SITE &quot;H18&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[18]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>398</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(399): Semantic error in &quot;LOCATE COMP &quot;gn[18]&quot; SITE &quot;H17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[18]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>399</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(400): Semantic error in &quot;LOCATE COMP &quot;gp[19]&quot; SITE &quot;F17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[19]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>400</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(401): Semantic error in &quot;LOCATE COMP &quot;gn[19]&quot; SITE &quot;G18&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[19]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>401</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(402): Semantic error in &quot;LOCATE COMP &quot;gp[20]&quot; SITE &quot;D18&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[20]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>402</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(403): Semantic error in &quot;LOCATE COMP &quot;gn[20]&quot; SITE &quot;E17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[20]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>403</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(404): Semantic error in &quot;IOBUF PORT &quot;gp[14]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[14]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>404</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(405): Semantic error in &quot;IOBUF PORT &quot;gn[14]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[14]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>405</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(406): Semantic error in &quot;IOBUF PORT &quot;gp[15]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[15]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>406</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(407): Semantic error in &quot;IOBUF PORT &quot;gn[15]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[15]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>407</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(408): Semantic error in &quot;IOBUF PORT &quot;gp[16]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[16]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>408</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(409): Semantic error in &quot;IOBUF PORT &quot;gn[16]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[16]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>409</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(410): Semantic error in &quot;IOBUF PORT &quot;gp[17]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[17]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>410</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(411): Semantic error in &quot;IOBUF PORT &quot;gn[17]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[17]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>411</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(412): Semantic error in &quot;IOBUF PORT &quot;gp[18]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[18]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>412</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(413): Semantic error in &quot;IOBUF PORT &quot;gn[18]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[18]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>413</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(414): Semantic error in &quot;IOBUF PORT &quot;gp[19]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[19]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>414</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(415): Semantic error in &quot;IOBUF PORT &quot;gn[19]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[19]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>415</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(416): Semantic error in &quot;IOBUF PORT &quot;gp[20]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[20]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>416</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(417): Semantic error in &quot;IOBUF PORT &quot;gn[20]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[20]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>417</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(418): Semantic error in &quot;LOCATE COMP &quot;gp[21]&quot; SITE &quot;C18&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[21]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>418</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(419): Semantic error in &quot;LOCATE COMP &quot;gn[21]&quot; SITE &quot;D17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[21]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>419</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(420): Semantic error in &quot;LOCATE COMP &quot;gp[22]&quot; SITE &quot;B15&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[22]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>420</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(421): Semantic error in &quot;LOCATE COMP &quot;gn[22]&quot; SITE &quot;C15&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[22]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>421</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(422): Semantic error in &quot;LOCATE COMP &quot;gp[23]&quot; SITE &quot;B17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[23]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>422</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(423): Semantic error in &quot;LOCATE COMP &quot;gn[23]&quot; SITE &quot;C17&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[23]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>423</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(424): Semantic error in &quot;LOCATE COMP &quot;gp[24]&quot; SITE &quot;C16&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[24]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>424</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(425): Semantic error in &quot;LOCATE COMP &quot;gn[24]&quot; SITE &quot;D16&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[24]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>425</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(426): Semantic error in &quot;LOCATE COMP &quot;gp[25]&quot; SITE &quot;D14&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[25]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>426</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(427): Semantic error in &quot;LOCATE COMP &quot;gn[25]&quot; SITE &quot;E14&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[25]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>427</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(428): Semantic error in &quot;LOCATE COMP &quot;gp[26]&quot; SITE &quot;B13&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[26]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>428</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(429): Semantic error in &quot;LOCATE COMP &quot;gn[26]&quot; SITE &quot;C13&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[26]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>429</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(430): Semantic error in &quot;LOCATE COMP &quot;gp[27]&quot; SITE &quot;D13&quot; ;&quot;: </Dynamic>
+            <Dynamic>gp[27]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>430</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(431): Semantic error in &quot;LOCATE COMP &quot;gn[27]&quot; SITE &quot;E13&quot; ;&quot;: </Dynamic>
+            <Dynamic>gn[27]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>431</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(432): Semantic error in &quot;IOBUF PORT &quot;gp[21]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[21]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>432</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(433): Semantic error in &quot;IOBUF PORT &quot;gn[21]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[21]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>433</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(434): Semantic error in &quot;IOBUF PORT &quot;gp[22]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[22]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>434</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(435): Semantic error in &quot;IOBUF PORT &quot;gn[22]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[22]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>435</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(436): Semantic error in &quot;IOBUF PORT &quot;gp[23]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[23]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>436</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(437): Semantic error in &quot;IOBUF PORT &quot;gn[23]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[23]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>437</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(438): Semantic error in &quot;IOBUF PORT &quot;gp[24]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[24]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>438</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(439): Semantic error in &quot;IOBUF PORT &quot;gn[24]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[24]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>439</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(440): Semantic error in &quot;IOBUF PORT &quot;gp[25]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[25]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>440</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(441): Semantic error in &quot;IOBUF PORT &quot;gn[25]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[25]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>441</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(442): Semantic error in &quot;IOBUF PORT &quot;gp[26]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[26]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>442</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(443): Semantic error in &quot;IOBUF PORT &quot;gn[26]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[26]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>443</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(444): Semantic error in &quot;IOBUF PORT &quot;gp[27]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gp[27]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>444</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(445): Semantic error in &quot;IOBUF PORT &quot;gn[27]&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>gn[27]</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>445</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(449): Semantic error in &quot;LOCATE COMP &quot;user_programn&quot; SITE &quot;M4&quot; ;&quot;: </Dynamic>
+            <Dynamic>user_programn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>449</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(450): Semantic error in &quot;IOBUF PORT &quot;user_programn&quot; PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>user_programn</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>450</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(454): Semantic error in &quot;LOCATE COMP &quot;shutdown&quot; SITE &quot;G16&quot; ;&quot;: </Dynamic>
+            <Dynamic>shutdown</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>454</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/Projects/FPGA/Learning/epaper/epaper.lpf(455): Semantic error in &quot;IOBUF PORT &quot;shutdown&quot; PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;&quot;: </Dynamic>
+            <Dynamic>shutdown</Dynamic>
+            <Navigation>E:/Projects/FPGA/Learning/epaper/epaper.lpf</Navigation>
+            <Navigation>455</Navigation>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[0]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DRIVE</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>btn_pad[4]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[12]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[11]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[10]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[9]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[8]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[7]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[6]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[5]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[4]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[3]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[2]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101275</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PULLMODE</Dynamic>
+            <Dynamic>UP</Dynamic>
+            <Dynamic>gp_pad[1]/IOBUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>btn[4:3](0)</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/topmodule.v(1): </Dynamic>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/topmodule.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/topmodule.v(19): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/topmodule.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/pll/pll.v(8): </Dynamic>
+            <Dynamic>pll</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/pll/pll.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(278): </Dynamic>
+            <Dynamic>IB</Dynamic>
+            <Navigation>C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v</Navigation>
+            <Navigation>278</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(757): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v</Navigation>
+            <Navigation>757</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(761): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v</Navigation>
+            <Navigation>761</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(1696): </Dynamic>
+            <Dynamic>EHXPLLL(CLKFB_DIV=4,CLKOP_DIV=6,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOP_CPHASE=5,CLKOP_TRIM_POL=&quot;FALLING&quot;,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v</Navigation>
+            <Navigation>1696</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/clocks.v(4): </Dynamic>
+            <Dynamic>clockDivider</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/clocks.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/clocks.v(14): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/clocks.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/clocks.v(34): </Dynamic>
+            <Dynamic>posEdgeDet</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/clocks.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(117): </Dynamic>
+            <Dynamic>retard</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>117</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(4): </Dynamic>
+            <Dynamic>ckvModule</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(22): </Dynamic>
+            <Dynamic>spvModule</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(39): </Dynamic>
+            <Dynamic>latchModule</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(54): </Dynamic>
+            <Dynamic>sphModule</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>btn[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>btn[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gp[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gp[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gp[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gp[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gp[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gp[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gp[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gp[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935036</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(19): </Dynamic>
+            <Dynamic>\myCkvModule/ckv_15</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35935036</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(36): </Dynamic>
+            <Dynamic>\mySpvModule/spv_17</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>36</Navigation>
+        </Message>
+        <Message>
+            <ID>35935036</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(50): </Dynamic>
+            <Dynamic>\myLeModule/le_16</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35935036</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/epaperDriver.v(65): </Dynamic>
+            <Dynamic>\mySphModule/sph_16</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/epaperDriver.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/projects/fpga/learning/epaper/clocks.v(43): </Dynamic>
+            <Dynamic>\spvPosEdge/sig_dly_7</Dynamic>
+            <Navigation>e:/projects/fpga/learning/epaper/clocks.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>btn[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>btn[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_25mhz</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>btn[4]</Dynamic>
+            <Navigation>btn[4]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>btn[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>btn[3]</Dynamic>
+            <Navigation>btn[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>btn[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>btn[3]</Dynamic>
+            <Navigation>btn[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;E:\Projects\FPGA\Learning\epaper\pll\pll.v&quot;:22:8:22:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>E:\Projects\FPGA\Learning\epaper\pll\pll.v</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG532 :&quot;E:\Projects\FPGA\Learning\epaper\epaperDriver.v&quot;:84:1:84:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur</Dynamic>
+            <Navigation>CG532</Navigation>
+            <Navigation>E:\Projects\FPGA\Learning\epaper\epaperDriver.v</Navigation>
+            <Navigation>84</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>84</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG360 :&quot;E:\Projects\FPGA\Learning\epaper\topModule.v&quot;:23:12:23:26|Removing wire epaperDataWires, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>E:\Projects\FPGA\Learning\epaper\topModule.v</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>Removing wire epaperDataWires, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL247 :&quot;E:\Projects\FPGA\Learning\epaper\topModule.v&quot;:19:40:19:42|Input port bit 3 of btn[4:3] is unused</Dynamic>
+            <Navigation>CL247</Navigation>
+            <Navigation>E:\Projects\FPGA\Learning\epaper\topModule.v</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Input port bit 3 of btn[4:3] is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;E:\Projects\FPGA\Learning\epaper\epaperDriver.v&quot;:88:1:88:6|Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>E:\Projects\FPGA\Learning\epaper\epaperDriver.v</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;E:\Projects\FPGA\Learning\epaper\clocks.v&quot;:7:1:7:6|Pruning register bits 32 to 2 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>E:\Projects\FPGA\Learning\epaper\clocks.v</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bits 32 to 2 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;e:\projects\fpga\learning\epaper\clocks.v&quot;:7:1:7:6|Found inferred clock pll|CLKOP_inferred_clock which controls 3 sequential elements including clckDiv.out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>e:\projects\fpga\learning\epaper\clocks.v</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock pll|CLKOP_inferred_clock which controls 3 sequential elements including clckDiv.out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;e:\projects\fpga\learning\epaper\pll\pll.v&quot;:58:12:58:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>e:\projects\fpga\learning\epaper\pll\pll.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock pll|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net myPll.clk_100mhz.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock pll|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net myPll.clk_100mhz.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version Q-2020.03L-SP1
+#--  Project file E:\Projects\FPGA\Learning\epaper\impl1\impl1_syn.prd
+#--  Written on Wed Jan 18 22:17:32 2023
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

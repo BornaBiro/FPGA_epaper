@@ -1,0 +1,1656 @@
+
+             Lattice Mapping Report File for Design Module 'top'
+
+
+Design Information
+------------------
+
+Command line:   map -a ECP5U -p LFE5U-12F -t CABGA381 -s 6 -oc Industrial
+     epaper_impl1.ngd -o epaper_impl1_map.ncd -pr epaper_impl1.prf -mp
+     epaper_impl1.mrp -lpf
+     E:/Projects/FPGA/Learning/epaper/impl1/epaper_impl1_synplify.lpf -lpf
+     E:/Projects/FPGA/Learning/epaper/epaper.lpf -gui -msgset
+     E:/Projects/FPGA/Learning/epaper/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-12FCABGA381
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  01/22/23  00:18:47
+
+Design Summary
+--------------
+
+   Number of registers:    148 out of 12687 (1%)
+      PFU registers:          145 out of 12096 (1%)
+      PIO registers:            3 out of   591 (1%)
+   Number of SLICEs:       167 out of  6048 (3%)
+      SLICEs as Logic/ROM:    167 out of  6048 (3%)
+      SLICEs as RAM:            0 out of  4536 (0%)
+      SLICEs as Carry:         73 out of  6048 (1%)
+   Number of LUT4s:        308 out of 12096 (3%)
+      Number used as logic LUTs:        162
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      146
+      Number used as shift registers:     0
+   Number of PIO sites used: 23 out of 197 (12%)
+   Number of block RAMs:  0 out of 32 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+
+                                    Page 1
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Summary (cont)
+---------------------
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 56 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 28 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
+   Number of clocks:  4
+     Net gp_c[4]: 72 loads, 0 rising, 72 falling (Driver:
+     myCtrlModule/clkOutMainModule )
+     Net clk_divOut: 6 loads, 6 rising, 0 falling (Driver: clckDiv/out )
+     Net clk_100mhz: 4 loads, 4 rising, 0 falling (Driver: myPll/PLLInst_0 )
+     Net myPll/buf_CLKI: 1 loads, 1 rising, 0 falling (Driver: PIO clk_25mhz )
+   Number of Clock Enables:  5
+     Net myCkvModule.ckv_1_sqmuxa_i: 1 loads, 0 LSLICEs
+     Net le_en: 1 loads, 0 LSLICEs
+     Net N_16: 1 loads, 0 LSLICEs
+     Net mySpvModule/spv_2_sqmuxa_i: 1 loads, 1 LSLICEs
+     Net myCtrlModule/frame14: 4 loads, 4 LSLICEs
+   Number of LSRs:  5
+     Net myCkvModule.ckv16: 1 loads, 0 LSLICEs
+     Net myLeModule.le16: 1 loads, 0 LSLICEs
+     Net mySphModule.sph16: 1 loads, 0 LSLICEs
+     Net mySpvModule/spv22: 1 loads, 1 LSLICEs
+     Net clckDiv/counter[1]: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net myCtrlModule/frame[2]: 33 loads
+     Net myCtrlModule/frame[3]: 33 loads
+     Net myCtrlModule/frame[4]: 33 loads
+     Net myCtrlModule/frame[1]: 25 loads
+     Net myCtrlModule/frame[5]: 25 loads
+     Net myCtrlModule/frame[0]: 11 loads
+     Net myLeModule/le4_30: 10 loads
+     Net myCkvModule/ckv4_30: 9 loads
+     Net myCtrlModule/frame[6]: 9 loads
+     Net mySpvModule/spv22: 8 loads
+
+
+
+
+   Number of warnings:  333
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(17): Semantic error
+     in "LOCATE COMP "ftdi_rxd" SITE "L4" ;": COMP "ftdi_rxd" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(18): Semantic error
+     in "LOCATE COMP "ftdi_txd" SITE "M1" ;": COMP "ftdi_txd" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(19): Semantic error
+     in "LOCATE COMP "ftdi_nrts" SITE "M3" ;": COMP "ftdi_nrts" cannot be found
+
+                                    Page 2
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(20): Semantic error
+     in "LOCATE COMP "ftdi_ndtr" SITE "N1" ;": COMP "ftdi_ndtr" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(21): Semantic error
+     in "LOCATE COMP "ftdi_txden" SITE "L3" ;": COMP "ftdi_txden" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(22): Semantic error
+     in "IOBUF PORT "ftdi_rxd" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "ftdi_rxd" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(23): Semantic error
+     in "IOBUF PORT "ftdi_txd" PULLMODE=UP IO_TYPE=LVCMOS33 ;": Port "ftdi_txd"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(24): Semantic error
+     in "IOBUF PORT "ftdi_nrts" PULLMODE=UP IO_TYPE=LVCMOS33 ;": Port
+     "ftdi_nrts" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(25): Semantic error
+     in "IOBUF PORT "ftdi_ndtr" PULLMODE=UP IO_TYPE=LVCMOS33 ;": Port
+     "ftdi_ndtr" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(26): Semantic error
+     in "IOBUF PORT "ftdi_txden" PULLMODE=UP IO_TYPE=LVCMOS33 ;": Port
+     "ftdi_txden" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(47): Semantic error
+     in "LOCATE COMP "btn[0]" SITE "D6" ;": COMP "btn[0]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(48): Semantic error
+     in "LOCATE COMP "btn[1]" SITE "R1" ;": COMP "btn[1]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(49): Semantic error
+     in "LOCATE COMP "btn[2]" SITE "T1" ;": COMP "btn[2]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(52): Semantic error
+     in "LOCATE COMP "btn[5]" SITE "U1" ;": COMP "btn[5]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(53): Semantic error
+     in "LOCATE COMP "btn[6]" SITE "H16" ;": COMP "btn[6]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(54): Semantic error
+     in "IOBUF PORT "btn[0]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "btn[0]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(55): Semantic error
+     in "IOBUF PORT "btn[1]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "btn[1]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(56): Semantic error
+     in "IOBUF PORT "btn[2]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "btn[2]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(57): Semantic error
+     in "IOBUF PORT "btn[3]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "btn[3]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(59): Semantic error
+     in "IOBUF PORT "btn[5]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "btn[5]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(60): Semantic error
+
+                                    Page 3
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in "IOBUF PORT "btn[6]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "btn[6]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(63): Semantic error
+     in "LOCATE COMP "sw[0]" SITE "E8" ;": COMP "sw[0]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(64): Semantic error
+     in "LOCATE COMP "sw[1]" SITE "D8" ;": COMP "sw[1]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(65): Semantic error
+     in "LOCATE COMP "sw[2]" SITE "D7" ;": COMP "sw[2]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(66): Semantic error
+     in "LOCATE COMP "sw[3]" SITE "E7" ;": COMP "sw[3]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(67): Semantic error
+     in "IOBUF PORT "sw[0]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sw[0]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(68): Semantic error
+     in "IOBUF PORT "sw[1]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sw[1]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(69): Semantic error
+     in "IOBUF PORT "sw[2]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sw[2]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(70): Semantic error
+     in "IOBUF PORT "sw[3]" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sw[3]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(73): Semantic error
+     in "LOCATE COMP "oled_clk" SITE "P4" ;": COMP "oled_clk" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(74): Semantic error
+     in "LOCATE COMP "oled_mosi" SITE "P3" ;": COMP "oled_mosi" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(75): Semantic error
+     in "LOCATE COMP "oled_dc" SITE "P1" ;": COMP "oled_dc" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(76): Semantic error
+     in "LOCATE COMP "oled_resn" SITE "P2" ;": COMP "oled_resn" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(77): Semantic error
+     in "LOCATE COMP "oled_csn" SITE "N2" ;": COMP "oled_csn" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(78): Semantic error
+     in "IOBUF PORT "oled_clk" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "oled_clk" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(79): Semantic error
+     in "IOBUF PORT "oled_mosi" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "oled_mosi" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(80): Semantic error
+     in "IOBUF PORT "oled_dc" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "oled_dc" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(81): Semantic error
+     in "IOBUF PORT "oled_resn" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "oled_resn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(82): Semantic error
+
+                                    Page 4
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in "IOBUF PORT "oled_csn" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "oled_csn" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(85): Semantic error
+     in "LOCATE COMP "flash_csn" SITE "R2" ;": COMP "flash_csn" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(86): Semantic error
+     in "LOCATE COMP "flash_mosi" SITE "W2" ;": COMP "flash_mosi" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(87): Semantic error
+     in "LOCATE COMP "flash_miso" SITE "V2" ;": COMP "flash_miso" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(88): Semantic error
+     in "LOCATE COMP "flash_holdn" SITE "W1" ;": COMP "flash_holdn" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(89): Semantic error
+     in "LOCATE COMP "flash_wpn" SITE "Y2" ;": COMP "flash_wpn" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(98): Semantic error
+     in "IOBUF PORT "flash_csn" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "flash_csn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(99): Semantic error
+     in "IOBUF PORT "flash_mosi" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "flash_mosi" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(100): Semantic error
+     in "IOBUF PORT "flash_miso" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "flash_miso" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(101): Semantic error
+     in "IOBUF PORT "flash_holdn" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "flash_holdn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(102): Semantic error
+     in "IOBUF PORT "flash_wpn" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "flash_wpn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(113): Semantic error
+     in "LOCATE COMP "sd_clk" SITE "H2" ;": COMP "sd_clk" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(114): Semantic error
+     in "LOCATE COMP "sd_cmd" SITE "J1" ;": COMP "sd_cmd" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(115): Semantic error
+     in "LOCATE COMP "sd_d[0]" SITE "J3" ;": COMP "sd_d[0]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(116): Semantic error
+     in "LOCATE COMP "sd_d[1]" SITE "H1" ;": COMP "sd_d[1]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(117): Semantic error
+     in "LOCATE COMP "sd_d[2]" SITE "K1" ;": COMP "sd_d[2]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(118): Semantic error
+     in "LOCATE COMP "sd_d[3]" SITE "K2" ;": COMP "sd_d[3]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(119): Semantic error
+
+                                    Page 5
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in "LOCATE COMP "sd_wp" SITE "P5" ;": COMP "sd_wp" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(120): Semantic error
+     in "LOCATE COMP "sd_cdn" SITE "N5" ;": COMP "sd_cdn" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(121): Semantic error
+     in "IOBUF PORT "sd_clk" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sd_clk" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(122): Semantic error
+     in "IOBUF PORT "sd_cmd" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sd_cmd" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(123): Semantic error
+     in "IOBUF PORT "sd_d[0]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sd_d[0]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(124): Semantic error
+     in "IOBUF PORT "sd_d[1]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sd_d[1]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(125): Semantic error
+     in "IOBUF PORT "sd_d[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sd_d[2]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(126): Semantic error
+     in "IOBUF PORT "sd_d[3]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sd_d[3]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(127): Semantic error
+     in "IOBUF PORT "sd_wp" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sd_wp" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(128): Semantic error
+     in "IOBUF PORT "sd_cdn" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sd_cdn" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(131): Semantic error
+     in "LOCATE COMP "adc_csn" SITE "R17" ;": COMP "adc_csn" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(132): Semantic error
+     in "LOCATE COMP "adc_mosi" SITE "R16" ;": COMP "adc_mosi" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(133): Semantic error
+     in "LOCATE COMP "adc_miso" SITE "U16" ;": COMP "adc_miso" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(134): Semantic error
+     in "LOCATE COMP "adc_sclk" SITE "P17" ;": COMP "adc_sclk" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(135): Semantic error
+     in "IOBUF PORT "adc_csn" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "adc_csn" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(136): Semantic error
+     in "IOBUF PORT "adc_mosi" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "adc_mosi" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(137): Semantic error
+     in "IOBUF PORT "adc_miso" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "adc_miso" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(138): Semantic error
+     in "IOBUF PORT "adc_sclk" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "adc_sclk" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(146): Semantic error
+     in "LOCATE COMP "audio_l[3]" SITE "B3" ;": COMP "audio_l[3]" cannot be
+     found in design. This preference has been disabled.
+
+                                    Page 6
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(147): Semantic error
+     in "LOCATE COMP "audio_l[2]" SITE "C3" ;": COMP "audio_l[2]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(148): Semantic error
+     in "LOCATE COMP "audio_l[1]" SITE "D3" ;": COMP "audio_l[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(149): Semantic error
+     in "LOCATE COMP "audio_l[0]" SITE "E4" ;": COMP "audio_l[0]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(150): Semantic error
+     in "LOCATE COMP "audio_r[3]" SITE "C5" ;": COMP "audio_r[3]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(151): Semantic error
+     in "LOCATE COMP "audio_r[2]" SITE "D5" ;": COMP "audio_r[2]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(152): Semantic error
+     in "LOCATE COMP "audio_r[1]" SITE "B5" ;": COMP "audio_r[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(153): Semantic error
+     in "LOCATE COMP "audio_r[0]" SITE "A3" ;": COMP "audio_r[0]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(154): Semantic error
+     in "LOCATE COMP "audio_v[3]" SITE "E5" ;": COMP "audio_v[3]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(155): Semantic error
+     in "LOCATE COMP "audio_v[2]" SITE "F5" ;": COMP "audio_v[2]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(156): Semantic error
+     in "LOCATE COMP "audio_v[1]" SITE "F2" ;": COMP "audio_v[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(157): Semantic error
+     in "LOCATE COMP "audio_v[0]" SITE "H5" ;": COMP "audio_v[0]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(158): Semantic error
+     in "IOBUF PORT "audio_l[3]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_l[3]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(159): Semantic error
+     in "IOBUF PORT "audio_l[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_l[2]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(160): Semantic error
+     in "IOBUF PORT "audio_l[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_l[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(161): Semantic error
+     in "IOBUF PORT "audio_l[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_l[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(162): Semantic error
+     in "IOBUF PORT "audio_r[3]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_r[3]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(163): Semantic error
+     in "IOBUF PORT "audio_r[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_r[2]" does not exist in the design. This preference has been
+
+                                    Page 7
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(164): Semantic error
+     in "IOBUF PORT "audio_r[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_r[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(165): Semantic error
+     in "IOBUF PORT "audio_r[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_r[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(166): Semantic error
+     in "IOBUF PORT "audio_v[3]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_v[3]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(167): Semantic error
+     in "IOBUF PORT "audio_v[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_v[2]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(168): Semantic error
+     in "IOBUF PORT "audio_v[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_v[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(169): Semantic error
+     in "IOBUF PORT "audio_v[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "audio_v[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(173): Semantic error
+     in "LOCATE COMP "wifi_en" SITE "F1" ;": COMP "wifi_en" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(174): Semantic error
+     in "LOCATE COMP "wifi_rxd" SITE "K3" ;": COMP "wifi_rxd" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(175): Semantic error
+     in "LOCATE COMP "wifi_txd" SITE "K4" ;": COMP "wifi_txd" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(176): Semantic error
+     in "LOCATE COMP "wifi_gpio0" SITE "L2" ;": COMP "wifi_gpio0" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(177): Semantic error
+     in "LOCATE COMP "wifi_gpio5" SITE "N4" ;": COMP "wifi_gpio5" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(178): Semantic error
+     in "LOCATE COMP "wifi_gpio16" SITE "L1" ;": COMP "wifi_gpio16" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(179): Semantic error
+     in "LOCATE COMP "wifi_gpio17" SITE "N3" ;": COMP "wifi_gpio17" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(181): Semantic error
+     in "IOBUF PORT "wifi_en" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "wifi_en" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(182): Semantic error
+     in "IOBUF PORT "wifi_rxd" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "wifi_rxd" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(183): Semantic error
+     in "IOBUF PORT "wifi_txd" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "wifi_txd" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(184): Semantic error
+
+                                    Page 8
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in "IOBUF PORT "wifi_gpio0" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "wifi_gpio0" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(185): Semantic error
+     in "IOBUF PORT "wifi_gpio16" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "wifi_gpio16" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(186): Semantic error
+     in "IOBUF PORT "wifi_gpio17" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "wifi_gpio17" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(190): Semantic error
+     in "LOCATE COMP "ant_433mhz" SITE "G1" ;": COMP "ant_433mhz" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(191): Semantic error
+     in "IOBUF PORT "ant_433mhz" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "ant_433mhz" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(194): Semantic error
+     in "LOCATE COMP "usb_fpga_dp" SITE "E16" ;": COMP "usb_fpga_dp" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(195): Semantic error
+     in "LOCATE COMP "usb_fpga_dn" SITE "F16" ;": COMP "usb_fpga_dn" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(196): Semantic error
+     in "IOBUF PORT "usb_fpga_dp" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=16 ;":
+     Port "usb_fpga_dp" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(197): Semantic error
+     in "IOBUF PORT "usb_fpga_dn" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=16 ;":
+     Port "usb_fpga_dn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(198): Semantic error
+     in "LOCATE COMP "usb_fpga_bd_dp" SITE "D15" ;": COMP "usb_fpga_bd_dp"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(199): Semantic error
+     in "LOCATE COMP "usb_fpga_bd_dn" SITE "E15" ;": COMP "usb_fpga_bd_dn"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(200): Semantic error
+     in "IOBUF PORT "usb_fpga_bd_dp" PULLMODE=NONE IO_TYPE=LVCMOS33D DRIVE=4 ;":
+     Port "usb_fpga_bd_dp" does not exist in the design. This preference has
+     been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(201): Semantic error
+     in "IOBUF PORT "usb_fpga_bd_dn" PULLMODE=NONE IO_TYPE=LVCMOS33D DRIVE=4 ;":
+     Port "usb_fpga_bd_dn" does not exist in the design. This preference has
+     been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(202): Semantic error
+     in "LOCATE COMP "usb_fpga_pu_dp" SITE "B12" ;": COMP "usb_fpga_pu_dp"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(203): Semantic error
+     in "LOCATE COMP "usb_fpga_pu_dn" SITE "C12" ;": COMP "usb_fpga_pu_dn"
+     cannot be found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(204): Semantic error
+     in "IOBUF PORT "usb_fpga_pu_dp" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=16 ;":
+     Port "usb_fpga_pu_dp" does not exist in the design. This preference has
+     been disabled.
+
+                                    Page 9
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(205): Semantic error
+     in "IOBUF PORT "usb_fpga_pu_dn" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=16 ;":
+     Port "usb_fpga_pu_dn" does not exist in the design. This preference has
+     been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(221): Semantic error
+     in "LOCATE COMP "sdram_clk" SITE "F19" ;": COMP "sdram_clk" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(222): Semantic error
+     in "LOCATE COMP "sdram_cke" SITE "F20" ;": COMP "sdram_cke" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(223): Semantic error
+     in "LOCATE COMP "sdram_csn" SITE "P20" ;": COMP "sdram_csn" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(224): Semantic error
+     in "LOCATE COMP "sdram_wen" SITE "T20" ;": COMP "sdram_wen" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(225): Semantic error
+     in "LOCATE COMP "sdram_rasn" SITE "R20" ;": COMP "sdram_rasn" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(226): Semantic error
+     in "LOCATE COMP "sdram_casn" SITE "T19" ;": COMP "sdram_casn" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(227): Semantic error
+     in "LOCATE COMP "sdram_a[0]" SITE "M20" ;": COMP "sdram_a[0]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(228): Semantic error
+     in "LOCATE COMP "sdram_a[1]" SITE "M19" ;": COMP "sdram_a[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(229): Semantic error
+     in "LOCATE COMP "sdram_a[2]" SITE "L20" ;": COMP "sdram_a[2]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(230): Semantic error
+     in "LOCATE COMP "sdram_a[3]" SITE "L19" ;": COMP "sdram_a[3]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(231): Semantic error
+     in "LOCATE COMP "sdram_a[4]" SITE "K20" ;": COMP "sdram_a[4]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(232): Semantic error
+     in "LOCATE COMP "sdram_a[5]" SITE "K19" ;": COMP "sdram_a[5]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(233): Semantic error
+     in "LOCATE COMP "sdram_a[6]" SITE "K18" ;": COMP "sdram_a[6]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(234): Semantic error
+     in "LOCATE COMP "sdram_a[7]" SITE "J20" ;": COMP "sdram_a[7]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(235): Semantic error
+     in "LOCATE COMP "sdram_a[8]" SITE "J19" ;": COMP "sdram_a[8]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(236): Semantic error
+     in "LOCATE COMP "sdram_a[9]" SITE "H20" ;": COMP "sdram_a[9]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(237): Semantic error
+     in "LOCATE COMP "sdram_a[10]" SITE "N19" ;": COMP "sdram_a[10]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(238): Semantic error
+
+                                   Page 10
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in "LOCATE COMP "sdram_a[11]" SITE "G20" ;": COMP "sdram_a[11]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(239): Semantic error
+     in "LOCATE COMP "sdram_a[12]" SITE "G19" ;": COMP "sdram_a[12]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(240): Semantic error
+     in "LOCATE COMP "sdram_ba[0]" SITE "P19" ;": COMP "sdram_ba[0]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(241): Semantic error
+     in "LOCATE COMP "sdram_ba[1]" SITE "N20" ;": COMP "sdram_ba[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(242): Semantic error
+     in "LOCATE COMP "sdram_dqm[0]" SITE "U19" ;": COMP "sdram_dqm[0]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(243): Semantic error
+     in "LOCATE COMP "sdram_dqm[1]" SITE "E20" ;": COMP "sdram_dqm[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(244): Semantic error
+     in "LOCATE COMP "sdram_d[0]" SITE "J16" ;": COMP "sdram_d[0]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(245): Semantic error
+     in "LOCATE COMP "sdram_d[1]" SITE "L18" ;": COMP "sdram_d[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(246): Semantic error
+     in "LOCATE COMP "sdram_d[2]" SITE "M18" ;": COMP "sdram_d[2]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(247): Semantic error
+     in "LOCATE COMP "sdram_d[3]" SITE "N18" ;": COMP "sdram_d[3]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(248): Semantic error
+     in "LOCATE COMP "sdram_d[4]" SITE "P18" ;": COMP "sdram_d[4]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(249): Semantic error
+     in "LOCATE COMP "sdram_d[5]" SITE "T18" ;": COMP "sdram_d[5]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(250): Semantic error
+     in "LOCATE COMP "sdram_d[6]" SITE "T17" ;": COMP "sdram_d[6]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(251): Semantic error
+     in "LOCATE COMP "sdram_d[7]" SITE "U20" ;": COMP "sdram_d[7]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(252): Semantic error
+     in "LOCATE COMP "sdram_d[8]" SITE "E19" ;": COMP "sdram_d[8]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(253): Semantic error
+     in "LOCATE COMP "sdram_d[9]" SITE "D20" ;": COMP "sdram_d[9]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(254): Semantic error
+     in "LOCATE COMP "sdram_d[10]" SITE "D19" ;": COMP "sdram_d[10]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(255): Semantic error
+     in "LOCATE COMP "sdram_d[11]" SITE "C20" ;": COMP "sdram_d[11]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(256): Semantic error
+     in "LOCATE COMP "sdram_d[12]" SITE "E18" ;": COMP "sdram_d[12]" cannot be
+     found in design. This preference has been disabled.
+
+                                   Page 11
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(257): Semantic error
+     in "LOCATE COMP "sdram_d[13]" SITE "F18" ;": COMP "sdram_d[13]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(258): Semantic error
+     in "LOCATE COMP "sdram_d[14]" SITE "J18" ;": COMP "sdram_d[14]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(259): Semantic error
+     in "LOCATE COMP "sdram_d[15]" SITE "J17" ;": COMP "sdram_d[15]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(260): Semantic error
+     in "IOBUF PORT "sdram_clk" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_clk" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(261): Semantic error
+     in "IOBUF PORT "sdram_cke" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_cke" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(262): Semantic error
+     in "IOBUF PORT "sdram_csn" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_csn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(263): Semantic error
+     in "IOBUF PORT "sdram_wen" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_wen" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(264): Semantic error
+     in "IOBUF PORT "sdram_rasn" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_rasn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(265): Semantic error
+     in "IOBUF PORT "sdram_casn" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_casn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(266): Semantic error
+     in "IOBUF PORT "sdram_a[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(267): Semantic error
+     in "IOBUF PORT "sdram_a[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(268): Semantic error
+     in "IOBUF PORT "sdram_a[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[2]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(269): Semantic error
+     in "IOBUF PORT "sdram_a[3]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[3]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(270): Semantic error
+     in "IOBUF PORT "sdram_a[4]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[4]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(271): Semantic error
+     in "IOBUF PORT "sdram_a[5]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[5]" does not exist in the design. This preference has been
+
+                                   Page 12
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(272): Semantic error
+     in "IOBUF PORT "sdram_a[6]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[6]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(273): Semantic error
+     in "IOBUF PORT "sdram_a[7]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[7]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(274): Semantic error
+     in "IOBUF PORT "sdram_a[8]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[8]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(275): Semantic error
+     in "IOBUF PORT "sdram_a[9]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_a[9]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(276): Semantic error
+     in "IOBUF PORT "sdram_a[10]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_a[10]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(277): Semantic error
+     in "IOBUF PORT "sdram_a[11]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_a[11]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(278): Semantic error
+     in "IOBUF PORT "sdram_a[12]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_a[12]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(279): Semantic error
+     in "IOBUF PORT "sdram_ba[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_ba[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(280): Semantic error
+     in "IOBUF PORT "sdram_ba[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_ba[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(281): Semantic error
+     in "IOBUF PORT "sdram_dqm[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_dqm[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(282): Semantic error
+     in "IOBUF PORT "sdram_dqm[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_dqm[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(283): Semantic error
+     in "IOBUF PORT "sdram_d[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(284): Semantic error
+     in "IOBUF PORT "sdram_d[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(285): Semantic error
+     in "IOBUF PORT "sdram_d[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[2]" does not exist in the design. This preference has been
+
+                                   Page 13
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(286): Semantic error
+     in "IOBUF PORT "sdram_d[3]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[3]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(287): Semantic error
+     in "IOBUF PORT "sdram_d[4]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[4]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(288): Semantic error
+     in "IOBUF PORT "sdram_d[5]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[5]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(289): Semantic error
+     in "IOBUF PORT "sdram_d[6]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[6]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(290): Semantic error
+     in "IOBUF PORT "sdram_d[7]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[7]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(291): Semantic error
+     in "IOBUF PORT "sdram_d[8]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[8]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(292): Semantic error
+     in "IOBUF PORT "sdram_d[9]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "sdram_d[9]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(293): Semantic error
+     in "IOBUF PORT "sdram_d[10]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_d[10]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(294): Semantic error
+     in "IOBUF PORT "sdram_d[11]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_d[11]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(295): Semantic error
+     in "IOBUF PORT "sdram_d[12]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_d[12]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(296): Semantic error
+     in "IOBUF PORT "sdram_d[13]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_d[13]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(297): Semantic error
+     in "IOBUF PORT "sdram_d[14]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_d[14]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(298): Semantic error
+     in "IOBUF PORT "sdram_d[15]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "sdram_d[15]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(301): Semantic error
+     in "LOCATE COMP "gpdi_dp[0]" SITE "A16" ;": COMP "gpdi_dp[0]" cannot be
+     found in design. This preference has been disabled.
+
+                                   Page 14
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(302): Semantic error
+     in "LOCATE COMP "gpdi_dn[0]" SITE "B16" ;": COMP "gpdi_dn[0]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(303): Semantic error
+     in "LOCATE COMP "gpdi_dp[1]" SITE "A14" ;": COMP "gpdi_dp[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(304): Semantic error
+     in "LOCATE COMP "gpdi_dn[1]" SITE "C14" ;": COMP "gpdi_dn[1]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(305): Semantic error
+     in "LOCATE COMP "gpdi_dp[2]" SITE "A12" ;": COMP "gpdi_dp[2]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(306): Semantic error
+     in "LOCATE COMP "gpdi_dn[2]" SITE "A13" ;": COMP "gpdi_dn[2]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(307): Semantic error
+     in "LOCATE COMP "gpdi_dp[3]" SITE "A17" ;": COMP "gpdi_dp[3]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(308): Semantic error
+     in "LOCATE COMP "gpdi_dn[3]" SITE "B18" ;": COMP "gpdi_dn[3]" cannot be
+     found in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(309): Semantic error
+     in "LOCATE COMP "gpdi_ethp" SITE "A19" ;": COMP "gpdi_ethp" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(310): Semantic error
+     in "LOCATE COMP "gpdi_ethn" SITE "B20" ;": COMP "gpdi_ethn" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(311): Semantic error
+     in "LOCATE COMP "gpdi_cec" SITE "A18" ;": COMP "gpdi_cec" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(312): Semantic error
+     in "LOCATE COMP "gpdi_sda" SITE "B19" ;": COMP "gpdi_sda" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(313): Semantic error
+     in "LOCATE COMP "gpdi_scl" SITE "E12" ;": COMP "gpdi_scl" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(314): Semantic error
+     in "IOBUF PORT "gpdi_dp[0]" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_dp[0]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(315): Semantic error
+     in "IOBUF PORT "gpdi_dn[0]" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_dn[0]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(316): Semantic error
+     in "IOBUF PORT "gpdi_dp[1]" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_dp[1]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(317): Semantic error
+     in "IOBUF PORT "gpdi_dn[1]" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_dn[1]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(318): Semantic error
+     in "IOBUF PORT "gpdi_dp[2]" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_dp[2]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(319): Semantic error
+     in "IOBUF PORT "gpdi_dn[2]" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_dn[2]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(320): Semantic error
+     in "IOBUF PORT "gpdi_dp[3]" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_dp[3]"
+
+                                   Page 15
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(321): Semantic error
+     in "IOBUF PORT "gpdi_dn[3]" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_dn[3]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(322): Semantic error
+     in "IOBUF PORT "gpdi_ethp" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_ethp"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(323): Semantic error
+     in "IOBUF PORT "gpdi_ethn" IO_TYPE=LVCMOS33D DRIVE=4 ;": Port "gpdi_ethn"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(324): Semantic error
+     in "IOBUF PORT "gpdi_cec" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gpdi_cec" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(325): Semantic error
+     in "IOBUF PORT "gpdi_sda" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gpdi_sda" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(326): Semantic error
+     in "IOBUF PORT "gpdi_scl" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gpdi_scl" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(335): Semantic error
+     in "LOCATE COMP "gn[0]" SITE "C11" ;": COMP "gn[0]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(337): Semantic error
+     in "LOCATE COMP "gn[1]" SITE "A11" ;": COMP "gn[1]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(339): Semantic error
+     in "LOCATE COMP "gn[2]" SITE "B10" ;": COMP "gn[2]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(341): Semantic error
+     in "LOCATE COMP "gn[3]" SITE "C10" ;": COMP "gn[3]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(343): Semantic error
+     in "LOCATE COMP "gn[4]" SITE "A8" ;": COMP "gn[4]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(345): Semantic error
+     in "LOCATE COMP "gn[5]" SITE "B8" ;": COMP "gn[5]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(347): Semantic error
+     in "LOCATE COMP "gn[6]" SITE "C7" ;": COMP "gn[6]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(349): Semantic error
+     in "IOBUF PORT "gn[0]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[0]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(351): Semantic error
+     in "IOBUF PORT "gn[1]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[1]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(353): Semantic error
+     in "IOBUF PORT "gn[2]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[2]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(355): Semantic error
+     in "IOBUF PORT "gn[3]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[3]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(357): Semantic error
+     in "IOBUF PORT "gn[4]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[4]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(359): Semantic error
+
+                                   Page 16
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in "IOBUF PORT "gn[5]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[5]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(361): Semantic error
+     in "IOBUF PORT "gn[6]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[6]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(363): Semantic error
+     in "LOCATE COMP "gn[7]" SITE "B6" ;": COMP "gn[7]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(365): Semantic error
+     in "LOCATE COMP "gn[8]" SITE "A5" ;": COMP "gn[8]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(367): Semantic error
+     in "LOCATE COMP "gn[9]" SITE "B1" ;": COMP "gn[9]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(369): Semantic error
+     in "LOCATE COMP "gn[10]" SITE "B4" ;": COMP "gn[10]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(371): Semantic error
+     in "LOCATE COMP "gn[11]" SITE "E3" ;": COMP "gn[11]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(373): Semantic error
+     in "LOCATE COMP "gn[12]" SITE "F3" ;": COMP "gn[12]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(374): Semantic error
+     in "LOCATE COMP "gp[13]" SITE "H4" ;": COMP "gp[13]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(375): Semantic error
+     in "LOCATE COMP "gn[13]" SITE "G5" ;": COMP "gn[13]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(377): Semantic error
+     in "IOBUF PORT "gn[7]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[7]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(379): Semantic error
+     in "IOBUF PORT "gn[8]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[8]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(381): Semantic error
+     in "IOBUF PORT "gn[9]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[9]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(383): Semantic error
+     in "IOBUF PORT "gn[10]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[10]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(385): Semantic error
+     in "IOBUF PORT "gn[11]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[11]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(387): Semantic error
+     in "IOBUF PORT "gn[12]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[12]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(388): Semantic error
+     in "IOBUF PORT "gp[13]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[13]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(389): Semantic error
+     in "IOBUF PORT "gn[13]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[13]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(390): Semantic error
+     in "LOCATE COMP "gp[14]" SITE "U18" ;": COMP "gp[14]" cannot be found in
+     design. This preference has been disabled.
+
+                                   Page 17
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(391): Semantic error
+     in "LOCATE COMP "gn[14]" SITE "U17" ;": COMP "gn[14]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(392): Semantic error
+     in "LOCATE COMP "gp[15]" SITE "N17" ;": COMP "gp[15]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(393): Semantic error
+     in "LOCATE COMP "gn[15]" SITE "P16" ;": COMP "gn[15]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(394): Semantic error
+     in "LOCATE COMP "gp[16]" SITE "N16" ;": COMP "gp[16]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(395): Semantic error
+     in "LOCATE COMP "gn[16]" SITE "M17" ;": COMP "gn[16]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(396): Semantic error
+     in "LOCATE COMP "gp[17]" SITE "L16" ;": COMP "gp[17]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(397): Semantic error
+     in "LOCATE COMP "gn[17]" SITE "L17" ;": COMP "gn[17]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(398): Semantic error
+     in "LOCATE COMP "gp[18]" SITE "H18" ;": COMP "gp[18]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(399): Semantic error
+     in "LOCATE COMP "gn[18]" SITE "H17" ;": COMP "gn[18]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(400): Semantic error
+     in "LOCATE COMP "gp[19]" SITE "F17" ;": COMP "gp[19]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(401): Semantic error
+     in "LOCATE COMP "gn[19]" SITE "G18" ;": COMP "gn[19]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(402): Semantic error
+     in "LOCATE COMP "gp[20]" SITE "D18" ;": COMP "gp[20]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(403): Semantic error
+     in "LOCATE COMP "gn[20]" SITE "E17" ;": COMP "gn[20]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(404): Semantic error
+     in "IOBUF PORT "gp[14]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[14]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(405): Semantic error
+     in "IOBUF PORT "gn[14]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[14]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(406): Semantic error
+     in "IOBUF PORT "gp[15]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[15]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(407): Semantic error
+     in "IOBUF PORT "gn[15]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[15]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(408): Semantic error
+     in "IOBUF PORT "gp[16]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[16]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(409): Semantic error
+     in "IOBUF PORT "gn[16]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+
+                                   Page 18
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     "gn[16]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(410): Semantic error
+     in "IOBUF PORT "gp[17]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[17]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(411): Semantic error
+     in "IOBUF PORT "gn[17]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[17]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(412): Semantic error
+     in "IOBUF PORT "gp[18]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[18]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(413): Semantic error
+     in "IOBUF PORT "gn[18]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[18]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(414): Semantic error
+     in "IOBUF PORT "gp[19]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[19]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(415): Semantic error
+     in "IOBUF PORT "gn[19]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[19]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(416): Semantic error
+     in "IOBUF PORT "gp[20]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[20]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(417): Semantic error
+     in "IOBUF PORT "gn[20]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[20]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(418): Semantic error
+     in "LOCATE COMP "gp[21]" SITE "C18" ;": COMP "gp[21]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(419): Semantic error
+     in "LOCATE COMP "gn[21]" SITE "D17" ;": COMP "gn[21]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(420): Semantic error
+     in "LOCATE COMP "gp[22]" SITE "B15" ;": COMP "gp[22]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(421): Semantic error
+     in "LOCATE COMP "gn[22]" SITE "C15" ;": COMP "gn[22]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(422): Semantic error
+     in "LOCATE COMP "gp[23]" SITE "B17" ;": COMP "gp[23]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(423): Semantic error
+     in "LOCATE COMP "gn[23]" SITE "C17" ;": COMP "gn[23]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(424): Semantic error
+     in "LOCATE COMP "gp[24]" SITE "C16" ;": COMP "gp[24]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(425): Semantic error
+     in "LOCATE COMP "gn[24]" SITE "D16" ;": COMP "gn[24]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(426): Semantic error
+     in "LOCATE COMP "gp[25]" SITE "D14" ;": COMP "gp[25]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(427): Semantic error
+     in "LOCATE COMP "gn[25]" SITE "E14" ;": COMP "gn[25]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(428): Semantic error
+
+                                   Page 19
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in "LOCATE COMP "gp[26]" SITE "B13" ;": COMP "gp[26]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(429): Semantic error
+     in "LOCATE COMP "gn[26]" SITE "C13" ;": COMP "gn[26]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(430): Semantic error
+     in "LOCATE COMP "gp[27]" SITE "D13" ;": COMP "gp[27]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(431): Semantic error
+     in "LOCATE COMP "gn[27]" SITE "E13" ;": COMP "gn[27]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(432): Semantic error
+     in "IOBUF PORT "gp[21]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[21]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(433): Semantic error
+     in "IOBUF PORT "gn[21]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[21]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(434): Semantic error
+     in "IOBUF PORT "gp[22]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[22]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(435): Semantic error
+     in "IOBUF PORT "gn[22]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[22]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(436): Semantic error
+     in "IOBUF PORT "gp[23]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[23]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(437): Semantic error
+     in "IOBUF PORT "gn[23]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[23]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(438): Semantic error
+     in "IOBUF PORT "gp[24]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[24]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(439): Semantic error
+     in "IOBUF PORT "gn[24]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[24]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(440): Semantic error
+     in "IOBUF PORT "gp[25]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[25]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(441): Semantic error
+     in "IOBUF PORT "gn[25]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[25]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(442): Semantic error
+     in "IOBUF PORT "gp[26]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[26]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(443): Semantic error
+     in "IOBUF PORT "gn[26]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[26]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(444): Semantic error
+     in "IOBUF PORT "gp[27]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gp[27]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(445): Semantic error
+     in "IOBUF PORT "gn[27]" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "gn[27]" does not exist in the design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(449): Semantic error
+     in "LOCATE COMP "user_programn" SITE "M4" ;": COMP "user_programn" cannot
+     be found in design. This preference has been disabled.
+
+                                   Page 20
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(450): Semantic error
+     in "IOBUF PORT "user_programn" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4 ;":
+     Port "user_programn" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(454): Semantic error
+     in "LOCATE COMP "shutdown" SITE "G16" ;": COMP "shutdown" cannot be found
+     in design. This preference has been disabled.
+WARNING - map: E:/Projects/FPGA/Learning/epaper/epaper.lpf(455): Semantic error
+     in "IOBUF PORT "shutdown" PULLMODE=DOWN IO_TYPE=LVCMOS33 DRIVE=4 ;": Port
+     "shutdown" does not exist in the design. This preference has been disabled.
+WARNING - map: PULLMODE=UP for gp_pad[0]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: DRIVE=4 for btn_pad[4]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[12]/IOBUF violates legal combination and
+     is ignored.
+WARNING - map: PULLMODE=UP for gp_pad[11]/IOBUF violates legal combination and
+     is ignored.
+WARNING - map: PULLMODE=UP for gp_pad[10]/IOBUF violates legal combination and
+     is ignored.
+WARNING - map: PULLMODE=UP for gp_pad[9]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[8]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[7]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[6]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[5]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[4]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[3]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[2]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: PULLMODE=UP for gp_pad[1]/IOBUF violates legal combination and is
+     ignored.
+WARNING - map: IO buffer missing for top level port btn[4:3](0)...logic will be
+     discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| led[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[0]               | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| btn[4]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk_25mhz           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                   Page 21
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+IO (PIO) Attributes (cont)
+--------------------------
+| led[7]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[6]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[5]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[4]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[12]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[11]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[10]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[9]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[8]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[7]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[6]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[5]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[4]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| gp[3]               | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| gp[2]               | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| gp[1]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Block clckDiv/VCC undriven or does not drive anything - clipped.
+Block spvPosEdge/VCC undriven or does not drive anything - clipped.
+Signal myLeModule.le.CN was merged into signal gp_c[4]
+Signal GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal myCtrlModule/VCC undriven or does not drive anything - clipped.
+Signal myCkvModule/VCC undriven or does not drive anything - clipped.
+Signal mySpvModule/VCC undriven or does not drive anything - clipped.
+Signal myLeModule/VCC undriven or does not drive anything - clipped.
+Signal mySphModule/VCC undriven or does not drive anything - clipped.
+Signal myPll/CLKINTFB undriven or does not drive anything - clipped.
+Signal myPll/REFCLK undriven or does not drive anything - clipped.
+Signal myPll/INTLOCK undriven or does not drive anything - clipped.
+
+                                   Page 22
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Removed logic (cont)
+--------------------
+Signal myPll/LOCK undriven or does not drive anything - clipped.
+Signal myPll/CLKOS3 undriven or does not drive anything - clipped.
+Signal myPll/CLKOS2 undriven or does not drive anything - clipped.
+Signal myPll/CLKOS undriven or does not drive anything - clipped.
+Signal myCtrlModule/frame_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal myCtrlModule/frame_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal myCtrlModule/N_3 undriven or does not drive anything - clipped.
+Signal myCtrlModule/frame_1_cry_6_0_S1 undriven or does not drive anything -
+     clipped.
+Signal myCtrlModule/frame_1_cry_6_0_COUT undriven or does not drive anything -
+     clipped.
+Signal myCkvModule/un4_counter_cry_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal myCkvModule/un4_counter_cry_0_0_S1_0 undriven or does not drive anything
+     - clipped.
+Signal myCkvModule/un4_counter_cry_0_0_S0_0 undriven or does not drive anything
+     - clipped.
+Signal myCkvModule/N_1 undriven or does not drive anything - clipped.
+Signal mySpvModule/un4_counter_cry_31_0_COUT undriven or does not drive anything
+     - clipped.
+Signal mySpvModule/un4_counter_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal mySpvModule/un4_counter_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal mySpvModule/N_1 undriven or does not drive anything - clipped.
+Signal myLeModule/un6_counter_cry_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal myLeModule/un6_counter_cry_0_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal myLeModule/un6_counter_cry_0_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal myLeModule/N_1 undriven or does not drive anything - clipped.
+Signal mySphModule/un6_counter_cry_31_0_COUT undriven or does not drive anything
+     - clipped.
+Signal mySphModule/un6_counter_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal mySphModule/un6_counter_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal mySphModule/N_1 undriven or does not drive anything - clipped.
+Block myCkvModule/counter_27_.CN was optimized away.
+Block GND was optimized away.
+Block VCC was optimized away.
+Block myCtrlModule/VCC was optimized away.
+Block myCkvModule/VCC was optimized away.
+Block mySpvModule/VCC was optimized away.
+Block myLeModule/VCC was optimized away.
+Block mySphModule/VCC was optimized away.
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+
+                                   Page 23
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+PLL/DLL Summary (cont)
+----------------------
+  PLL Instance Name:                                myPll/PLLInst_0
+  PLL Type:                                         EHXPLLL
+  Input Clock:                             PIN      myPll/buf_CLKI
+  Input Clock2:                                     NONE
+  Input Clock select:                               NONE
+  Output Clock(P):                         NODE     clk_100mhz
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     clk_100mhz
+  Reset Signal:                                     NONE
+  Standby Signal:                          NODE     myPll/GND
+  PLL LOCK signal:                                  NONE
+  PLL Internal LOCK Signal:                         NONE
+  Input Clock Frequency (MHz):                      25.0000
+  Output Clock(P) Frequency (MHz):                  100.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    4
+  CLKOP Divider:                                    6
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 FALLING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+  CLKOS3 Desired Phase Shift(degree):               0
+  CLKOS3 Trim Option Rising/Falling:                NONE
+  CLKOS3 Trim Option Delay:                         NONE
+
+ASIC Components
+---------------
+
+Instance Name: myPll/PLLInst_0
+         Type: EHXPLLL
+
+
+
+
+                                   Page 24
+
+
+
+
+Design:  top                                           Date:  01/22/23  00:18:47
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 2 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 110 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 25
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.

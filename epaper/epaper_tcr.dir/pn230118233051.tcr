@@ -1,0 +1,48 @@
+#Start recording tcl command: 1/18/2023 20:53:29
+#Project Location: E:/Projects/FPGA/Learning/epaper; Project name: epaper
+prj_project open "E:/Projects/FPGA/Learning/epaper/epaper.ldf"
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+launch_synplify_prj impl1
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+source "E:/Projects/FPGA/Learning/epaper/hdle_generate_Symbol.tcl"
+source "E:/Projects/FPGA/Learning/epaper/hdle_generate_Symbol.tcl"
+launch_synplify_prj impl1
+prj_run Export -impl impl1 -task Promgen -forceAll
+prj_run Export -impl impl1 -task Promgen
+prj_run Export -impl impl1 -task Promgen
+prj_run Export -impl impl1 -task Promgen
+prj_run Export -impl impl1 -task Promgen
+prj_run Export -impl impl1 -task Promgen
+prj_run Export -impl impl1 -task Promgen
+prj_run Export -impl impl1 -task Promgen
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+#Stop recording: 1/18/2023 23:30:51

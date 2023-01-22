@@ -1,0 +1,55 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\Program Files (x86)\Lattice\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-T6QGB4V
+
+Implementation : impl1
+Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+6        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-01-22 00:17:12, 2023-01-22 00:18:35)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 3
+MID:  lib.cell.view
+1        work.clockDivider.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-01-22 00:17:12, 2023-01-22 00:18:35) <-- (module definition)
+2        work.clockGenerator.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-01-22 00:17:12, 2023-01-22 00:18:35) <-- (module definition)
+10       work.posEdgeDet.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-01-22 00:17:12, 2023-01-22 00:18:35) <-- (module definition)
+
+*******************************************************************
+Unmodified files: 10
+FID:  path (timestamp)
+0        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v (2020-10-29 09:20:54)
+1        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 09:20:54)
+2        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 09:23:10)
+3        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\vlog\scemi_objects.v (2020-10-29 09:23:10)
+4        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh (2020-10-29 09:23:10)
+5        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 09:23:10)
+10       E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-01-22 00:17:08)
+7        E:\Projects\FPGA\Learning\epaper\pll\pll.v (2023-01-10 21:21:34)
+8        E:\Projects\FPGA\Learning\epaper\topModule.v (2023-01-21 22:33:00)
+11       E:\Projects\FPGA\Learning\epaper\waveformFile.txt (2023-01-21 23:57:31)
+
+*******************************************************************
+Unchanged modules: 8
+MID:  lib.cell.view
+0        work.ckvModule.verilog
+8        work.dataModule.verilog
+6        work.latchModule.verilog
+9        work.mainEpaperModule.verilog
+3        work.pll.verilog
+7        work.sphModule.verilog
+5        work.spvModule.verilog
+4        work.top.verilog

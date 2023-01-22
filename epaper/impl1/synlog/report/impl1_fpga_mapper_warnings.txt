@@ -1,0 +1,41 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":86:3:86:4|Found combinational loop during mapping at net myCtrlModule.lat_e
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_445
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[5]
+@W: BN137 :|Found combinational loop during mapping at net G_447
+@W: BN137 :|Found combinational loop during mapping at net G_443
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[9]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[6]
+@W: BN137 :|Found combinational loop during mapping at net G_449
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[4]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":104:9:104:19|Found combinational loop during mapping at net myCtrlModule.dataLines4lto6_0_2
+@W: BN137 :|Found combinational loop during mapping at net G_453
+@W: BN137 :|Found combinational loop during mapping at net myCtrlModule.frame_3[0]
+@W: BN137 :|Found combinational loop during mapping at net G_448
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[1]
+@W: BN137 :|Found combinational loop during mapping at net G_454
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[3]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_458
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_459
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_460
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":86:3:86:4|Found combinational loop during mapping at net myCtrlModule.lat_e
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_445
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[5]
+@W: BN137 :|Found combinational loop during mapping at net G_447
+@W: BN137 :|Found combinational loop during mapping at net G_443
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[9]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[6]
+@W: BN137 :|Found combinational loop during mapping at net G_449
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[4]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":104:9:104:19|Found combinational loop during mapping at net myCtrlModule.dataLines4lto6_0_2
+@W: BN137 :|Found combinational loop during mapping at net G_453
+@W: BN137 :|Found combinational loop during mapping at net myCtrlModule.frame_3[0]
+@W: BN137 :|Found combinational loop during mapping at net G_448
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[1]
+@W: BN137 :|Found combinational loop during mapping at net G_454
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[3]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_458
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_459
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_460
+@W: MT246 :"e:\projects\fpga\learning\epaper\pll\pll.v":58:12:58:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock pll|CLKOP_inferred_clock with period 3.97ns. Please declare a user-defined clock on net myPll.clk_100mhz.

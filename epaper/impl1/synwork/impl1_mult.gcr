@@ -1,0 +1,29 @@
+i myCtrlModule.clkOutMainModule_uclk
+m 0 0
+u 8 136
+n ckid0_0 {t:mySphModule.counter[32:0].C} Derived clock on input (not legal for GCC)
+p {t:myCtrlModule.uclk_clkOutMainModule.OUT}{p:myCtrlModule.clkOutMainModule_uclk_buf}{t:myCtrlModule.clkOutMainModule_uclk_buf}{t:mySphModule.clkOutMainModule_uclk_buf}{p:mySphModule.clkOutMainModule_uclk_buf}{t:mySphModule.I_1.I[0]}{t:mySphModule.I_1.OUT[0]}{t:mySphModule.counter[32:0].C}
+e ckid0_0 {t:mySphModule.counter[32:0].C} dff
+d ckid0_0 {t:myCtrlModule.uclk_clkOutMainModule.OUT} and Derived clock on input (not legal for GCC)
+i myCtrlModule.startFlag_2
+m 0 0
+u 10 10
+n ckid0_1 {t:myCtrlModule.frame[9].C} Clock optimization blocked by combinational loop marker (loopbuf)
+p {t:myCtrlModule.startFlag_2.OUT}{t:myCtrlModule.frame[9].C}
+e ckid0_1 {t:myCtrlModule.frame[9].C} lat
+d ckid0_1 {t:myCtrlModule.startFlag_2.OUT} or Clock optimization blocked by combinational loop marker (loopbuf)
+i clckDiv.out_i
+m 0 0
+u 1 1
+n ckid0_2 {t:spvPosEdge.sig_dly.C} Derived clock on input (not legal for GCC)
+p {t:clckDiv.out.Q[0]}{t:clckDiv.out_derived_clock.I[0]}{t:clckDiv.out_derived_clock.OUT[0]}{p:clckDiv.out}{t:clckDiv.out}{t:spvPosEdge.clk}{p:spvPosEdge.clk}{t:spvPosEdge.sig_dly.C}
+e ckid0_2 {t:spvPosEdge.sig_dly.C} dff
+d ckid0_3 {t:clckDiv.out.Q[0]} dffe Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i myPll.CLKOP_i
+m 0 0
+u 2 5
+p {t:myPll.PLLInst_0.CLKOP}{t:myPll.CLKOP_inferred_clock.I[0]}{t:myPll.CLKOP_inferred_clock.OUT[0]}{p:myPll.CLKOP}{t:myPll.CLKOP}{t:clckDiv.clock}{p:clckDiv.clock}{t:clckDiv.counter[3:0].C}
+e ckid0_4 {t:clckDiv.counter[3:0].C} sdffr
+c ckid0_4 {t:myPll.PLLInst_0.CLKOP} EHXPLLL Unsupported/too complex instance on clock path
+l 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

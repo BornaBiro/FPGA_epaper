@@ -1,0 +1,33 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  34 of 12687 (0.268%)
+I/O cells:      22
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        35          100.0
+                            EHXPLLL         1          100.0
+                            FD1S3AX         1          100.0
+                            FD1S3IX        33          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                               LUT4         2          100.0
+                                 OB        21          100.0
+SUB MODULES
+                       clockDivider         1
+                                pll         1
+                              TOTAL        97
+----------------------------------------------------------------------
+Report for cell pll.v1
+Instance Path : myPll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLL         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell clockDivider.v1
+Instance Path : clckDiv
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1          100.0
+                               LUT4         1           50.0
+                              TOTAL         2

@@ -1,0 +1,97 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\Program Files (x86)\Lattice\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-T6QGB4V
+
+Implementation : impl1
+
+# Written on Sun Jan 22 00:18:42 2023
+
+##### DESIGN INFO #######################################################
+
+Top View:                "top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                           Ending                             |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                             System                             |     5.000            |     No paths         |     No paths         |     No paths                         
+pll|CLKOP_inferred_clock           pll|CLKOP_inferred_clock           |     5.000            |     No paths         |     No paths         |     No paths                         
+clockDivider|out_derived_clock     clockDivider|out_derived_clock     |     5.000            |     5.000            |     No paths         |     2.500                            
+=================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:btn[3]
+p:btn[4]
+p:clk_25mhz
+p:gp[0]
+p:gp[1]
+p:gp[2]
+p:gp[3]
+p:gp[5]
+p:gp[6]
+p:gp[7]
+p:gp[8]
+p:gp[9]
+p:gp[10]
+p:gp[11]
+p:gp[12]
+p:led[0]
+p:led[1]
+p:led[3]
+p:led[4]
+p:led[5]
+p:led[6]
+p:led[7]
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

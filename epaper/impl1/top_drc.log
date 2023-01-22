@@ -1,0 +1,20 @@
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/Lattice/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'btn[4]' has no load.
+WARNING - synthesis: input pad net 'btn[4]' has no legal load.
+WARNING - synthesis: logical net 'btn[3]' has no load.
+WARNING - synthesis: input pad net 'btn[3]' has no legal load.
+WARNING - synthesis: DRC complete with 4 warnings.
+
+Design Results:
+     98 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file epaper_impl1.ngd.

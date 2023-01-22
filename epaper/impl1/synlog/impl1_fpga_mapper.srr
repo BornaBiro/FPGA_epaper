@@ -1,0 +1,1244 @@
+# Sat Jan 21 22:49:22 2023
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\Program Files (x86)\Lattice\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-T6QGB4V
+
+Implementation : impl1
+Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 128MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 128MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 132MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 166MB)
+
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_1 (in view: work.top(verilog)) on net led[7] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_2 (in view: work.top(verilog)) on net led[6] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_3 (in view: work.top(verilog)) on net led[5] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_4 (in view: work.top(verilog)) on net led[4] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_5 (in view: work.top(verilog)) on net led[3] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_6 (in view: work.top(verilog)) on net led[1] (in view: work.top(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 170MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 179MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -1.48ns		 127 /       142
+   2		0h:00m:01s		    -1.48ns		 126 /       142
+   3		0h:00m:01s		    -1.30ns		 126 /       142
+   4		0h:00m:01s		    -1.30ns		 126 /       142
+
+   5		0h:00m:01s		    -1.56ns		 134 /       142
+
+   6		0h:00m:01s		    -1.49ns		 135 /       142
+   7		0h:00m:01s		    -1.25ns		 136 /       142
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 180MB)
+
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[0].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[1].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[2].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[3].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[4].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[5].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[6].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[7].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[8].
+@N: FX493 |Applying initial value "0" on instance myCtrlModule.frame[9].
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_1_.un1[0] (in view: work.top(verilog)) on net led[1] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_3_.un1[0] (in view: work.top(verilog)) on net led[3] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_4_.un1[0] (in view: work.top(verilog)) on net led[4] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_5_.un1[0] (in view: work.top(verilog)) on net led[5] (in view: work.top(verilog)) has its enable tied to GND.
+@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":57:1:57:6|Boundary register mySphModule.sph.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":42:1:42:6|Boundary register myLeModule.le.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":25:1:25:6|Boundary register mySpvModule.spv.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":7:1:7:6|Boundary register myCkvModule.ckv.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 145MB peak: 181MB)
+
+Writing Analyst data base E:\Projects\FPGA\Learning\epaper\impl1\synwork\impl1_m.srm
+Warning: Found 19 combinational loops!
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":86:3:86:4|Found combinational loop during mapping at net myCtrlModule.lat_e
+1) instance dataLines4lto6_0_2_1_0_RNIFQ3F (in view: work.mainEpaperModule(netlist)), output net lat_e (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.lat_e
+    input  pin myCtrlModule.frame_3_s_9_0_RNI_0/A
+    instance   myCtrlModule.frame_3_s_9_0_RNI_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI_0/Z
+    net        myCtrlModule.startFlag_0_1_0
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F/B
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F/Z
+    net        dataLines4lto6_0_2_1_RNIFQ3F_0
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_445
+2) instance I_224.lat (in view: work.top(verilog)), output net G_445 (in view: work.top(verilog))
+    net        G_445
+    input  pin I_224.lat/B
+    instance   I_224.lat (cell ORCALUT4)
+    output pin I_224.lat/Z
+    net        myCtrlModule.G_445
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[5]
+3) instance frame_3_cry_5_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[5] (in view: work.mainEpaperModule(netlist))
+    net        frame_3_cry_5_0_RNIS7F
+    input  pin I_224.lat/C
+    instance   I_224.lat (cell ORCALUT4)
+    output pin I_224.lat/Z
+    net        myCtrlModule.G_445
+    input  pin myCtrlModule.frame_3_cry_5_0/A0
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S0
+    net        myCtrlModule.frame_3[5]
+@W: BN137 :|Found combinational loop during mapping at net G_447
+4) instance I_225.lat (in view: work.top(verilog)), output net G_447 (in view: work.top(verilog))
+    net        G_447
+    input  pin I_225.lat/A
+    instance   I_225.lat (cell ORCALUT4)
+    output pin I_225.lat/Z
+    net        myCtrlModule.G_447
+@W: BN137 :|Found combinational loop during mapping at net G_443
+5) instance I_228.lat (in view: work.top(verilog)), output net G_443 (in view: work.top(verilog))
+    net        G_443
+    input  pin I_228.lat/A
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[9]
+6) instance frame_3_s_9_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[9] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[9]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI/A
+    instance   myCtrlModule.frame_3_s_9_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI/Z
+    net        myCtrlModule.G_0_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/A
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/Z
+    net        myCtrlModule.frame_1[0]
+    input  pin I_228.lat/B
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+    input  pin myCtrlModule.frame_3_cry_0_0/A1
+    instance   myCtrlModule.frame_3_cry_0_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_0_0/S1
+    net        myCtrlModule.frame_3[0]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNINT9/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNINT9 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNINT9/Z
+    net        myCtrlModule.m7_e_0
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK/Z
+    net        myCtrlModule.N_7
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/Z
+    net        myCtrlModule.frame_1[6]
+    input  pin I_225.lat/B
+    instance   I_225.lat (cell ORCALUT4)
+    output pin I_225.lat/Z
+    net        myCtrlModule.G_447
+    input  pin myCtrlModule.frame_3_cry_5_0/A1
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S1
+    net        myCtrlModule.frame_3[6]
+    input  pin myCtrlModule.dataLines4lto6_0_2/B
+    instance   myCtrlModule.dataLines4lto6_0_2 (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2/Z
+    net        dataLines4lto6_0_2_RNITB6B
+    input  pin I_224.lat/D
+    instance   I_224.lat (cell ORCALUT4)
+    output pin I_224.lat/Z
+    net        myCtrlModule.G_445
+    input  pin myCtrlModule.frame_3_cry_5_0/A0
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S0
+    net        myCtrlModule.frame_3[5]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI_0/B
+    instance   myCtrlModule.frame_3_s_9_0_RNI_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI_0/Z
+    net        myCtrlModule.startFlag_0_1_0
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F/B
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F/Z
+    net        dataLines4lto6_0_2_1_RNIFQ3F_0
+    input  pin I_220.lat/A
+    instance   I_220.lat (cell ORCALUT4)
+    output pin I_220.lat/Z
+    net        myCtrlModule.G_460
+    input  pin myCtrlModule.frame_3_s_9_0/A0
+    instance   myCtrlModule.frame_3_s_9_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_s_9_0/S0
+    net        myCtrlModule.frame_3[9]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[6]
+7) instance frame_3_cry_5_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[6] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[6]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI/B
+    instance   myCtrlModule.frame_3_s_9_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI/Z
+    net        myCtrlModule.G_0_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/A
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/Z
+    net        myCtrlModule.frame_1[0]
+    input  pin I_228.lat/B
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+    input  pin myCtrlModule.frame_3_cry_0_0/A1
+    instance   myCtrlModule.frame_3_cry_0_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_0_0/S1
+    net        myCtrlModule.frame_3[0]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNINT9/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNINT9 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNINT9/Z
+    net        myCtrlModule.m7_e_0
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK/Z
+    net        myCtrlModule.N_7
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/Z
+    net        myCtrlModule.frame_1[6]
+    input  pin I_225.lat/B
+    instance   I_225.lat (cell ORCALUT4)
+    output pin I_225.lat/Z
+    net        myCtrlModule.G_447
+    input  pin myCtrlModule.frame_3_cry_5_0/A1
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S1
+    net        myCtrlModule.frame_3[6]
+@W: BN137 :|Found combinational loop during mapping at net G_449
+8) instance I_222.lat (in view: work.top(verilog)), output net G_449 (in view: work.top(verilog))
+    net        G_449
+    input  pin I_222.lat/A
+    instance   I_222.lat (cell ORCALUT4)
+    output pin I_222.lat/Z
+    net        myCtrlModule.G_449
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[4]
+9) instance frame_3_cry_3_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[4] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[4]
+    input  pin myCtrlModule.frame_3_cry_3_0_RNI_1/A
+    instance   myCtrlModule.frame_3_cry_3_0_RNI_1 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_3_0_RNI_1/Z
+    net        myCtrlModule.frame_3_cry_3_0_RNI_1
+    input  pin myCtrlModule.frame_3_cry_3_0_RNI/A
+    instance   myCtrlModule.frame_3_cry_3_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_3_0_RNI/Z
+    net        myCtrlModule.frame_1[3]
+    input  pin I_222.lat/B
+    instance   I_222.lat (cell ORCALUT4)
+    output pin I_222.lat/Z
+    net        myCtrlModule.G_449
+    input  pin myCtrlModule.frame_3_cry_3_0/A0
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S1
+    net        myCtrlModule.frame_3[4]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":104:9:104:19|Found combinational loop during mapping at net myCtrlModule.dataLines4lto6_0_2
+10) instance dataLines4lto6_0_2 (in view: work.mainEpaperModule(netlist)), output net dataLines4lto6_0_2 (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.dataLines4lto6_0_2
+    input  pin myCtrlModule.frame_3_cry_3_0_RNI/C
+    instance   myCtrlModule.frame_3_cry_3_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_3_0_RNI/Z
+    net        myCtrlModule.frame_1[3]
+    input  pin I_222.lat/B
+    instance   I_222.lat (cell ORCALUT4)
+    output pin I_222.lat/Z
+    net        myCtrlModule.G_449
+    input  pin myCtrlModule.frame_3_cry_3_0/A0
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S1
+    net        myCtrlModule.frame_3[4]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI/D
+    instance   myCtrlModule.frame_3_s_9_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI/Z
+    net        myCtrlModule.G_0_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/A
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/Z
+    net        myCtrlModule.frame_1[0]
+    input  pin I_228.lat/B
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+    input  pin myCtrlModule.frame_3_cry_0_0/A1
+    instance   myCtrlModule.frame_3_cry_0_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_0_0/S1
+    net        myCtrlModule.frame_3[0]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNINT9/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNINT9 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNINT9/Z
+    net        myCtrlModule.m7_e_0
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK/Z
+    net        myCtrlModule.N_7
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/Z
+    net        myCtrlModule.frame_1[6]
+    input  pin I_225.lat/B
+    instance   I_225.lat (cell ORCALUT4)
+    output pin I_225.lat/Z
+    net        myCtrlModule.G_447
+    input  pin myCtrlModule.frame_3_cry_5_0/A1
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S1
+    net        myCtrlModule.frame_3[6]
+    input  pin myCtrlModule.dataLines4lto6_0_2/B
+    instance   myCtrlModule.dataLines4lto6_0_2 (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2/Z
+    net        dataLines4lto6_0_2_RNITB6B
+@W: BN137 :|Found combinational loop during mapping at net G_453
+11) instance I_223.lat (in view: work.top(verilog)), output net G_453 (in view: work.top(verilog))
+    net        G_453
+    input  pin I_223.lat/A
+    instance   I_223.lat (cell ORCALUT4)
+    output pin I_223.lat/Z
+    net        myCtrlModule.G_453
+@W: BN137 :|Found combinational loop during mapping at net myCtrlModule.frame_3[0]
+12) instance frame_3_cry_0_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[0] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[0]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNIFTK_0/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNIFTK_0/Z
+    net        myCtrlModule.m8_0_a4_0_2_0
+    input  pin myCtrlModule.frame_3_cry_0_0_RNIFTK_1/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNIFTK_1 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNIFTK_1/Z
+    net        myCtrlModule.G_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_RNIFTK/A
+    instance   myCtrlModule.dataLines4lto6_0_2_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_RNIFTK/Z
+    net        myCtrlModule.frame_1[4]
+    input  pin I_223.lat/B
+    instance   I_223.lat (cell ORCALUT4)
+    output pin I_223.lat/Z
+    net        myCtrlModule.G_453
+    input  pin myCtrlModule.frame_3_cry_3_0/A1
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S0
+    net        myCtrlModule.frame_3[3]
+    input  pin myCtrlModule.frame_3_cry_3_0_RNI/D
+    instance   myCtrlModule.frame_3_cry_3_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_3_0_RNI/Z
+    net        myCtrlModule.frame_1[3]
+    input  pin I_222.lat/B
+    instance   I_222.lat (cell ORCALUT4)
+    output pin I_222.lat/Z
+    net        myCtrlModule.G_449
+    input  pin myCtrlModule.frame_3_cry_3_0/A0
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S1
+    net        myCtrlModule.frame_3[4]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI/D
+    instance   myCtrlModule.frame_3_s_9_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI/Z
+    net        myCtrlModule.G_0_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/A
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/Z
+    net        myCtrlModule.frame_1[0]
+    input  pin I_228.lat/B
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+    input  pin myCtrlModule.frame_3_cry_0_0/A1
+    instance   myCtrlModule.frame_3_cry_0_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_0_0/S1
+    net        myCtrlModule.frame_3[0]
+@W: BN137 :|Found combinational loop during mapping at net G_448
+13) instance I_229.lat (in view: work.top(verilog)), output net G_448 (in view: work.top(verilog))
+    net        G_448
+    input  pin I_229.lat/A
+    instance   I_229.lat (cell ORCALUT4)
+    output pin I_229.lat/Z
+    net        myCtrlModule.G_448
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[1]
+14) instance frame_3_cry_1_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[1] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[1]
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIOVA_0/D
+    instance   myCtrlModule.frame_3_cry_1_0_RNIOVA_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIOVA_0/Z
+    net        myCtrlModule.frame_1[1]
+    input  pin I_229.lat/B
+    instance   I_229.lat (cell ORCALUT4)
+    output pin I_229.lat/Z
+    net        myCtrlModule.G_448
+    input  pin myCtrlModule.frame_3_cry_1_0/A0
+    instance   myCtrlModule.frame_3_cry_1_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_1_0/S0
+    net        myCtrlModule.frame_3[1]
+@W: BN137 :|Found combinational loop during mapping at net G_454
+15) instance I_221.lat (in view: work.top(verilog)), output net G_454 (in view: work.top(verilog))
+    net        G_454
+    input  pin I_221.lat/A
+    instance   I_221.lat (cell ORCALUT4)
+    output pin I_221.lat/Z
+    net        myCtrlModule.G_454
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[3]
+16) instance frame_3_cry_3_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[3] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[3]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNIFTK_0/D
+    instance   myCtrlModule.frame_3_cry_0_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNIFTK_0/Z
+    net        myCtrlModule.m8_0_a4_0_2_0
+    input  pin myCtrlModule.frame_3_cry_0_0_RNIFTK_1/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNIFTK_1 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNIFTK_1/Z
+    net        myCtrlModule.G_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_RNIFTK/A
+    instance   myCtrlModule.dataLines4lto6_0_2_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_RNIFTK/Z
+    net        myCtrlModule.frame_1[4]
+    input  pin I_223.lat/B
+    instance   I_223.lat (cell ORCALUT4)
+    output pin I_223.lat/Z
+    net        myCtrlModule.G_453
+    input  pin myCtrlModule.frame_3_cry_3_0/A1
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S0
+    net        myCtrlModule.frame_3[3]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_458
+17) instance I_226.lat (in view: work.top(verilog)), output net G_458 (in view: work.top(verilog))
+    net        G_458
+    input  pin I_226.lat/B
+    instance   I_226.lat (cell ORCALUT4)
+    output pin I_226.lat/Z
+    net        myCtrlModule.G_458
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_459
+18) instance I_227.lat (in view: work.top(verilog)), output net G_459 (in view: work.top(verilog))
+    net        G_459
+    input  pin I_227.lat/B
+    instance   I_227.lat (cell ORCALUT4)
+    output pin I_227.lat/Z
+    net        myCtrlModule.G_459
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_460
+19) instance I_220.lat (in view: work.top(verilog)), output net G_460 (in view: work.top(verilog))
+    net        G_460
+    input  pin I_220.lat/B
+    instance   I_220.lat (cell ORCALUT4)
+    output pin I_220.lat/Z
+    net        myCtrlModule.G_460
+End of loops
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 180MB peak: 181MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: E:\Projects\FPGA\Learning\epaper\impl1\impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 185MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 185MB)
+
+Warning: Found 19 combinational loops!
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":86:3:86:4|Found combinational loop during mapping at net myCtrlModule.lat_e
+1) instance dataLines4lto6_0_2_1_0_RNIFQ3F (in view: work.mainEpaperModule(netlist)), output net lat_e (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.lat_e
+    input  pin myCtrlModule.frame_3_s_9_0_RNI_0/A
+    instance   myCtrlModule.frame_3_s_9_0_RNI_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI_0/Z
+    net        myCtrlModule.startFlag_0_1_0
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F/B
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F/Z
+    net        dataLines4lto6_0_2_1_RNIFQ3F_0
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_445
+2) instance I_224.lat (in view: work.top(verilog)), output net G_445 (in view: work.top(verilog))
+    net        G_445
+    input  pin I_224.lat/B
+    instance   I_224.lat (cell ORCALUT4)
+    output pin I_224.lat/Z
+    net        myCtrlModule.G_445
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[5]
+3) instance frame_3_cry_5_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[5] (in view: work.mainEpaperModule(netlist))
+    net        frame_3_cry_5_0_RNIS7F
+    input  pin I_224.lat/C
+    instance   I_224.lat (cell ORCALUT4)
+    output pin I_224.lat/Z
+    net        myCtrlModule.G_445
+    input  pin myCtrlModule.frame_3_cry_5_0/A0
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S0
+    net        myCtrlModule.frame_3[5]
+@W: BN137 :|Found combinational loop during mapping at net G_447
+4) instance I_225.lat (in view: work.top(verilog)), output net G_447 (in view: work.top(verilog))
+    net        G_447
+    input  pin I_225.lat/A
+    instance   I_225.lat (cell ORCALUT4)
+    output pin I_225.lat/Z
+    net        myCtrlModule.G_447
+@W: BN137 :|Found combinational loop during mapping at net G_443
+5) instance I_228.lat (in view: work.top(verilog)), output net G_443 (in view: work.top(verilog))
+    net        G_443
+    input  pin I_228.lat/A
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[9]
+6) instance frame_3_s_9_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[9] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[9]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI/A
+    instance   myCtrlModule.frame_3_s_9_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI/Z
+    net        myCtrlModule.G_0_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/A
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/Z
+    net        myCtrlModule.frame_1[0]
+    input  pin I_228.lat/B
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+    input  pin myCtrlModule.frame_3_cry_0_0/A1
+    instance   myCtrlModule.frame_3_cry_0_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_0_0/S1
+    net        myCtrlModule.frame_3[0]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNINT9/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNINT9 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNINT9/Z
+    net        myCtrlModule.m7_e_0
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK/Z
+    net        myCtrlModule.N_7
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/Z
+    net        myCtrlModule.frame_1[6]
+    input  pin I_225.lat/B
+    instance   I_225.lat (cell ORCALUT4)
+    output pin I_225.lat/Z
+    net        myCtrlModule.G_447
+    input  pin myCtrlModule.frame_3_cry_5_0/A1
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S1
+    net        myCtrlModule.frame_3[6]
+    input  pin myCtrlModule.dataLines4lto6_0_2/B
+    instance   myCtrlModule.dataLines4lto6_0_2 (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2/Z
+    net        dataLines4lto6_0_2_RNITB6B
+    input  pin I_224.lat/D
+    instance   I_224.lat (cell ORCALUT4)
+    output pin I_224.lat/Z
+    net        myCtrlModule.G_445
+    input  pin myCtrlModule.frame_3_cry_5_0/A0
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S0
+    net        myCtrlModule.frame_3[5]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI_0/B
+    instance   myCtrlModule.frame_3_s_9_0_RNI_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI_0/Z
+    net        myCtrlModule.startFlag_0_1_0
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F/B
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIFQ3F/Z
+    net        dataLines4lto6_0_2_1_RNIFQ3F_0
+    input  pin I_220.lat/A
+    instance   I_220.lat (cell ORCALUT4)
+    output pin I_220.lat/Z
+    net        myCtrlModule.G_460
+    input  pin myCtrlModule.frame_3_s_9_0/A0
+    instance   myCtrlModule.frame_3_s_9_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_s_9_0/S0
+    net        myCtrlModule.frame_3[9]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[6]
+7) instance frame_3_cry_5_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[6] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[6]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI/B
+    instance   myCtrlModule.frame_3_s_9_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI/Z
+    net        myCtrlModule.G_0_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/A
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/Z
+    net        myCtrlModule.frame_1[0]
+    input  pin I_228.lat/B
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+    input  pin myCtrlModule.frame_3_cry_0_0/A1
+    instance   myCtrlModule.frame_3_cry_0_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_0_0/S1
+    net        myCtrlModule.frame_3[0]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNINT9/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNINT9 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNINT9/Z
+    net        myCtrlModule.m7_e_0
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK/Z
+    net        myCtrlModule.N_7
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/Z
+    net        myCtrlModule.frame_1[6]
+    input  pin I_225.lat/B
+    instance   I_225.lat (cell ORCALUT4)
+    output pin I_225.lat/Z
+    net        myCtrlModule.G_447
+    input  pin myCtrlModule.frame_3_cry_5_0/A1
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S1
+    net        myCtrlModule.frame_3[6]
+@W: BN137 :|Found combinational loop during mapping at net G_449
+8) instance I_222.lat (in view: work.top(verilog)), output net G_449 (in view: work.top(verilog))
+    net        G_449
+    input  pin I_222.lat/A
+    instance   I_222.lat (cell ORCALUT4)
+    output pin I_222.lat/Z
+    net        myCtrlModule.G_449
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[4]
+9) instance frame_3_cry_3_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[4] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[4]
+    input  pin myCtrlModule.frame_3_cry_3_0_RNI_1/A
+    instance   myCtrlModule.frame_3_cry_3_0_RNI_1 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_3_0_RNI_1/Z
+    net        myCtrlModule.frame_3_cry_3_0_RNI_1
+    input  pin myCtrlModule.frame_3_cry_3_0_RNI/A
+    instance   myCtrlModule.frame_3_cry_3_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_3_0_RNI/Z
+    net        myCtrlModule.frame_1[3]
+    input  pin I_222.lat/B
+    instance   I_222.lat (cell ORCALUT4)
+    output pin I_222.lat/Z
+    net        myCtrlModule.G_449
+    input  pin myCtrlModule.frame_3_cry_3_0/A0
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S1
+    net        myCtrlModule.frame_3[4]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":104:9:104:19|Found combinational loop during mapping at net myCtrlModule.dataLines4lto6_0_2
+10) instance dataLines4lto6_0_2 (in view: work.mainEpaperModule(netlist)), output net dataLines4lto6_0_2 (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.dataLines4lto6_0_2
+    input  pin myCtrlModule.frame_3_cry_3_0_RNI/C
+    instance   myCtrlModule.frame_3_cry_3_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_3_0_RNI/Z
+    net        myCtrlModule.frame_1[3]
+    input  pin I_222.lat/B
+    instance   I_222.lat (cell ORCALUT4)
+    output pin I_222.lat/Z
+    net        myCtrlModule.G_449
+    input  pin myCtrlModule.frame_3_cry_3_0/A0
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S1
+    net        myCtrlModule.frame_3[4]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI/D
+    instance   myCtrlModule.frame_3_s_9_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI/Z
+    net        myCtrlModule.G_0_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/A
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/Z
+    net        myCtrlModule.frame_1[0]
+    input  pin I_228.lat/B
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+    input  pin myCtrlModule.frame_3_cry_0_0/A1
+    instance   myCtrlModule.frame_3_cry_0_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_0_0/S1
+    net        myCtrlModule.frame_3[0]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNINT9/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNINT9 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNINT9/Z
+    net        myCtrlModule.m7_e_0
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK/Z
+    net        myCtrlModule.N_7
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/A
+    instance   myCtrlModule.frame_3_cry_1_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIFTK_0/Z
+    net        myCtrlModule.frame_1[6]
+    input  pin I_225.lat/B
+    instance   I_225.lat (cell ORCALUT4)
+    output pin I_225.lat/Z
+    net        myCtrlModule.G_447
+    input  pin myCtrlModule.frame_3_cry_5_0/A1
+    instance   myCtrlModule.frame_3_cry_5_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_5_0/S1
+    net        myCtrlModule.frame_3[6]
+    input  pin myCtrlModule.dataLines4lto6_0_2/B
+    instance   myCtrlModule.dataLines4lto6_0_2 (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2/Z
+    net        dataLines4lto6_0_2_RNITB6B
+@W: BN137 :|Found combinational loop during mapping at net G_453
+11) instance I_223.lat (in view: work.top(verilog)), output net G_453 (in view: work.top(verilog))
+    net        G_453
+    input  pin I_223.lat/A
+    instance   I_223.lat (cell ORCALUT4)
+    output pin I_223.lat/Z
+    net        myCtrlModule.G_453
+@W: BN137 :|Found combinational loop during mapping at net myCtrlModule.frame_3[0]
+12) instance frame_3_cry_0_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[0] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[0]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNIFTK_0/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNIFTK_0/Z
+    net        myCtrlModule.m8_0_a4_0_2_0
+    input  pin myCtrlModule.frame_3_cry_0_0_RNIFTK_1/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNIFTK_1 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNIFTK_1/Z
+    net        myCtrlModule.G_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_RNIFTK/A
+    instance   myCtrlModule.dataLines4lto6_0_2_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_RNIFTK/Z
+    net        myCtrlModule.frame_1[4]
+    input  pin I_223.lat/B
+    instance   I_223.lat (cell ORCALUT4)
+    output pin I_223.lat/Z
+    net        myCtrlModule.G_453
+    input  pin myCtrlModule.frame_3_cry_3_0/A1
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S0
+    net        myCtrlModule.frame_3[3]
+    input  pin myCtrlModule.frame_3_cry_3_0_RNI/D
+    instance   myCtrlModule.frame_3_cry_3_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_3_0_RNI/Z
+    net        myCtrlModule.frame_1[3]
+    input  pin I_222.lat/B
+    instance   I_222.lat (cell ORCALUT4)
+    output pin I_222.lat/Z
+    net        myCtrlModule.G_449
+    input  pin myCtrlModule.frame_3_cry_3_0/A0
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S1
+    net        myCtrlModule.frame_3[4]
+    input  pin myCtrlModule.frame_3_s_9_0_RNI/D
+    instance   myCtrlModule.frame_3_s_9_0_RNI (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_s_9_0_RNI/Z
+    net        myCtrlModule.G_0_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/A
+    instance   myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_1_0_RNIJ4BA/Z
+    net        myCtrlModule.frame_1[0]
+    input  pin I_228.lat/B
+    instance   I_228.lat (cell ORCALUT4)
+    output pin I_228.lat/Z
+    net        myCtrlModule.G_443
+    input  pin myCtrlModule.frame_3_cry_0_0/A1
+    instance   myCtrlModule.frame_3_cry_0_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_0_0/S1
+    net        myCtrlModule.frame_3[0]
+@W: BN137 :|Found combinational loop during mapping at net G_448
+13) instance I_229.lat (in view: work.top(verilog)), output net G_448 (in view: work.top(verilog))
+    net        G_448
+    input  pin I_229.lat/A
+    instance   I_229.lat (cell ORCALUT4)
+    output pin I_229.lat/Z
+    net        myCtrlModule.G_448
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[1]
+14) instance frame_3_cry_1_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[1] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[1]
+    input  pin myCtrlModule.frame_3_cry_1_0_RNIOVA_0/D
+    instance   myCtrlModule.frame_3_cry_1_0_RNIOVA_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_1_0_RNIOVA_0/Z
+    net        myCtrlModule.frame_1[1]
+    input  pin I_229.lat/B
+    instance   I_229.lat (cell ORCALUT4)
+    output pin I_229.lat/Z
+    net        myCtrlModule.G_448
+    input  pin myCtrlModule.frame_3_cry_1_0/A0
+    instance   myCtrlModule.frame_3_cry_1_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_1_0/S0
+    net        myCtrlModule.frame_3[1]
+@W: BN137 :|Found combinational loop during mapping at net G_454
+15) instance I_221.lat (in view: work.top(verilog)), output net G_454 (in view: work.top(verilog))
+    net        G_454
+    input  pin I_221.lat/A
+    instance   I_221.lat (cell ORCALUT4)
+    output pin I_221.lat/Z
+    net        myCtrlModule.G_454
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":93:5:93:6|Found combinational loop during mapping at net myCtrlModule.frame_3[3]
+16) instance frame_3_cry_3_0 (in view: work.mainEpaperModule(netlist)), output net frame_3[3] (in view: work.mainEpaperModule(netlist))
+    net        myCtrlModule.frame_3[3]
+    input  pin myCtrlModule.frame_3_cry_0_0_RNIFTK_0/D
+    instance   myCtrlModule.frame_3_cry_0_0_RNIFTK_0 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNIFTK_0/Z
+    net        myCtrlModule.m8_0_a4_0_2_0
+    input  pin myCtrlModule.frame_3_cry_0_0_RNIFTK_1/A
+    instance   myCtrlModule.frame_3_cry_0_0_RNIFTK_1 (cell ORCALUT4)
+    output pin myCtrlModule.frame_3_cry_0_0_RNIFTK_1/Z
+    net        myCtrlModule.G_1
+    input  pin myCtrlModule.dataLines4lto6_0_2_RNIFTK/A
+    instance   myCtrlModule.dataLines4lto6_0_2_RNIFTK (cell ORCALUT4)
+    output pin myCtrlModule.dataLines4lto6_0_2_RNIFTK/Z
+    net        myCtrlModule.frame_1[4]
+    input  pin I_223.lat/B
+    instance   I_223.lat (cell ORCALUT4)
+    output pin I_223.lat/Z
+    net        myCtrlModule.G_453
+    input  pin myCtrlModule.frame_3_cry_3_0/A1
+    instance   myCtrlModule.frame_3_cry_3_0 (cell CCU2C)
+    output pin myCtrlModule.frame_3_cry_3_0/S0
+    net        myCtrlModule.frame_3[3]
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_458
+17) instance I_226.lat (in view: work.top(verilog)), output net G_458 (in view: work.top(verilog))
+    net        G_458
+    input  pin I_226.lat/B
+    instance   I_226.lat (cell ORCALUT4)
+    output pin I_226.lat/Z
+    net        myCtrlModule.G_458
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_459
+18) instance I_227.lat (in view: work.top(verilog)), output net G_459 (in view: work.top(verilog))
+    net        G_459
+    input  pin I_227.lat/B
+    instance   I_227.lat (cell ORCALUT4)
+    output pin I_227.lat/Z
+    net        myCtrlModule.G_459
+@W: BN137 :"e:\projects\fpga\learning\epaper\epaperdriver.v":30:7:30:24|Found combinational loop during mapping at net G_460
+19) instance I_220.lat (in view: work.top(verilog)), output net G_460 (in view: work.top(verilog))
+    net        G_460
+    input  pin I_220.lat/B
+    instance   I_220.lat (cell ORCALUT4)
+    output pin I_220.lat/Z
+    net        myCtrlModule.G_460
+End of loops
+@W: MT246 :"e:\projects\fpga\learning\epaper\pll\pll.v":58:12:58:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock pll|CLKOP_inferred_clock with period 3.97ns. Please declare a user-defined clock on net myPll.clk_100mhz.
+@N: MT615 |Found clock clockDivider|out_derived_clock with period 3.97ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sat Jan 21 22:49:25 2023
+#
+
+
+Top view:               top
+Requested Frequency:    251.9 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 0.525
+
+                                   Requested     Estimated     Requested     Estimated               Clock                                       Clock                
+Starting Clock                     Frequency     Frequency     Period        Period        Slack     Type                                        Group                
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clockDivider|out_derived_clock     251.9 MHz     269.7 MHz     3.970         3.707         0.525     derived (from pll|CLKOP_inferred_clock)     Autoconstr_clkgroup_0
+pll|CLKOP_inferred_clock           251.9 MHz     547.0 MHz     3.970         1.828         2.142     inferred                                    Autoconstr_clkgroup_0
+System                             364.4 MHz     NA            2.744         0.000         2.744     system                                      system_clkgroup      
+======================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                          |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                        Ending                          |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------
+System                          System                          |  2.744       2.744  |  No paths    -      |  No paths    -      |  No paths    -    
+pll|CLKOP_inferred_clock        pll|CLKOP_inferred_clock        |  3.970       2.142  |  No paths    -      |  No paths    -      |  No paths    -    
+clockDivider|out_derived_clock  clockDivider|out_derived_clock  |  No paths    -      |  3.970       0.525  |  No paths    -      |  1.985       4.946
+======================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: clockDivider|out_derived_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                            Starting                                                               Arrival          
+Instance                    Reference                          Type        Pin     Net             Time        Slack
+                            Clock                                                                                   
+--------------------------------------------------------------------------------------------------------------------
+mySphModule.counter[16]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[16]     0.907       0.525
+mySphModule.counter[18]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[18]     0.907       0.525
+mySphModule.counter[19]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[19]     0.907       0.525
+mySphModule.counter[20]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[20]     0.907       0.525
+mySphModule.counter[21]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[21]     0.907       0.525
+mySphModule.counter[23]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[23]     0.907       0.525
+mySphModule.counter[24]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[24]     0.907       0.525
+mySphModule.counter[25]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[25]     0.907       0.525
+mySphModule.counter[27]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[27]     0.907       0.525
+mySphModule.counter[28]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[28]     0.907       0.525
+====================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                            Starting                                                                             Required          
+Instance                    Reference                          Type        Pin     Net                           Time         Slack
+                            Clock                                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------------
+mySphModule.counter[31]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_31_0_S0_0     7.886        0.525
+mySphModule.counter[32]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_31_0_S1_0     7.886        0.525
+mySphModule.counter[29]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_29_0_S0_0     7.886        0.586
+mySphModule.counter[30]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_29_0_S1_0     7.886        0.586
+mySphModule.counter[27]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_27_0_S0_0     7.886        0.647
+mySphModule.counter[28]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_27_0_S1_0     7.886        0.647
+mySphModule.counter[25]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_25_0_S0_0     7.886        0.708
+mySphModule.counter[26]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_25_0_S1_0     7.886        0.708
+mySphModule.counter[23]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_23_0_S0_0     7.886        0.769
+mySphModule.counter[24]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_23_0_S1_0     7.886        0.769
+===================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      7.940
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         7.886
+
+    - Propagation time:                      7.361
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     0.525
+
+    Number of logic level(s):                22
+    Starting point:                          mySphModule.counter[16] / Q
+    Ending point:                            mySphModule.counter[32] / D
+    The start point is clocked by            clockDivider|out_derived_clock [falling] (rise=0.000 fall=1.985 period=3.970) on pin CK
+    The end   point is clocked by            clockDivider|out_derived_clock [falling] (rise=0.000 fall=1.985 period=3.970) on pin CK
+    -Timing constraint applied as multi cycle path with factor 2 (from c:clockDivider|out_derived_clock to c:clockDivider|out_derived_clock)
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+mySphModule.counter[16]              FD1S3AX      Q        Out     0.907     0.907 r     -         
+counter[16]                          Net          -        -       -         -           2         
+mySphModule.sph_1_sqmuxa_i_a2_17     ORCALUT4     A        In      0.000     0.907 r     -         
+mySphModule.sph_1_sqmuxa_i_a2_17     ORCALUT4     Z        Out     0.606     1.513 f     -         
+sph_1_sqmuxa_i_a2_17                 Net          -        -       -         -           1         
+mySphModule.sph_1_sqmuxa_i_a2_21     ORCALUT4     D        In      0.000     1.513 f     -         
+mySphModule.sph_1_sqmuxa_i_a2_21     ORCALUT4     Z        Out     0.606     2.119 f     -         
+sph_1_sqmuxa_i_a2_21                 Net          -        -       -         -           1         
+mySphModule.sph_1_sqmuxa_i_a2        ORCALUT4     D        In      0.000     2.119 f     -         
+mySphModule.sph_1_sqmuxa_i_a2        ORCALUT4     Z        Out     0.660     2.779 f     -         
+N_41                                 Net          -        -       -         -           2         
+mySphModule.sph4_0_a2                ORCALUT4     A        In      0.000     2.779 f     -         
+mySphModule.sph4_0_a2                ORCALUT4     Z        Out     0.708     3.487 f     -         
+N_43                                 Net          -        -       -         -           3         
+mySphModule.counter_2_i_a2[7]        ORCALUT4     A        In      0.000     3.487 f     -         
+mySphModule.counter_2_i_a2[7]        ORCALUT4     Z        Out     0.762     4.249 f     -         
+N_44                                 Net          -        -       -         -           5         
+mySphModule.counter_2_i_a2[2]        ORCALUT4     A        In      0.000     4.249 f     -         
+mySphModule.counter_2_i_a2[2]        ORCALUT4     Z        Out     0.660     4.909 f     -         
+N_48                                 Net          -        -       -         -           2         
+mySphModule.un6_counter_cry_1_0      CCU2C        B1       In      0.000     4.909 f     -         
+mySphModule.un6_counter_cry_1_0      CCU2C        COUT     Out     0.900     5.809 r     -         
+un6_counter_cry_2                    Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_3_0      CCU2C        CIN      In      0.000     5.809 r     -         
+mySphModule.un6_counter_cry_3_0      CCU2C        COUT     Out     0.061     5.870 r     -         
+un6_counter_cry_4                    Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_5_0      CCU2C        CIN      In      0.000     5.870 r     -         
+mySphModule.un6_counter_cry_5_0      CCU2C        COUT     Out     0.061     5.931 r     -         
+un6_counter_cry_6                    Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_7_0      CCU2C        CIN      In      0.000     5.931 r     -         
+mySphModule.un6_counter_cry_7_0      CCU2C        COUT     Out     0.061     5.992 r     -         
+un6_counter_cry_8                    Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_9_0      CCU2C        CIN      In      0.000     5.992 r     -         
+mySphModule.un6_counter_cry_9_0      CCU2C        COUT     Out     0.061     6.053 r     -         
+un6_counter_cry_10                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_11_0     CCU2C        CIN      In      0.000     6.053 r     -         
+mySphModule.un6_counter_cry_11_0     CCU2C        COUT     Out     0.061     6.114 r     -         
+un6_counter_cry_12                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_13_0     CCU2C        CIN      In      0.000     6.114 r     -         
+mySphModule.un6_counter_cry_13_0     CCU2C        COUT     Out     0.061     6.175 r     -         
+un6_counter_cry_14                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_15_0     CCU2C        CIN      In      0.000     6.175 r     -         
+mySphModule.un6_counter_cry_15_0     CCU2C        COUT     Out     0.061     6.236 r     -         
+un6_counter_cry_16                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_17_0     CCU2C        CIN      In      0.000     6.236 r     -         
+mySphModule.un6_counter_cry_17_0     CCU2C        COUT     Out     0.061     6.297 r     -         
+un6_counter_cry_18                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_19_0     CCU2C        CIN      In      0.000     6.297 r     -         
+mySphModule.un6_counter_cry_19_0     CCU2C        COUT     Out     0.061     6.358 r     -         
+un6_counter_cry_20                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_21_0     CCU2C        CIN      In      0.000     6.358 r     -         
+mySphModule.un6_counter_cry_21_0     CCU2C        COUT     Out     0.061     6.419 r     -         
+un6_counter_cry_22                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_23_0     CCU2C        CIN      In      0.000     6.419 r     -         
+mySphModule.un6_counter_cry_23_0     CCU2C        COUT     Out     0.061     6.480 r     -         
+un6_counter_cry_24                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_25_0     CCU2C        CIN      In      0.000     6.480 r     -         
+mySphModule.un6_counter_cry_25_0     CCU2C        COUT     Out     0.061     6.541 r     -         
+un6_counter_cry_26                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_27_0     CCU2C        CIN      In      0.000     6.541 r     -         
+mySphModule.un6_counter_cry_27_0     CCU2C        COUT     Out     0.061     6.602 r     -         
+un6_counter_cry_28                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_29_0     CCU2C        CIN      In      0.000     6.602 r     -         
+mySphModule.un6_counter_cry_29_0     CCU2C        COUT     Out     0.061     6.663 r     -         
+un6_counter_cry_30                   Net          -        -       -         -           1         
+mySphModule.un6_counter_cry_31_0     CCU2C        CIN      In      0.000     6.663 r     -         
+mySphModule.un6_counter_cry_31_0     CCU2C        S1       Out     0.698     7.361 r     -         
+un6_counter_cry_31_0_S1_0            Net          -        -       -         -           1         
+mySphModule.counter[32]              FD1S3AX      D        In      0.000     7.361 r     -         
+===================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: pll|CLKOP_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                       Starting                                                        Arrival          
+Instance               Reference                    Type        Pin     Net            Time        Slack
+                       Clock                                                                            
+--------------------------------------------------------------------------------------------------------
+clckDiv.counter[1]     pll|CLKOP_inferred_clock     FD1S3IX     Q       counter[1]     1.009       2.142
+clckDiv.counter[2]     pll|CLKOP_inferred_clock     FD1S3IX     Q       counter[2]     0.985       2.166
+clckDiv.counter[3]     pll|CLKOP_inferred_clock     FD1S3IX     Q       counter[3]     0.955       2.196
+clckDiv.counter[0]     pll|CLKOP_inferred_clock     FD1S3IX     Q       CO0            0.985       2.505
+clckDiv.out            pll|CLKOP_inferred_clock     FD1S3AX     Q       out_i          0.955       2.571
+========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                       Starting                                                      Required          
+Instance               Reference                    Type        Pin     Net          Time         Slack
+                       Clock                                                                           
+-------------------------------------------------------------------------------------------------------
+clckDiv.counter[0]     pll|CLKOP_inferred_clock     FD1S3IX     CD      N_8_i        3.889        2.142
+clckDiv.counter[1]     pll|CLKOP_inferred_clock     FD1S3IX     CD      N_8_i        3.889        2.142
+clckDiv.counter[2]     pll|CLKOP_inferred_clock     FD1S3IX     CD      N_8_i        3.889        2.142
+clckDiv.counter[3]     pll|CLKOP_inferred_clock     FD1S3IX     CD      N_8_i        3.889        2.142
+clckDiv.counter[0]     pll|CLKOP_inferred_clock     FD1S3IX     D       CO0_i        3.916        2.505
+clckDiv.counter[1]     pll|CLKOP_inferred_clock     FD1S3IX     D       N_10_i       3.916        2.517
+clckDiv.counter[2]     pll|CLKOP_inferred_clock     FD1S3IX     D       N_11_i_i     3.916        2.517
+clckDiv.counter[3]     pll|CLKOP_inferred_clock     FD1S3IX     D       N_13_i_i     3.916        2.517
+clckDiv.out            pll|CLKOP_inferred_clock     FD1S3AX     D       out_RNO      3.916        2.517
+=======================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      3.970
+    - Setup time:                            0.081
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.889
+
+    - Propagation time:                      1.747
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 2.142
+
+    Number of logic level(s):                1
+    Starting point:                          clckDiv.counter[1] / Q
+    Ending point:                            clckDiv.counter[0] / CD
+    The start point is clocked by            pll|CLKOP_inferred_clock [rising] (rise=0.000 fall=1.985 period=3.970) on pin CK
+    The end   point is clocked by            pll|CLKOP_inferred_clock [rising] (rise=0.000 fall=1.985 period=3.970) on pin CK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                           Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+clckDiv.counter[1]             FD1S3IX      Q        Out     1.009     1.009 r     -         
+counter[1]                     Net          -        -       -         -           5         
+clckDiv.counter_RNI8S5R[3]     ORCALUT4     A        In      0.000     1.009 r     -         
+clckDiv.counter_RNI8S5R[3]     ORCALUT4     Z        Out     0.738     1.747 r     -         
+N_8_i                          Net          -        -       -         -           4         
+clckDiv.counter[0]             FD1S3IX      CD       In      0.000     1.747 r     -         
+=============================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                        Arrival          
+Instance            Reference     Type        Pin       Net         Time        Slack
+                    Clock                                                            
+-------------------------------------------------------------------------------------
+myPll.PLLInst_0     System        EHXPLLL     CLKOP     CLKOP_i     0.000       2.744
+=====================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                        Required          
+Instance            Reference     Type        Pin       Net         Time         Slack
+                    Clock                                                             
+--------------------------------------------------------------------------------------
+myPll.PLLInst_0     System        EHXPLLL     CLKFB     CLKOP_i     2.744        2.744
+======================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      2.744
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         2.744
+
+    - Propagation time:                      0.000
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 2.744
+
+    Number of logic level(s):                0
+    Starting point:                          myPll.PLLInst_0 / CLKOP
+    Ending point:                            myPll.PLLInst_0 / CLKFB
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                  Pin       Pin               Arrival     No. of    
+Name                Type        Name      Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------
+myPll.PLLInst_0     EHXPLLL     CLKOP     Out     0.000     0.000 r     -         
+CLKOP_i             Net         -         -       -         -           6         
+myPll.PLLInst_0     EHXPLLL     CLKFB     In      0.000     0.000 r     -         
+==================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 185MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 185MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lfe5u_12f-6
+
+Register bits: 142 of 12096 (1%)
+PIC Latch:       0
+I/O cells:       23
+
+
+Details:
+CCU2C:          74
+EHXPLLL:        1
+FD1P3JX:        1
+FD1S3AX:        134
+FD1S3IX:        4
+GSR:            1
+IB:             2
+INV:            3
+OB:             15
+OBZ:            6
+OFS1P3IX:       1
+OFS1P3JX:       2
+ORCALUT4:       140
+PUR:            1
+VHI:            8
+VLO:            2
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 66MB peak: 185MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Sat Jan 21 22:49:25 2023
+
+###########################################################]

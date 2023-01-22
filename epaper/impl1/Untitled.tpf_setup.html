@@ -1,0 +1,837 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Wed Jan 18 22:14:05 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     top
+Device,speed:    LFE5U-12F,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+</A><A name="FREQUENCY NET 'clk_100mhz' 100.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
+            3 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 7.912ns
+         The internal maximum frequency of the following component is 478.927 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    SLICE      CLK            <A href="#@comp:clckDiv/SLICE_68">clckDiv/SLICE_68</A>
+
+   Delay:               2.088ns -- based on Minimum Pulse Width
+<font color=#000000> 
+
+Passed: The following path meets requirements by 8.744ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:clckDiv/SLICE_68">clckDiv/counter[0]</A>  (from <A href="#@net:clk_100mhz">clk_100mhz</A> +)
+   Destination:    FF         Data in        <A href="#@comp:clckDiv/SLICE_69">clckDiv/out</A>  (to <A href="#@net:clk_100mhz">clk_100mhz</A> +)
+
+   Delay:               1.514ns  (49.9% logic, 50.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.514ns physical path delay clckDiv/SLICE_68 to clckDiv/SLICE_69 meets
+     10.000ns delay constraint less
+      0.000ns skew and
+     -0.258ns DIN_SET requirement (totaling 10.258ns) by 8.744ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:REG_DEL, 0.522,R36C26B.CLK,R36C26B.Q0,clckDiv/SLICE_68:ROUTE, 0.758,R36C26B.Q0,R36C26A.A0,clckDiv/counter[0]:CTOF_DEL, 0.234,R36C26A.A0,R36C26A.F0,clckDiv/SLICE_69:ROUTE, 0.000,R36C26A.F0,R36C26A.DI0,clckDiv/out_0">Data path</A> clckDiv/SLICE_68 to clckDiv/SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R36C26B.CLK to     R36C26B.Q0 <A href="#@comp:clckDiv/SLICE_68">clckDiv/SLICE_68</A> (from <A href="#@net:clk_100mhz">clk_100mhz</A>)
+ROUTE         2     0.758<A href="#@net:clckDiv/counter[0]:R36C26B.Q0:R36C26A.A0:0.758">     R36C26B.Q0 to R36C26A.A0    </A> <A href="#@net:clckDiv/counter[0]">clckDiv/counter[0]</A>
+CTOF_DEL    ---     0.234     R36C26A.A0 to     R36C26A.F0 <A href="#@comp:clckDiv/SLICE_69">clckDiv/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:clckDiv/out_0:R36C26A.F0:R36C26A.DI0:0.000">     R36C26A.F0 to R36C26A.DI0   </A> <A href="#@net:clckDiv/out_0">clckDiv/out_0</A> (to <A href="#@net:clk_100mhz">clk_100mhz</A>)
+                  --------
+                    1.514   (49.9% logic, 50.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:ROUTE, 2.141,PLL_BL0.CLKOP,R36C26B.CLK,clk_100mhz">Source Clock Path</A> myPll/PLLInst_0 to clckDiv/SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         3     2.141<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:R36C26B.CLK:2.141">  PLL_BL0.CLKOP to R36C26B.CLK   </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:ROUTE, 2.141,PLL_BL0.CLKOP,R36C26A.CLK,clk_100mhz">Destination Clock Path</A> myPll/PLLInst_0 to clckDiv/SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         3     2.141<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:R36C26A.CLK:2.141">  PLL_BL0.CLKOP to R36C26A.CLK   </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 9.299ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:clckDiv/SLICE_69">clckDiv/out</A>  (from <A href="#@net:clk_100mhz">clk_100mhz</A> +)
+   Destination:    FF         Data in        <A href="#@comp:clckDiv/SLICE_69">clckDiv/out</A>  (to <A href="#@net:clk_100mhz">clk_100mhz</A> +)
+
+   Delay:               0.959ns  (78.8% logic, 21.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.959ns physical path delay clckDiv/SLICE_69 to clckDiv/SLICE_69 meets
+     10.000ns delay constraint less
+      0.000ns skew and
+     -0.258ns DIN_SET requirement (totaling 10.258ns) by 9.299ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:REG_DEL, 0.522,R36C26A.CLK,R36C26A.Q0,clckDiv/SLICE_69:ROUTE, 0.203,R36C26A.Q0,R36C26A.D0,clk_divOut:CTOF_DEL, 0.234,R36C26A.D0,R36C26A.F0,clckDiv/SLICE_69:ROUTE, 0.000,R36C26A.F0,R36C26A.DI0,clckDiv/out_0">Data path</A> clckDiv/SLICE_69 to clckDiv/SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R36C26A.CLK to     R36C26A.Q0 <A href="#@comp:clckDiv/SLICE_69">clckDiv/SLICE_69</A> (from <A href="#@net:clk_100mhz">clk_100mhz</A>)
+ROUTE         4     0.203<A href="#@net:clk_divOut:R36C26A.Q0:R36C26A.D0:0.203">     R36C26A.Q0 to R36C26A.D0    </A> <A href="#@net:clk_divOut">clk_divOut</A>
+CTOF_DEL    ---     0.234     R36C26A.D0 to     R36C26A.F0 <A href="#@comp:clckDiv/SLICE_69">clckDiv/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:clckDiv/out_0:R36C26A.F0:R36C26A.DI0:0.000">     R36C26A.F0 to R36C26A.DI0   </A> <A href="#@net:clckDiv/out_0">clckDiv/out_0</A> (to <A href="#@net:clk_100mhz">clk_100mhz</A>)
+                  --------
+                    0.959   (78.8% logic, 21.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:ROUTE, 2.141,PLL_BL0.CLKOP,R36C26A.CLK,clk_100mhz">Source Clock Path</A> myPll/PLLInst_0 to clckDiv/SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         3     2.141<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:R36C26A.CLK:2.141">  PLL_BL0.CLKOP to R36C26A.CLK   </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:ROUTE, 2.141,PLL_BL0.CLKOP,R36C26A.CLK,clk_100mhz">Destination Clock Path</A> myPll/PLLInst_0 to clckDiv/SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         3     2.141<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:R36C26A.CLK:2.141">  PLL_BL0.CLKOP to R36C26A.CLK   </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 9.299ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:clckDiv/SLICE_68">clckDiv/counter[0]</A>  (from <A href="#@net:clk_100mhz">clk_100mhz</A> +)
+   Destination:    FF         Data in        <A href="#@comp:clckDiv/SLICE_68">clckDiv/counter[0]</A>  (to <A href="#@net:clk_100mhz">clk_100mhz</A> +)
+
+   Delay:               0.959ns  (78.8% logic, 21.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.959ns physical path delay clckDiv/SLICE_68 to clckDiv/SLICE_68 meets
+     10.000ns delay constraint less
+      0.000ns skew and
+     -0.258ns DIN_SET requirement (totaling 10.258ns) by 9.299ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:REG_DEL, 0.522,R36C26B.CLK,R36C26B.Q0,clckDiv/SLICE_68:ROUTE, 0.203,R36C26B.Q0,R36C26B.D0,clckDiv/counter[0]:CTOF_DEL, 0.234,R36C26B.D0,R36C26B.F0,clckDiv/SLICE_68:ROUTE, 0.000,R36C26B.F0,R36C26B.DI0,clckDiv/counter_i[0]">Data path</A> clckDiv/SLICE_68 to clckDiv/SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R36C26B.CLK to     R36C26B.Q0 <A href="#@comp:clckDiv/SLICE_68">clckDiv/SLICE_68</A> (from <A href="#@net:clk_100mhz">clk_100mhz</A>)
+ROUTE         2     0.203<A href="#@net:clckDiv/counter[0]:R36C26B.Q0:R36C26B.D0:0.203">     R36C26B.Q0 to R36C26B.D0    </A> <A href="#@net:clckDiv/counter[0]">clckDiv/counter[0]</A>
+CTOF_DEL    ---     0.234     R36C26B.D0 to     R36C26B.F0 <A href="#@comp:clckDiv/SLICE_68">clckDiv/SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:clckDiv/counter_i[0]:R36C26B.F0:R36C26B.DI0:0.000">     R36C26B.F0 to R36C26B.DI0   </A> <A href="#@net:clckDiv/counter_i[0]">clckDiv/counter_i[0]</A> (to <A href="#@net:clk_100mhz">clk_100mhz</A>)
+                  --------
+                    0.959   (78.8% logic, 21.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:ROUTE, 2.141,PLL_BL0.CLKOP,R36C26B.CLK,clk_100mhz">Source Clock Path</A> myPll/PLLInst_0 to clckDiv/SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         3     2.141<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:R36C26B.CLK:2.141">  PLL_BL0.CLKOP to R36C26B.CLK   </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_100mhz' 100.000000 MHz ;:ROUTE, 2.141,PLL_BL0.CLKOP,R36C26B.CLK,clk_100mhz">Destination Clock Path</A> myPll/PLLInst_0 to clckDiv/SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         3     2.141<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:R36C26B.CLK:2.141">  PLL_BL0.CLKOP to R36C26B.CLK   </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+                  --------
+                    2.141   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  478.927MHz is the maximum frequency for this preference.
+
+
+</A><A name="FREQUENCY NET 'myPll/buf_CLKI' 25.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "myPll/buf_CLKI" 25.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+</A><A name="FREQUENCY PORT 'clk_25mhz' 25.000000 MH"></A>================================================================================
+Preference: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 13.764ns (weighted slack = 27.528ns)
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySpvModule/SLICE_70">mySpvModule/spv</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:spvPosEdge/SLICE_128">spvPosEdge/sig_dly</A>  (to <A href="#@net:clk_divOut">clk_divOut</A> +)
+
+   Delay:               1.748ns  (27.9% logic, 72.1% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.748ns physical path delay mySpvModule/SLICE_70 to spvPosEdge/SLICE_128 meets
+     20.000ns delay constraint less
+      4.649ns skew and
+      0.000ns feedback compensation and
+     -0.161ns M_SET requirement (totaling 15.512ns) by 13.764ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.488,R44C30D.CLK,R44C30D.Q0,mySpvModule/SLICE_70:ROUTE, 1.260,R44C30D.Q0,R36C27C.M0,gp_c[1]">Data path</A> mySpvModule/SLICE_70 to spvPosEdge/SLICE_128:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.488    R44C30D.CLK to     R44C30D.Q0 <A href="#@comp:mySpvModule/SLICE_70">mySpvModule/SLICE_70</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         3     1.260<A href="#@net:gp_c[1]:R44C30D.Q0:R36C27C.M0:1.260">     R44C30D.Q0 to R36C27C.M0    </A> <A href="#@net:gp_c[1]">gp_c[1]</A> (to <A href="#@net:clk_divOut">clk_divOut</A>)
+                  --------
+                    1.748   (27.9% logic, 72.1% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:PADI_DEL, 1.152,G2.PAD,G2.PADDI,clk_25mhz:ROUTE, 0.383,G2.PADDI,PLL_BL0.CLKI,myPll/buf_CLKI:CLKI2OP_DEL, 0.000,PLL_BL0.CLKI,PLL_BL0.CLKOP,myPll/PLLInst_0:ROUTE, 2.141,PLL_BL0.CLKOP,R36C26A.CLK,clk_100mhz:REG_DEL, 0.522,R36C26A.CLK,R36C26A.Q0,clckDiv/SLICE_69:ROUTE, 0.612,R36C26A.Q0,R36C27D.CLK,clk_divOut:REG_DEL, 0.522,R36C27D.CLK,R36C27D.Q0,myCtrlModule/SLICE_72:ROUTE, 1.177,R36C27D.Q0,R38C31A.C0,myCtrlModule/startFlag:CTOF_DEL, 0.234,R38C31A.C0,R38C31A.F0,myCtrlModule/SLICE_127:ROUTE, 2.716,R38C31A.F0,R44C30D.CLK,gp_c[4]">Source Clock Path</A> clk_25mhz to mySpvModule/SLICE_70:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.152         G2.PAD to       G2.PADDI <A href="#@comp:clk_25mhz">clk_25mhz</A>
+ROUTE         1     0.383<A href="#@net:myPll/buf_CLKI:G2.PADDI:PLL_BL0.CLKI:0.383">       G2.PADDI to PLL_BL0.CLKI  </A> <A href="#@net:myPll/buf_CLKI">myPll/buf_CLKI</A>
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP <A href="#@comp:myPll/PLLInst_0">myPll/PLLInst_0</A>
+ROUTE         3     2.141<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:R36C26A.CLK:2.141">  PLL_BL0.CLKOP to R36C26A.CLK   </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+REG_DEL     ---     0.522    R36C26A.CLK to     R36C26A.Q0 <A href="#@comp:clckDiv/SLICE_69">clckDiv/SLICE_69</A>
+ROUTE         4     0.612<A href="#@net:clk_divOut:R36C26A.Q0:R36C27D.CLK:0.612">     R36C26A.Q0 to R36C27D.CLK   </A> <A href="#@net:clk_divOut">clk_divOut</A>
+REG_DEL     ---     0.522    R36C27D.CLK to     R36C27D.Q0 <A href="#@comp:myCtrlModule/SLICE_72">myCtrlModule/SLICE_72</A>
+ROUTE         2     1.177<A href="#@net:myCtrlModule/startFlag:R36C27D.Q0:R38C31A.C0:1.177">     R36C27D.Q0 to R38C31A.C0    </A> <A href="#@net:myCtrlModule/startFlag">myCtrlModule/startFlag</A>
+CTOF_DEL    ---     0.234     R38C31A.C0 to     R38C31A.F0 <A href="#@comp:myCtrlModule/SLICE_127">myCtrlModule/SLICE_127</A>
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R44C30D.CLK:2.716">     R38C31A.F0 to R44C30D.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    9.459   (25.7% logic, 74.3% route), 5 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP <A href="#@comp:myPll/PLLInst_0">myPll/PLLInst_0</A>
+ROUTE         3     2.241<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:PLL_BL0.CLKFB:2.241">  PLL_BL0.CLKOP to PLL_BL0.CLKFB </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+                  --------
+                    2.241   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:PADI_DEL, 1.152,G2.PAD,G2.PADDI,clk_25mhz:ROUTE, 0.383,G2.PADDI,PLL_BL0.CLKI,myPll/buf_CLKI:CLKI2OP_DEL, 0.000,PLL_BL0.CLKI,PLL_BL0.CLKOP,myPll/PLLInst_0:ROUTE, 2.141,PLL_BL0.CLKOP,R36C26A.CLK,clk_100mhz:REG_DEL, 0.522,R36C26A.CLK,R36C26A.Q0,clckDiv/SLICE_69:ROUTE, 0.612,R36C26A.Q0,R36C27C.CLK,clk_divOut">Destination Clock Path</A> clk_25mhz to spvPosEdge/SLICE_128:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.152         G2.PAD to       G2.PADDI <A href="#@comp:clk_25mhz">clk_25mhz</A>
+ROUTE         1     0.383<A href="#@net:myPll/buf_CLKI:G2.PADDI:PLL_BL0.CLKI:0.383">       G2.PADDI to PLL_BL0.CLKI  </A> <A href="#@net:myPll/buf_CLKI">myPll/buf_CLKI</A>
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP <A href="#@comp:myPll/PLLInst_0">myPll/PLLInst_0</A>
+ROUTE         3     2.141<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:R36C26A.CLK:2.141">  PLL_BL0.CLKOP to R36C26A.CLK   </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+REG_DEL     ---     0.522    R36C26A.CLK to     R36C26A.Q0 <A href="#@comp:clckDiv/SLICE_69">clckDiv/SLICE_69</A>
+ROUTE         4     0.612<A href="#@net:clk_divOut:R36C26A.Q0:R36C27C.CLK:0.612">     R36C26A.Q0 to R36C27C.CLK   </A> <A href="#@net:clk_divOut">clk_divOut</A>
+                  --------
+                    4.810   (34.8% logic, 65.2% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP <A href="#@comp:myPll/PLLInst_0">myPll/PLLInst_0</A>
+ROUTE         3     2.241<A href="#@net:clk_100mhz:PLL_BL0.CLKOP:PLL_BL0.CLKFB:2.241">  PLL_BL0.CLKOP to PLL_BL0.CLKFB </A> <A href="#@net:clk_100mhz">clk_100mhz</A>
+                  --------
+                    2.241   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.400ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_7">mySphModule/counter[13]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               9.559ns  (22.2% logic, 77.8% route), 8 logic levels.
+
+ Constraint Details:
+
+      9.559ns physical path delay mySphModule/SLICE_7 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 30.400ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.488,R31C21D.CLK,R31C21D.Q0,mySphModule/SLICE_7:ROUTE, 1.019,R31C21D.Q0,R31C24C.A0,mySphModule/counter[13]:CTOF_DEL, 0.234,R31C24C.A0,R31C24C.F0,mySphModule/SLICE_120:ROUTE, 0.383,R31C24C.F0,R31C24D.C0,mySphModule/sph_1_sqmuxa_i_a2_16:CTOF_DEL, 0.234,R31C24D.C0,R31C24D.F0,mySphModule/SLICE_86:ROUTE, 0.825,R31C24D.F0,R32C22C.C0,mySphModule/sph_1_sqmuxa_i_a2_20:CTOF_DEL, 0.234,R32C22C.C0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_7 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.488    R31C21D.CLK to     R31C21D.Q0 <A href="#@comp:mySphModule/SLICE_7">mySphModule/SLICE_7</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     1.019<A href="#@net:mySphModule/counter[13]:R31C21D.Q0:R31C24C.A0:1.019">     R31C21D.Q0 to R31C24C.A0    </A> <A href="#@net:mySphModule/counter[13]">mySphModule/counter[13]</A>
+CTOF_DEL    ---     0.234     R31C24C.A0 to     R31C24C.F0 <A href="#@comp:mySphModule/SLICE_120">mySphModule/SLICE_120</A>
+ROUTE         1     0.383<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_16:R31C24C.F0:R31C24D.C0:0.383">     R31C24C.F0 to R31C24D.C0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_16">mySphModule/sph_1_sqmuxa_i_a2_16</A>
+CTOF_DEL    ---     0.234     R31C24D.C0 to     R31C24D.F0 <A href="#@comp:mySphModule/SLICE_86">mySphModule/SLICE_86</A>
+ROUTE         1     0.825<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20:R31C24D.F0:R32C22C.C0:0.825">     R31C24D.F0 to R32C22C.C0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20">mySphModule/sph_1_sqmuxa_i_a2_20</A>
+CTOF_DEL    ---     0.234     R32C22C.C0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    9.559   (22.2% logic, 77.8% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C21D.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C21D.CLK:2.716">     R38C31A.F0 to R31C21D.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.451ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_12">mySphModule/counter[24]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               9.508ns  (22.3% logic, 77.7% route), 8 logic levels.
+
+ Constraint Details:
+
+      9.508ns physical path delay mySphModule/SLICE_12 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 30.451ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.485,R31C23A.CLK,R31C23A.Q1,mySphModule/SLICE_12:ROUTE, 0.786,R31C23A.Q1,R31C24D.B1,mySphModule/counter[24]:CTOF_DEL, 0.234,R31C24D.B1,R31C24D.F1,mySphModule/SLICE_86:ROUTE, 0.568,R31C24D.F1,R31C24D.A0,mySphModule/sph_1_sqmuxa_i_a2_6:CTOF_DEL, 0.234,R31C24D.A0,R31C24D.F0,mySphModule/SLICE_86:ROUTE, 0.825,R31C24D.F0,R32C22C.C0,mySphModule/sph_1_sqmuxa_i_a2_20:CTOF_DEL, 0.234,R32C22C.C0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_12 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.485    R31C23A.CLK to     R31C23A.Q1 <A href="#@comp:mySphModule/SLICE_12">mySphModule/SLICE_12</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     0.786<A href="#@net:mySphModule/counter[24]:R31C23A.Q1:R31C24D.B1:0.786">     R31C23A.Q1 to R31C24D.B1    </A> <A href="#@net:mySphModule/counter[24]">mySphModule/counter[24]</A>
+CTOF_DEL    ---     0.234     R31C24D.B1 to     R31C24D.F1 <A href="#@comp:mySphModule/SLICE_86">mySphModule/SLICE_86</A>
+ROUTE         1     0.568<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_6:R31C24D.F1:R31C24D.A0:0.568">     R31C24D.F1 to R31C24D.A0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_6">mySphModule/sph_1_sqmuxa_i_a2_6</A>
+CTOF_DEL    ---     0.234     R31C24D.A0 to     R31C24D.F0 <A href="#@comp:mySphModule/SLICE_86">mySphModule/SLICE_86</A>
+ROUTE         1     0.825<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20:R31C24D.F0:R32C22C.C0:0.825">     R31C24D.F0 to R32C22C.C0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20">mySphModule/sph_1_sqmuxa_i_a2_20</A>
+CTOF_DEL    ---     0.234     R32C22C.C0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    9.508   (22.3% logic, 77.7% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C23A.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C23A.CLK:2.716">     R38C31A.F0 to R31C23A.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.458ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_8">mySphModule/counter[15]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               9.501ns  (22.4% logic, 77.6% route), 8 logic levels.
+
+ Constraint Details:
+
+      9.501ns physical path delay mySphModule/SLICE_8 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 30.458ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.488,R31C22A.CLK,R31C22A.Q0,mySphModule/SLICE_8:ROUTE, 1.195,R31C22A.Q0,R32C21B.B1,mySphModule/counter[15]:CTOF_DEL, 0.234,R32C21B.B1,R32C21B.F1,mySphModule/SLICE_85:ROUTE, 0.560,R32C21B.F1,R32C21B.B0,mySphModule/sph_1_sqmuxa_i_a2_17:CTOF_DEL, 0.234,R32C21B.B0,R32C21B.F0,mySphModule/SLICE_85:ROUTE, 0.414,R32C21B.F0,R32C22C.D0,mySphModule/sph_1_sqmuxa_i_a2_21:CTOF_DEL, 0.234,R32C22C.D0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_8 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.488    R31C22A.CLK to     R31C22A.Q0 <A href="#@comp:mySphModule/SLICE_8">mySphModule/SLICE_8</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     1.195<A href="#@net:mySphModule/counter[15]:R31C22A.Q0:R32C21B.B1:1.195">     R31C22A.Q0 to R32C21B.B1    </A> <A href="#@net:mySphModule/counter[15]">mySphModule/counter[15]</A>
+CTOF_DEL    ---     0.234     R32C21B.B1 to     R32C21B.F1 <A href="#@comp:mySphModule/SLICE_85">mySphModule/SLICE_85</A>
+ROUTE         1     0.560<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_17:R32C21B.F1:R32C21B.B0:0.560">     R32C21B.F1 to R32C21B.B0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_17">mySphModule/sph_1_sqmuxa_i_a2_17</A>
+CTOF_DEL    ---     0.234     R32C21B.B0 to     R32C21B.F0 <A href="#@comp:mySphModule/SLICE_85">mySphModule/SLICE_85</A>
+ROUTE         1     0.414<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_21:R32C21B.F0:R32C22C.D0:0.414">     R32C21B.F0 to R32C22C.D0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_21">mySphModule/sph_1_sqmuxa_i_a2_21</A>
+CTOF_DEL    ---     0.234     R32C22C.D0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    9.501   (22.4% logic, 77.6% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C22A.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C22A.CLK:2.716">     R38C31A.F0 to R31C22A.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.627ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_7">mySphModule/counter[14]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               9.332ns  (22.7% logic, 77.3% route), 8 logic levels.
+
+ Constraint Details:
+
+      9.332ns physical path delay mySphModule/SLICE_7 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 30.627ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.485,R31C21D.CLK,R31C21D.Q1,mySphModule/SLICE_7:ROUTE, 1.029,R31C21D.Q1,R32C21B.C1,mySphModule/counter[14]:CTOF_DEL, 0.234,R32C21B.C1,R32C21B.F1,mySphModule/SLICE_85:ROUTE, 0.560,R32C21B.F1,R32C21B.B0,mySphModule/sph_1_sqmuxa_i_a2_17:CTOF_DEL, 0.234,R32C21B.B0,R32C21B.F0,mySphModule/SLICE_85:ROUTE, 0.414,R32C21B.F0,R32C22C.D0,mySphModule/sph_1_sqmuxa_i_a2_21:CTOF_DEL, 0.234,R32C22C.D0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_7 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.485    R31C21D.CLK to     R31C21D.Q1 <A href="#@comp:mySphModule/SLICE_7">mySphModule/SLICE_7</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     1.029<A href="#@net:mySphModule/counter[14]:R31C21D.Q1:R32C21B.C1:1.029">     R31C21D.Q1 to R32C21B.C1    </A> <A href="#@net:mySphModule/counter[14]">mySphModule/counter[14]</A>
+CTOF_DEL    ---     0.234     R32C21B.C1 to     R32C21B.F1 <A href="#@comp:mySphModule/SLICE_85">mySphModule/SLICE_85</A>
+ROUTE         1     0.560<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_17:R32C21B.F1:R32C21B.B0:0.560">     R32C21B.F1 to R32C21B.B0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_17">mySphModule/sph_1_sqmuxa_i_a2_17</A>
+CTOF_DEL    ---     0.234     R32C21B.B0 to     R32C21B.F0 <A href="#@comp:mySphModule/SLICE_85">mySphModule/SLICE_85</A>
+ROUTE         1     0.414<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_21:R32C21B.F0:R32C22C.D0:0.414">     R32C21B.F0 to R32C22C.D0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_21">mySphModule/sph_1_sqmuxa_i_a2_21</A>
+CTOF_DEL    ---     0.234     R32C22C.D0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    9.332   (22.7% logic, 77.3% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C21D.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C21D.CLK:2.716">     R38C31A.F0 to R31C21D.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.636ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_13">mySphModule/counter[26]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               9.323ns  (22.8% logic, 77.2% route), 8 logic levels.
+
+ Constraint Details:
+
+      9.323ns physical path delay mySphModule/SLICE_13 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 30.636ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.485,R31C23B.CLK,R31C23B.Q1,mySphModule/SLICE_13:ROUTE, 0.786,R31C23B.Q1,R31C24C.B0,mySphModule/counter[26]:CTOF_DEL, 0.234,R31C24C.B0,R31C24C.F0,mySphModule/SLICE_120:ROUTE, 0.383,R31C24C.F0,R31C24D.C0,mySphModule/sph_1_sqmuxa_i_a2_16:CTOF_DEL, 0.234,R31C24D.C0,R31C24D.F0,mySphModule/SLICE_86:ROUTE, 0.825,R31C24D.F0,R32C22C.C0,mySphModule/sph_1_sqmuxa_i_a2_20:CTOF_DEL, 0.234,R32C22C.C0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_13 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.485    R31C23B.CLK to     R31C23B.Q1 <A href="#@comp:mySphModule/SLICE_13">mySphModule/SLICE_13</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     0.786<A href="#@net:mySphModule/counter[26]:R31C23B.Q1:R31C24C.B0:0.786">     R31C23B.Q1 to R31C24C.B0    </A> <A href="#@net:mySphModule/counter[26]">mySphModule/counter[26]</A>
+CTOF_DEL    ---     0.234     R31C24C.B0 to     R31C24C.F0 <A href="#@comp:mySphModule/SLICE_120">mySphModule/SLICE_120</A>
+ROUTE         1     0.383<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_16:R31C24C.F0:R31C24D.C0:0.383">     R31C24C.F0 to R31C24D.C0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_16">mySphModule/sph_1_sqmuxa_i_a2_16</A>
+CTOF_DEL    ---     0.234     R31C24D.C0 to     R31C24D.F0 <A href="#@comp:mySphModule/SLICE_86">mySphModule/SLICE_86</A>
+ROUTE         1     0.825<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20:R31C24D.F0:R32C22C.C0:0.825">     R31C24D.F0 to R32C22C.C0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20">mySphModule/sph_1_sqmuxa_i_a2_20</A>
+CTOF_DEL    ---     0.234     R32C22C.C0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    9.323   (22.8% logic, 77.2% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C23B.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C23B.CLK:2.716">     R38C31A.F0 to R31C23B.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.806ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_14">mySphModule/counter[27]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               9.153ns  (23.2% logic, 76.8% route), 8 logic levels.
+
+ Constraint Details:
+
+      9.153ns physical path delay mySphModule/SLICE_14 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 30.806ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.488,R31C23C.CLK,R31C23C.Q0,mySphModule/SLICE_14:ROUTE, 0.613,R31C23C.Q0,R31C24C.C0,mySphModule/counter[27]:CTOF_DEL, 0.234,R31C24C.C0,R31C24C.F0,mySphModule/SLICE_120:ROUTE, 0.383,R31C24C.F0,R31C24D.C0,mySphModule/sph_1_sqmuxa_i_a2_16:CTOF_DEL, 0.234,R31C24D.C0,R31C24D.F0,mySphModule/SLICE_86:ROUTE, 0.825,R31C24D.F0,R32C22C.C0,mySphModule/sph_1_sqmuxa_i_a2_20:CTOF_DEL, 0.234,R32C22C.C0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_14 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.488    R31C23C.CLK to     R31C23C.Q0 <A href="#@comp:mySphModule/SLICE_14">mySphModule/SLICE_14</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     0.613<A href="#@net:mySphModule/counter[27]:R31C23C.Q0:R31C24C.C0:0.613">     R31C23C.Q0 to R31C24C.C0    </A> <A href="#@net:mySphModule/counter[27]">mySphModule/counter[27]</A>
+CTOF_DEL    ---     0.234     R31C24C.C0 to     R31C24C.F0 <A href="#@comp:mySphModule/SLICE_120">mySphModule/SLICE_120</A>
+ROUTE         1     0.383<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_16:R31C24C.F0:R31C24D.C0:0.383">     R31C24C.F0 to R31C24D.C0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_16">mySphModule/sph_1_sqmuxa_i_a2_16</A>
+CTOF_DEL    ---     0.234     R31C24D.C0 to     R31C24D.F0 <A href="#@comp:mySphModule/SLICE_86">mySphModule/SLICE_86</A>
+ROUTE         1     0.825<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20:R31C24D.F0:R32C22C.C0:0.825">     R31C24D.F0 to R32C22C.C0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20">mySphModule/sph_1_sqmuxa_i_a2_20</A>
+CTOF_DEL    ---     0.234     R32C22C.C0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    9.153   (23.2% logic, 76.8% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C23C.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C23C.CLK:2.716">     R38C31A.F0 to R31C23C.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.811ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_13">mySphModule/counter[25]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               9.148ns  (23.2% logic, 76.8% route), 8 logic levels.
+
+ Constraint Details:
+
+      9.148ns physical path delay mySphModule/SLICE_13 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 30.811ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.488,R31C23B.CLK,R31C23B.Q0,mySphModule/SLICE_13:ROUTE, 0.423,R31C23B.Q0,R31C24D.D1,mySphModule/counter[25]:CTOF_DEL, 0.234,R31C24D.D1,R31C24D.F1,mySphModule/SLICE_86:ROUTE, 0.568,R31C24D.F1,R31C24D.A0,mySphModule/sph_1_sqmuxa_i_a2_6:CTOF_DEL, 0.234,R31C24D.A0,R31C24D.F0,mySphModule/SLICE_86:ROUTE, 0.825,R31C24D.F0,R32C22C.C0,mySphModule/sph_1_sqmuxa_i_a2_20:CTOF_DEL, 0.234,R32C22C.C0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_13 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.488    R31C23B.CLK to     R31C23B.Q0 <A href="#@comp:mySphModule/SLICE_13">mySphModule/SLICE_13</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     0.423<A href="#@net:mySphModule/counter[25]:R31C23B.Q0:R31C24D.D1:0.423">     R31C23B.Q0 to R31C24D.D1    </A> <A href="#@net:mySphModule/counter[25]">mySphModule/counter[25]</A>
+CTOF_DEL    ---     0.234     R31C24D.D1 to     R31C24D.F1 <A href="#@comp:mySphModule/SLICE_86">mySphModule/SLICE_86</A>
+ROUTE         1     0.568<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_6:R31C24D.F1:R31C24D.A0:0.568">     R31C24D.F1 to R31C24D.A0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_6">mySphModule/sph_1_sqmuxa_i_a2_6</A>
+CTOF_DEL    ---     0.234     R31C24D.A0 to     R31C24D.F0 <A href="#@comp:mySphModule/SLICE_86">mySphModule/SLICE_86</A>
+ROUTE         1     0.825<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20:R31C24D.F0:R32C22C.C0:0.825">     R31C24D.F0 to R32C22C.C0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_20">mySphModule/sph_1_sqmuxa_i_a2_20</A>
+CTOF_DEL    ---     0.234     R32C22C.C0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    9.148   (23.2% logic, 76.8% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C23B.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C23B.CLK:2.716">     R38C31A.F0 to R31C23B.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.862ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_6">mySphModule/counter[12]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               9.097ns  (23.3% logic, 76.7% route), 8 logic levels.
+
+ Constraint Details:
+
+      9.097ns physical path delay mySphModule/SLICE_6 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 30.862ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.485,R31C21C.CLK,R31C21C.Q1,mySphModule/SLICE_6:ROUTE, 0.794,R31C21C.Q1,R32C21B.A1,mySphModule/counter[12]:CTOF_DEL, 0.234,R32C21B.A1,R32C21B.F1,mySphModule/SLICE_85:ROUTE, 0.560,R32C21B.F1,R32C21B.B0,mySphModule/sph_1_sqmuxa_i_a2_17:CTOF_DEL, 0.234,R32C21B.B0,R32C21B.F0,mySphModule/SLICE_85:ROUTE, 0.414,R32C21B.F0,R32C22C.D0,mySphModule/sph_1_sqmuxa_i_a2_21:CTOF_DEL, 0.234,R32C22C.D0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_6 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.485    R31C21C.CLK to     R31C21C.Q1 <A href="#@comp:mySphModule/SLICE_6">mySphModule/SLICE_6</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     0.794<A href="#@net:mySphModule/counter[12]:R31C21C.Q1:R32C21B.A1:0.794">     R31C21C.Q1 to R32C21B.A1    </A> <A href="#@net:mySphModule/counter[12]">mySphModule/counter[12]</A>
+CTOF_DEL    ---     0.234     R32C21B.A1 to     R32C21B.F1 <A href="#@comp:mySphModule/SLICE_85">mySphModule/SLICE_85</A>
+ROUTE         1     0.560<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_17:R32C21B.F1:R32C21B.B0:0.560">     R32C21B.F1 to R32C21B.B0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_17">mySphModule/sph_1_sqmuxa_i_a2_17</A>
+CTOF_DEL    ---     0.234     R32C21B.B0 to     R32C21B.F0 <A href="#@comp:mySphModule/SLICE_85">mySphModule/SLICE_85</A>
+ROUTE         1     0.414<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_21:R32C21B.F0:R32C22C.D0:0.414">     R32C21B.F0 to R32C22C.D0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_21">mySphModule/sph_1_sqmuxa_i_a2_21</A>
+CTOF_DEL    ---     0.234     R32C22C.D0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    9.097   (23.3% logic, 76.7% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C21C.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_6:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C21C.CLK:2.716">     R38C31A.F0 to R31C21C.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.006ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:mySphModule/SLICE_10">mySphModule/counter[20]</A>  (from <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+   Destination:    FF         Data in        <A href="#@comp:gp[3]_MGIOL">mySphModule_sphio</A>  (to <A href="#@net:gp_c[4]">gp_c[4]</A> -)
+
+   Delay:               8.953ns  (23.7% logic, 76.3% route), 8 logic levels.
+
+ Constraint Details:
+
+      8.953ns physical path delay mySphModule/SLICE_10 to gp[3]_MGIOL meets
+     40.000ns delay constraint less
+     -0.099ns skew and
+      0.140ns RST_SET requirement (totaling 39.959ns) by 31.006ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:REG_DEL, 0.485,R31C22C.CLK,R31C22C.Q1,mySphModule/SLICE_10:ROUTE, 1.016,R31C22C.Q1,R32C21A.A0,mySphModule/counter[20]:CTOF_DEL, 0.234,R32C21A.A0,R32C21A.F0,mySphModule/SLICE_118:ROUTE, 0.194,R32C21A.F0,R32C21B.D0,mySphModule/sph_1_sqmuxa_i_a2_12:CTOF_DEL, 0.234,R32C21B.D0,R32C21B.F0,mySphModule/SLICE_85:ROUTE, 0.414,R32C21B.F0,R32C22C.D0,mySphModule/sph_1_sqmuxa_i_a2_21:CTOF_DEL, 0.234,R32C22C.D0,R32C22C.F0,mySphModule/SLICE_84:ROUTE, 0.648,R32C22C.F0,R30C20D.D1,mySphModule/N_36:CTOF_DEL, 0.234,R30C20D.D1,R30C20D.F1,mySphModule/SLICE_82:ROUTE, 0.809,R30C20D.F1,R30C21A.A1,mySphModule/N_38:CTOF_DEL, 0.234,R30C21A.A1,R30C21A.F1,mySphModule/SLICE_79:ROUTE, 0.585,R30C21A.F1,R30C21B.B1,mySphModule/N_39:CTOF_DEL, 0.234,R30C21B.B1,R30C21B.F1,mySphModule/SLICE_80:ROUTE, 0.569,R30C21B.F1,R30C21B.B0,mySphModule/N_43:CTOF_DEL, 0.234,R30C21B.B0,R30C21B.F0,mySphModule/SLICE_80:ROUTE, 2.595,R30C21B.F0,IOL_T22A.LSR,mySphModule.sph16">Data path</A> mySphModule/SLICE_10 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.485    R31C22C.CLK to     R31C22C.Q1 <A href="#@comp:mySphModule/SLICE_10">mySphModule/SLICE_10</A> (from <A href="#@net:gp_c[4]">gp_c[4]</A>)
+ROUTE         2     1.016<A href="#@net:mySphModule/counter[20]:R31C22C.Q1:R32C21A.A0:1.016">     R31C22C.Q1 to R32C21A.A0    </A> <A href="#@net:mySphModule/counter[20]">mySphModule/counter[20]</A>
+CTOF_DEL    ---     0.234     R32C21A.A0 to     R32C21A.F0 <A href="#@comp:mySphModule/SLICE_118">mySphModule/SLICE_118</A>
+ROUTE         1     0.194<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_12:R32C21A.F0:R32C21B.D0:0.194">     R32C21A.F0 to R32C21B.D0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_12">mySphModule/sph_1_sqmuxa_i_a2_12</A>
+CTOF_DEL    ---     0.234     R32C21B.D0 to     R32C21B.F0 <A href="#@comp:mySphModule/SLICE_85">mySphModule/SLICE_85</A>
+ROUTE         1     0.414<A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_21:R32C21B.F0:R32C22C.D0:0.414">     R32C21B.F0 to R32C22C.D0    </A> <A href="#@net:mySphModule/sph_1_sqmuxa_i_a2_21">mySphModule/sph_1_sqmuxa_i_a2_21</A>
+CTOF_DEL    ---     0.234     R32C22C.D0 to     R32C22C.F0 <A href="#@comp:mySphModule/SLICE_84">mySphModule/SLICE_84</A>
+ROUTE         2     0.648<A href="#@net:mySphModule/N_36:R32C22C.F0:R30C20D.D1:0.648">     R32C22C.F0 to R30C20D.D1    </A> <A href="#@net:mySphModule/N_36">mySphModule/N_36</A>
+CTOF_DEL    ---     0.234     R30C20D.D1 to     R30C20D.F1 <A href="#@comp:mySphModule/SLICE_82">mySphModule/SLICE_82</A>
+ROUTE         3     0.809<A href="#@net:mySphModule/N_38:R30C20D.F1:R30C21A.A1:0.809">     R30C20D.F1 to R30C21A.A1    </A> <A href="#@net:mySphModule/N_38">mySphModule/N_38</A>
+CTOF_DEL    ---     0.234     R30C21A.A1 to     R30C21A.F1 <A href="#@comp:mySphModule/SLICE_79">mySphModule/SLICE_79</A>
+ROUTE         5     0.585<A href="#@net:mySphModule/N_39:R30C21A.F1:R30C21B.B1:0.585">     R30C21A.F1 to R30C21B.B1    </A> <A href="#@net:mySphModule/N_39">mySphModule/N_39</A>
+CTOF_DEL    ---     0.234     R30C21B.B1 to     R30C21B.F1 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         2     0.569<A href="#@net:mySphModule/N_43:R30C21B.F1:R30C21B.B0:0.569">     R30C21B.F1 to R30C21B.B0    </A> <A href="#@net:mySphModule/N_43">mySphModule/N_43</A>
+CTOF_DEL    ---     0.234     R30C21B.B0 to     R30C21B.F0 <A href="#@comp:mySphModule/SLICE_80">mySphModule/SLICE_80</A>
+ROUTE         1     2.595<A href="#@net:mySphModule.sph16:R30C21B.F0:IOL_T22A.LSR:2.595">     R30C21B.F0 to IOL_T22A.LSR  </A> <A href="#@net:mySphModule.sph16">mySphModule.sph16</A> (to <A href="#@net:gp_c[4]">gp_c[4]</A>)
+                  --------
+                    8.953   (23.7% logic, 76.3% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.716,R38C31A.F0,R31C22C.CLK,gp_c[4]">Source Clock Path</A> myCtrlModule/SLICE_127 to mySphModule/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.716<A href="#@net:gp_c[4]:R38C31A.F0:R31C22C.CLK:2.716">     R38C31A.F0 to R31C22C.CLK   </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.716   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clk_25mhz' 25.000000 MHz ;:ROUTE, 2.815,R38C31A.F0,IOL_T22A.CLK,gp_c[4]">Destination Clock Path</A> myCtrlModule/SLICE_127 to gp[3]_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        74     2.815<A href="#@net:gp_c[4]:R38C31A.F0:IOL_T22A.CLK:2.815">     R38C31A.F0 to IOL_T22A.CLK  </A> <A href="#@net:gp_c[4]">gp_c[4]</A>
+                  --------
+                    2.815   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:   80.180MHz is the maximum frequency for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_100mhz" 100.000000   |             |             |
+MHz ;                                   |  100.000 MHz|  478.927 MHz|   0  
+                                        |             |             |
+FREQUENCY NET "myPll/buf_CLKI"          |             |             |
+25.000000 MHz ;                         |            -|            -|   0  
+                                        |             |             |
+FREQUENCY PORT "clk_25mhz" 25.000000    |             |             |
+MHz ;                                   |   25.000 MHz|   80.180 MHz|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: <A href="#@net:myPll/buf_CLKI">myPll/buf_CLKI</A>   Source: clk_25mhz.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:gp_c[4]">gp_c[4]</A>   Source: myCtrlModule/SLICE_127.F0   Loads: 74
+   Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
+
+Clock Domain: <A href="#@net:clk_divOut">clk_divOut</A>   Source: clckDiv/SLICE_69.Q0   Loads: 4
+   Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:gp_c[4]">gp_c[4]</A>   Source: myCtrlModule/SLICE_127.F0
+      Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;   Transfers: 1
+
+Clock Domain: <A href="#@net:clk_100mhz">clk_100mhz</A>   Source: myPll/PLLInst_0.CLKOP   Loads: 3
+   Covered under: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 37729 paths, 5 nets, and 839 connections (98.71% coverage)
+

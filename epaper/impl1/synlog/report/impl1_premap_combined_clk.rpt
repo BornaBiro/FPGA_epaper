@@ -1,0 +1,28 @@
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 5 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 147 clock pin(s) of sequential element(s)
+0 instances converted, 147 sequential instances remain driven by gated/generated clocks
+
+================================= Non-Gated/Non-Generated Clocks =================================
+Clock Tree ID     Driving Element           Drive Element Type     Fanout     Sample Instance     
+--------------------------------------------------------------------------------------------------
+@KP:ckid0_4       myPll.PLLInst_0.CLKOP     EHXPLLL                5          clckDiv.counter[3:0]
+==================================================================================================
+========================================================================================= Gated/Generated Clocks =========================================================================================
+Clock Tree ID     Driving Element                            Drive Element Type     Unconverted Fanout     Sample Instance               Explanation                                                      
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       myCtrlModule.uclk_clkOutMainModule.OUT     and                    136                    mySphModule.counter[32:0]     Derived clock on input (not legal for GCC)                       
+@KP:ckid0_1       myCtrlModule.startFlag_2.OUT               or                     10                     myCtrlModule.frame[9]         Clock optimization blocked by combinational loop marker (loopbuf)
+@KP:ckid0_2       clckDiv.out.Q[0]                           dffe                   1                      spvPosEdge.sig_dly            Derived clock on input (not legal for GCC)                       
+==========================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+

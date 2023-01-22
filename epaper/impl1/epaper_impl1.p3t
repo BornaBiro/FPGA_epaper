@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "epaper_impl1.log"
+-o "epaper_impl1.csv"
+-pr "epaper_impl1.prf"
