@@ -17,14 +17,14 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>clockDivider|out_derived_clock</data>
 <data>200.0 MHz</data>
-<data>269.7 MHz</data>
-<data>2.586</data>
+<data>296.9 MHz</data>
+<data>3.264</data>
 </row>
 <row>
 <data>pll|CLKOP_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>668.9 MHz</data>
-<data>3.505</data>
+<data>653.2 MHz</data>
+<data>3.469</data>
 </row>
 <row>
 <data>System</data>

@@ -5,45 +5,45 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1674343152"/>
-            <Task name="Promgen" build_result="0" update_result="2" update_time="1674343152"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1677883611"/>
+            <Task name="Promgen" build_result="0" update_result="2" update_time="1677883611"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1674343130">
-            <Task name="Map" build_result="2" update_result="0" update_time="1674343130"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1674343131"/>
-            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1674343130"/>
-            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1674343130"/>
+        <Milestone name="Map" build_result="2" build_time="1677883583">
+            <Task name="Map" build_result="2" update_result="0" update_time="1677883583"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1677883585"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1677883583"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1677883583"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1674343145">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1674343145"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1674343147"/>
-            <Task name="IOTiming" build_result="0" update_result="2" update_time="1674343145"/>
+        <Milestone name="PAR" build_result="2" build_time="1677883604">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1677883604"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1677883607"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1677883604"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1674343126">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1674343126"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1677883580">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1677883580"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1674343115"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1674343115"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1677883566"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1677883566"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1674343127">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1674343127"/>
+        <Milestone name="Translate" build_result="2" build_time="1677883580">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1677883580"/>
         </Milestone>
         <Report name=".vdbs/epaper_impl1_map.vdb" last_build_time="1674079979" last_build_size="48339"/>
-        <Report name="epaper_impl1.bgn" last_build_time="1674343152" last_build_size="4452"/>
-        <Report name="epaper_impl1.bit" last_build_time="1674343152" last_build_size="103982"/>
-        <Report name="epaper_impl1.edi" last_build_time="1674343125" last_build_size="233579"/>
+        <Report name="epaper_impl1.bgn" last_build_time="1677883611" last_build_size="4452"/>
+        <Report name="epaper_impl1.bit" last_build_time="1677883611" last_build_size="103710"/>
+        <Report name="epaper_impl1.edi" last_build_time="1677883579" last_build_size="230707"/>
         <Report name="epaper_impl1.ior" last_build_time="1674077901" last_build_size="2754"/>
         <Report name="epaper_impl1.lsedata" last_build_time="1674079975" last_build_size="268142"/>
         <Report name="epaper_impl1.mcs" last_build_time="1674077908" last_build_size="294222"/>
-        <Report name="epaper_impl1.ncd" last_build_time="1674343145" last_build_size="301433"/>
-        <Report name="epaper_impl1.ngd" last_build_time="1674343127" last_build_size="215156"/>
-        <Report name="epaper_impl1.tw1" last_build_time="1674343131" last_build_size="17544"/>
-        <Report name="epaper_impl1.twr" last_build_time="1674343147" last_build_size="98451"/>
-        <Report name="epaper_impl1_map.ncd" last_build_time="1674343129" last_build_size="215613"/>
+        <Report name="epaper_impl1.ncd" last_build_time="1677883604" last_build_size="298728"/>
+        <Report name="epaper_impl1.ngd" last_build_time="1677883580" last_build_size="212457"/>
+        <Report name="epaper_impl1.tw1" last_build_time="1677883585" last_build_size="17443"/>
+        <Report name="epaper_impl1.twr" last_build_time="1677883606" last_build_size="73062"/>
+        <Report name="epaper_impl1_map.ncd" last_build_time="1677883583" last_build_size="212441"/>
         <Report name="epaper_impl1_mapvho.sdf" last_build_time="1674077813" last_build_size="340830"/>
         <Report name="epaper_impl1_mapvho.vho" last_build_time="1674077813" last_build_size="234741"/>
         <Report name="epaper_impl1_mapvo.sdf" last_build_time="1674077811" last_build_size="340557"/>

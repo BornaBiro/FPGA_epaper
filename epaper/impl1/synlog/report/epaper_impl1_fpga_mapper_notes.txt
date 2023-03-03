@@ -7,7 +7,7 @@
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_4 (in view: work.top(verilog)) on net led[4] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_5 (in view: work.top(verilog)) on net led[3] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_6 (in view: work.top(verilog)) on net led[1] (in view: work.top(verilog)) has its enable tied to GND.
-@N: FX214 :"e:\projects\fpga\learning\epaper\epaperdriver.v":116:21:116:36|Generating ROM myCtrlModule.dataLines_1[7:0] (in view: work.top(verilog)).
+@N: FX214 :"e:\projects\fpga\learning\epaper\epaperdriver.v":137:21:137:36|Generating ROM myCtrlModule.dataLines_1[7:0] (in view: work.top(verilog)).
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_1_.un1[0] (in view: work.top(verilog)) on net led[1] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_3_.un1[0] (in view: work.top(verilog)) on net led[3] (in view: work.top(verilog)) has its enable tied to GND.

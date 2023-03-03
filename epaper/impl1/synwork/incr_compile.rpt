@@ -16,17 +16,33 @@ Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-6        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-01-22 00:17:12, 2023-01-22 00:18:35)
+10       E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 3
+Modules that may have changed as a result of file changes: 11
 MID:  lib.cell.view
+0        work.ckvModule.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (module definition)
 1        work.clockDivider.verilog may have changed because the following files changed:
-                        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-01-22 00:17:12, 2023-01-22 00:18:35) <-- (module definition)
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (may instantiate this module)
 2        work.clockGenerator.verilog may have changed because the following files changed:
-                        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-01-22 00:17:12, 2023-01-22 00:18:35) <-- (module definition)
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (may instantiate this module)
+8        work.dataModule.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (module definition)
+6        work.latchModule.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (module definition)
+9        work.mainEpaperModule.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (module definition)
+3        work.pll.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (may instantiate this module)
 10       work.posEdgeDet.verilog may have changed because the following files changed:
-                        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-01-22 00:17:12, 2023-01-22 00:18:35) <-- (module definition)
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (may instantiate this module)
+7        work.sphModule.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (module definition)
+5        work.spvModule.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (module definition)
+4        work.top.verilog may have changed because the following files changed:
+                        E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-03-03 23:44:25, 2023-03-03 23:46:06) <-- (may instantiate this module)
 
 *******************************************************************
 Unmodified files: 10
@@ -37,19 +53,11 @@ FID:  path (timestamp)
 3        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\vlog\scemi_objects.v (2020-10-29 09:23:10)
 4        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh (2020-10-29 09:23:10)
 5        C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 09:23:10)
-10       E:\Projects\FPGA\Learning\epaper\epaperDriver.v (2023-01-22 00:17:08)
+6        E:\Projects\FPGA\Learning\epaper\clocks.v (2023-03-03 23:24:08)
 7        E:\Projects\FPGA\Learning\epaper\pll\pll.v (2023-01-10 21:21:34)
 8        E:\Projects\FPGA\Learning\epaper\topModule.v (2023-01-21 22:33:00)
 11       E:\Projects\FPGA\Learning\epaper\waveformFile.txt (2023-01-21 23:57:31)
 
 *******************************************************************
-Unchanged modules: 8
+Unchanged modules: 0
 MID:  lib.cell.view
-0        work.ckvModule.verilog
-8        work.dataModule.verilog
-6        work.latchModule.verilog
-9        work.mainEpaperModule.verilog
-3        work.pll.verilog
-7        work.sphModule.verilog
-5        work.spvModule.verilog
-4        work.top.verilog

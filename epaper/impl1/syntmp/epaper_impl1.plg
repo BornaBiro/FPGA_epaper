@@ -1,20 +1,20 @@
-@P:  Worst Slack : 2.586
-@P:  clockDivider|out_derived_clock - Estimated Frequency : 269.7 MHz
+@P:  Worst Slack : 3.264
+@P:  clockDivider|out_derived_clock - Estimated Frequency : 296.9 MHz
 @P:  clockDivider|out_derived_clock - Requested Frequency : 200.0 MHz
-@P:  clockDivider|out_derived_clock - Estimated Period : 3.707
+@P:  clockDivider|out_derived_clock - Estimated Period : 3.368
 @P:  clockDivider|out_derived_clock - Requested Period : 5.000
-@P:  clockDivider|out_derived_clock - Slack : 2.586
-@P:  pll|CLKOP_inferred_clock - Estimated Frequency : 668.9 MHz
+@P:  clockDivider|out_derived_clock - Slack : 3.264
+@P:  pll|CLKOP_inferred_clock - Estimated Frequency : 653.2 MHz
 @P:  pll|CLKOP_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  pll|CLKOP_inferred_clock - Estimated Period : 1.495
+@P:  pll|CLKOP_inferred_clock - Estimated Period : 1.531
 @P:  pll|CLKOP_inferred_clock - Requested Period : 5.000
-@P:  pll|CLKOP_inferred_clock - Slack : 3.505
+@P:  pll|CLKOP_inferred_clock - Slack : 3.469
 @P:  System - Estimated Frequency : NA
 @P:  System - Requested Frequency : 200.0 MHz
 @P:  System - Estimated Period : 0.000
 @P:  System - Requested Period : 5.000
 @P:  System - Slack : 5.000
-@P:  Total Area : 126.0
+@P:  Total Area : 122.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0

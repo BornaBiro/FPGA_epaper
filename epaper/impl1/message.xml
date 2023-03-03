@@ -2988,12 +2988,12 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG532 :&quot;E:\Projects\FPGA\Learning\epaper\epaperDriver.v&quot;:84:1:84:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur</Dynamic>
+            <Dynamic>CG532 :&quot;E:\Projects\FPGA\Learning\epaper\epaperDriver.v&quot;:105:1:105:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur</Dynamic>
             <Navigation>CG532</Navigation>
             <Navigation>E:\Projects\FPGA\Learning\epaper\epaperDriver.v</Navigation>
-            <Navigation>84</Navigation>
+            <Navigation>105</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>84</Navigation>
+            <Navigation>105</Navigation>
             <Navigation>7</Navigation>
             <Navigation>Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur</Navigation>
         </Message>
@@ -3024,26 +3024,26 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;E:\Projects\FPGA\Learning\epaper\epaperDriver.v&quot;:88:1:88:6|Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;E:\Projects\FPGA\Learning\epaper\epaperDriver.v&quot;:109:1:109:6|Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>E:\Projects\FPGA\Learning\epaper\epaperDriver.v</Navigation>
-            <Navigation>88</Navigation>
+            <Navigation>109</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>88</Navigation>
+            <Navigation>109</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;E:\Projects\FPGA\Learning\epaper\clocks.v&quot;:7:1:7:6|Pruning register bits 32 to 2 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;E:\Projects\FPGA\Learning\epaper\clocks.v&quot;:7:1:7:6|Pruning register bits 32 to 1 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>E:\Projects\FPGA\Learning\epaper\clocks.v</Navigation>
             <Navigation>7</Navigation>
             <Navigation>1</Navigation>
             <Navigation>7</Navigation>
             <Navigation>6</Navigation>
-            <Navigation>Pruning register bits 32 to 2 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+            <Navigation>Pruning register bits 32 to 1 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>
@@ -3055,14 +3055,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;e:\projects\fpga\learning\epaper\clocks.v&quot;:7:1:7:6|Found inferred clock pll|CLKOP_inferred_clock which controls 3 sequential elements including clckDiv.out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;e:\projects\fpga\learning\epaper\clocks.v&quot;:7:1:7:6|Found inferred clock pll|CLKOP_inferred_clock which controls 1 sequential elements including clckDiv.out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>e:\projects\fpga\learning\epaper\clocks.v</Navigation>
             <Navigation>7</Navigation>
             <Navigation>1</Navigation>
             <Navigation>7</Navigation>
             <Navigation>6</Navigation>
-            <Navigation>Found inferred clock pll|CLKOP_inferred_clock which controls 3 sequential elements including clckDiv.out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock pll|CLKOP_inferred_clock which controls 1 sequential elements including clckDiv.out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

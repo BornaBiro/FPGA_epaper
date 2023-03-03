@@ -13,7 +13,7 @@ Hostname: DESKTOP-T6QGB4V
 
 Implementation : impl1
 
-# Written on Sun Jan 22 00:18:42 2023
+# Written on Fri Mar  3 23:46:15 2023
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -33,7 +33,7 @@ Clock Summary
           Start                                Requested     Requested     Clock                                       Clock                   Clock
 Level     Clock                                Frequency     Period        Type                                        Group                   Load 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-0 -       pll|CLKOP_inferred_clock             200.0 MHz     5.000         inferred                                    Inferred_clkgroup_0     3    
+0 -       pll|CLKOP_inferred_clock             200.0 MHz     5.000         inferred                                    Inferred_clkgroup_0     1    
 1 .         clockDivider|out_derived_clock     200.0 MHz     5.000         derived (from pll|CLKOP_inferred_clock)     Inferred_clkgroup_0     145  
 ====================================================================================================================================================
 
@@ -41,9 +41,9 @@ Level     Clock                                Frequency     Period        Type 
 Clock Load Summary
 ******************
 
-                                   Clock     Source                             Clock Pin                  Non-clock Pin     Non-clock Pin            
-Clock                              Load      Pin                                Seq Example                Seq Example       Comb Example             
-------------------------------------------------------------------------------------------------------------------------------------------------------
-pll|CLKOP_inferred_clock           3         myPll.PLLInst_0.CLKOP(EHXPLLL)     clckDiv.counter[1:0].C     -                 -                        
-clockDivider|out_derived_clock     145       clckDiv.out.Q[0](dffe)             mySphModule.sph.C          -                 mySphModule.I_1.I[0](inv)
-======================================================================================================================================================
+                                   Clock     Source                             Clock Pin             Non-clock Pin     Non-clock Pin            
+Clock                              Load      Pin                                Seq Example           Seq Example       Comb Example             
+-------------------------------------------------------------------------------------------------------------------------------------------------
+pll|CLKOP_inferred_clock           1         myPll.PLLInst_0.CLKOP(EHXPLLL)     clckDiv.out.C         -                 -                        
+clockDivider|out_derived_clock     145       clckDiv.out.Q[0](dff)              mySphModule.sph.C     -                 mySphModule.I_1.I[0](inv)
+=================================================================================================================================================

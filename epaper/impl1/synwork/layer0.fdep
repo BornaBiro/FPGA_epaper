@@ -7,10 +7,10 @@
 #CUR:"C:\\Program Files (x86)\\Lattice\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_objects.v":1603959790
 #CUR:"C:\\Program Files (x86)\\Lattice\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1603959790
 #CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\topModule.v":1674336780
-#CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\epaperDriver.v":1674343028
-#CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\clocks.v":1674343115
+#CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\epaperDriver.v":1677883566
+#CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\clocks.v":1677882248
 #CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\pll\\pll.v":1673382094
-#CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\epaperDriver.v":1674343028
+#CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\epaperDriver.v":1677883566
 #CUR:"E:\\Projects\\FPGA\\Learning\\epaper\\waveformFile.txt":1674341851
 #numinternalfiles:6
 #defaultlanguage:verilog

@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 Report for cell top.verilog
 
-Register bits: 148 of 12096 (1%)
+Register bits: 146 of 12096 (1%)
 PIC Latch:       0
 I/O cells:       23
                                           Cell usage:
@@ -11,7 +11,6 @@ I/O cells:       23
                             FD1P3AX        7       100.0
                             FD1P3JX        1       100.0
                             FD1S3AX      135       100.0
-                            FD1S3IX        2       100.0
                                 GSR        1       100.0
                                  IB        2       100.0
                                 INV        3       100.0
@@ -19,7 +18,7 @@ I/O cells:       23
                                 OBZ        6       100.0
                            OFS1P3IX        1       100.0
                            OFS1P3JX        2       100.0
-                           ORCALUT4      123       100.0
+                           ORCALUT4      119       100.0
                                 PUR        1       100.0
                            ROM32X1A        8       100.0
                            ROM64X1A        8       100.0
@@ -35,7 +34,7 @@ SUB MODULES
                           sphModule        1       100.0
                           spvModule        1       100.0
                             
-                         TOTAL           407           
+                         TOTAL           401           
 ----------------------------------------------------------------------
 Report for cell sphModule.netlist
      Instance path:  mySphModule
@@ -43,10 +42,10 @@ Report for cell sphModule.netlist
                                cell       count    Res Usage(%)
                               CCU2C       17        23.3
                             FD1S3AX       33        24.4
-                           ORCALUT4       23        18.7
+                           ORCALUT4       25        21.0
                                 VHI        1        12.5
                             
-                         TOTAL            74           
+                         TOTAL            76           
 ----------------------------------------------------------------------
 Report for cell latchModule.netlist
      Instance path:  myLeModule
@@ -54,10 +53,10 @@ Report for cell latchModule.netlist
                                cell       count    Res Usage(%)
                               CCU2C       17        23.3
                             FD1S3AX       33        24.4
-                           ORCALUT4       25        20.3
+                           ORCALUT4       21        17.6
                                 VHI        1        12.5
                             
-                         TOTAL            76           
+                         TOTAL            72           
 ----------------------------------------------------------------------
 Report for cell spvModule.netlist
      Instance path:  mySpvModule
@@ -67,10 +66,10 @@ Report for cell spvModule.netlist
                             FD1P3JX        1       100.0
                             FD1S3AX       33        24.4
                                 INV        1        33.3
-                           ORCALUT4       29        23.6
+                           ORCALUT4       30        25.2
                                 VHI        1        12.5
                             
-                         TOTAL            82           
+                         TOTAL            83           
 ----------------------------------------------------------------------
 Report for cell ckvModule.netlist
      Instance path:  myCkvModule
@@ -79,10 +78,10 @@ Report for cell ckvModule.netlist
                               CCU2C       17        23.3
                             FD1S3AX       33        24.4
                                 INV        1        33.3
-                           ORCALUT4       22        17.9
+                           ORCALUT4       21        17.6
                                 VHI        1        12.5
                             
-                         TOTAL            74           
+                         TOTAL            73           
 ----------------------------------------------------------------------
 Report for cell mainEpaperModule.netlist
      Instance path:  myCtrlModule
@@ -91,7 +90,7 @@ Report for cell mainEpaperModule.netlist
                               CCU2C        5         6.8
                             FD1P3AX        7       100.0
                             FD1S3AX        1         0.7
-                           ORCALUT4       21        17.1
+                           ORCALUT4       21        17.6
                            ROM32X1A        8       100.0
                            ROM64X1A        8       100.0
                                 VHI        1        12.5
@@ -113,12 +112,10 @@ Report for cell clockDivider.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1S3AX        1         0.7
-                            FD1S3IX        2       100.0
                                 INV        1        33.3
-                           ORCALUT4        2         1.6
                                 VHI        1        12.5
                             
-                         TOTAL             7           
+                         TOTAL             3           
 ----------------------------------------------------------------------
 Report for cell pll.netlist
      Instance path:  myPll

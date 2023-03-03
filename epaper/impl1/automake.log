@@ -10,7 +10,7 @@ Lattice Diamond Version 3.12.0.240.2
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-T6QGB4V
 
-# Sun Jan 22 00:18:38 2023
+# Fri Mar  3 23:46:11 2023
 
 #Implementation: impl1
 
@@ -60,7 +60,8 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"E:\Projects\FPGA\Learning\epaper\clocks.v" (library work)
 @I::"E:\Projects\FPGA\Learning\epaper\pll\pll.v" (library work)
 Verilog syntax check successful!
-File E:\Projects\FPGA\Learning\epaper\clocks.v changed - recompiling
+File E:\Projects\FPGA\Learning\epaper\epaperDriver.v changed - recompiling
+File E:\Projects\FPGA\Learning\epaper\epaperDriver.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v":278:7:278:8|Synthesizing module IB in library work.
 Running optimization stage 1 on IB .......
@@ -77,17 +78,17 @@ Running optimization stage 1 on pll .......
 Running optimization stage 1 on clockDivider .......
 @N: CG364 :"E:\Projects\FPGA\Learning\epaper\clocks.v":34:7:34:16|Synthesizing module posEdgeDet in library work.
 Running optimization stage 1 on posEdgeDet .......
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":79:7:79:22|Synthesizing module mainEpaperModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":100:7:100:22|Synthesizing module mainEpaperModule in library work.
 Opening data file waveformFile.txt from directory E:\Projects\FPGA\Learning\epaper
-@W: CG532 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":84:1:84:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur
+@W: CG532 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":105:1:105:7|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur
 Running optimization stage 1 on mainEpaperModule .......
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":4:7:4:15|Synthesizing module ckvModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":25:7:25:15|Synthesizing module ckvModule in library work.
 Running optimization stage 1 on ckvModule .......
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":22:7:22:15|Synthesizing module spvModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":43:7:43:15|Synthesizing module spvModule in library work.
 Running optimization stage 1 on spvModule .......
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":39:7:39:17|Synthesizing module latchModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":60:7:60:17|Synthesizing module latchModule in library work.
 Running optimization stage 1 on latchModule .......
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":54:7:54:15|Synthesizing module sphModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":75:7:75:15|Synthesizing module sphModule in library work.
 Running optimization stage 1 on sphModule .......
 @N: CG364 :"E:\Projects\FPGA\Learning\epaper\topModule.v":19:7:19:9|Synthesizing module top in library work.
 @W: CG360 :"E:\Projects\FPGA\Learning\epaper\topModule.v":23:12:23:26|Removing wire epaperDataWires, as there is no assignment to it.
@@ -96,52 +97,22 @@ Running optimization stage 2 on top .......
 @W: CL247 :"E:\Projects\FPGA\Learning\epaper\topModule.v":19:40:19:42|Input port bit 3 of btn[4:3] is unused
 
 Running optimization stage 2 on sphModule .......
-@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":54:36:54:40|Input reset is unused.
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":75:36:75:40|Input reset is unused.
 Running optimization stage 2 on latchModule .......
-@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":39:38:39:42|Input reset is unused.
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":60:38:60:42|Input reset is unused.
 Running optimization stage 2 on spvModule .......
-@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":22:36:22:40|Input reset is unused.
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":43:36:43:40|Input reset is unused.
 Running optimization stage 2 on ckvModule .......
-@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":4:36:4:40|Input reset is unused.
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":25:36:25:40|Input reset is unused.
 Running optimization stage 2 on mainEpaperModule .......
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[7] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[8] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[9] is always 0.
-@W: CL279 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":109:1:109:6|Register bit frame[7] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":109:1:109:6|Register bit frame[8] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":109:1:109:6|Register bit frame[9] is always 0.
+@W: CL279 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":109:1:109:6|Pruning register bits 9 to 7 of frame[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Running optimization stage 2 on posEdgeDet .......
 Running optimization stage 2 on clockDivider .......
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[2] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[3] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[4] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[5] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[6] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[7] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[8] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[9] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[10] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[11] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[12] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[13] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[14] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[15] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[16] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[17] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[18] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[19] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[20] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[21] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[22] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[23] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[24] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[25] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[26] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[27] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[28] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[29] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[30] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[31] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[32] is always 0.
-@W: CL279 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Pruning register bits 32 to 2 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Pruning register bits 32 to 1 of counter[32:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[0] is always 0.
 Running optimization stage 2 on pll .......
 Running optimization stage 2 on EHXPLLL .......
 Running optimization stage 2 on VLO .......
@@ -158,7 +129,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jan 22 00:18:40 2023
+# Fri Mar  3 23:46:13 2023
 
 ###########################################################]
 ###########################################################[
@@ -186,7 +157,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jan 22 00:18:40 2023
+# Fri Mar  3 23:46:13 2023
 
 ###########################################################]
 
@@ -201,7 +172,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jan 22 00:18:40 2023
+# Fri Mar  3 23:46:13 2023
 
 ###########################################################]
 ###########################################################[
@@ -229,10 +200,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jan 22 00:18:41 2023
+# Fri Mar  3 23:46:14 2023
 
 ###########################################################]
-# Sun Jan 22 00:18:41 2023
+# Fri Mar  3 23:46:14 2023
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -260,7 +231,7 @@ See clock summary report "E:\Projects\FPGA\Learning\epaper\impl1\epaper_impl1_sc
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 128MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 128MB)
 
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 128MB)
@@ -303,7 +274,7 @@ Clock Summary
           Start                                Requested     Requested     Clock                                       Clock                   Clock
 Level     Clock                                Frequency     Period        Type                                        Group                   Load 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-0 -       pll|CLKOP_inferred_clock             200.0 MHz     5.000         inferred                                    Inferred_clkgroup_0     3    
+0 -       pll|CLKOP_inferred_clock             200.0 MHz     5.000         inferred                                    Inferred_clkgroup_0     1    
 1 .         clockDivider|out_derived_clock     200.0 MHz     5.000         derived (from pll|CLKOP_inferred_clock)     Inferred_clkgroup_0     145  
 ====================================================================================================================================================
 
@@ -312,14 +283,14 @@ Level     Clock                                Frequency     Period        Type 
 Clock Load Summary
 ***********************
 
-                                   Clock     Source                             Clock Pin                  Non-clock Pin     Non-clock Pin            
-Clock                              Load      Pin                                Seq Example                Seq Example       Comb Example             
-------------------------------------------------------------------------------------------------------------------------------------------------------
-pll|CLKOP_inferred_clock           3         myPll.PLLInst_0.CLKOP(EHXPLLL)     clckDiv.counter[1:0].C     -                 -                        
-clockDivider|out_derived_clock     145       clckDiv.out.Q[0](dffe)             mySphModule.sph.C          -                 mySphModule.I_1.I[0](inv)
-======================================================================================================================================================
+                                   Clock     Source                             Clock Pin             Non-clock Pin     Non-clock Pin            
+Clock                              Load      Pin                                Seq Example           Seq Example       Comb Example             
+-------------------------------------------------------------------------------------------------------------------------------------------------
+pll|CLKOP_inferred_clock           1         myPll.PLLInst_0.CLKOP(EHXPLLL)     clckDiv.out.C         -                 -                        
+clockDivider|out_derived_clock     145       clckDiv.out.Q[0](dff)              mySphModule.sph.C     -                 mySphModule.I_1.I[0](inv)
+=================================================================================================================================================
 
-@W: MT529 :"e:\projects\fpga\learning\epaper\clocks.v":7:1:7:6|Found inferred clock pll|CLKOP_inferred_clock which controls 3 sequential elements including clckDiv.out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\projects\fpga\learning\epaper\clocks.v":7:1:7:6|Found inferred clock pll|CLKOP_inferred_clock which controls 1 sequential elements including clckDiv.out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -332,19 +303,19 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 3 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
 1 gated/generated clock tree(s) driving 145 clock pin(s) of sequential element(s)
 0 instances converted, 145 sequential instances remain driven by gated/generated clocks
 
 ============================== Non-Gated/Non-Generated Clocks ===============================
 Clock Tree ID     Driving Element           Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------------
-@KP:ckid0_3       myPll.PLLInst_0.CLKOP     EHXPLLL                3          clckDiv.out    
+@KP:ckid0_3       myPll.PLLInst_0.CLKOP     EHXPLLL                1          clckDiv.out    
 =============================================================================================
 ================================================================= Gated/Generated Clocks =================================================================
 Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout     Sample Instance            Explanation                               
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       clckDiv.out.Q[0]     dffe                   145                    myCtrlModule.startFlag     Derived clock on input (not legal for GCC)
+@KP:ckid0_1       clckDiv.out.Q[0]     dff                    145                    myCtrlModule.startFlag     Derived clock on input (not legal for GCC)
 ==========================================================================================================================================================
 
 
@@ -353,7 +324,7 @@ Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
 
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
@@ -363,13 +334,13 @@ Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 87MB peak: 173MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 88MB peak: 173MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Jan 22 00:18:43 2023
+# Fri Mar  3 23:46:16 2023
 
 ###########################################################]
-# Sun Jan 22 00:18:43 2023
+# Fri Mar  3 23:46:16 2023
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -407,7 +378,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 167MB peak: 167MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 166MB)
 
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_1 (in view: work.top(verilog)) on net led[7] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_2 (in view: work.top(verilog)) on net led[6] (in view: work.top(verilog)) has its enable tied to GND.
@@ -420,67 +391,67 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 170MB)
 
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
-@N: FX214 :"e:\projects\fpga\learning\epaper\epaperdriver.v":116:21:116:36|Generating ROM myCtrlModule.dataLines_1[7:0] (in view: work.top(verilog)).
+@N: FX214 :"e:\projects\fpga\learning\epaper\epaperdriver.v":137:21:137:36|Generating ROM myCtrlModule.dataLines_1[7:0] (in view: work.top(verilog)).
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 181MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		     3.72ns		 126 /       148
+   1		0h:00m:01s		     3.72ns		 122 /       146
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 182MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_1_.un1[0] (in view: work.top(verilog)) on net led[1] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_3_.un1[0] (in view: work.top(verilog)) on net led[3] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_4_.un1[0] (in view: work.top(verilog)) on net led[4] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"e:\projects\fpga\learning\epaper\topmodule.v":19:74:19:76|Tristate driver led_obuft_5_.un1[0] (in view: work.top(verilog)) on net led[5] (in view: work.top(verilog)) has its enable tied to GND.
-@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":57:1:57:6|Boundary register mySphModule.sph.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":42:1:42:6|Boundary register myLeModule.le.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":25:1:25:6|Boundary register mySpvModule.spv.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":7:1:7:6|Boundary register myCkvModule.ckv.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":78:1:78:6|Boundary register mySphModule.sph.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":63:1:63:6|Boundary register myLeModule.le.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":46:1:46:6|Boundary register mySpvModule.spv.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\projects\fpga\learning\epaper\epaperdriver.v":28:1:28:6|Boundary register myCkvModule.ckv.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 182MB peak: 182MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 180MB peak: 180MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 182MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 181MB)
 
 Writing Analyst data base E:\Projects\FPGA\Learning\epaper\impl1\synwork\epaper_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 182MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 180MB peak: 181MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: E:\Projects\FPGA\Learning\epaper\impl1\epaper_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 186MB peak: 186MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 185MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 186MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 184MB peak: 185MB)
 
 @W: MT246 :"e:\projects\fpga\learning\epaper\pll\pll.v":58:12:58:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock pll|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net myPll.clk_100mhz.
@@ -488,7 +459,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sun Jan 22 00:18:46 2023
+# Timing report written on Fri Mar  3 23:46:19 2023
 #
 
 
@@ -507,14 +478,14 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 2.586
+Worst slack in design: 3.264
 
 @N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
                                    Requested     Estimated     Requested     Estimated               Clock                                       Clock              
 Starting Clock                     Frequency     Frequency     Period        Period        Slack     Type                                        Group              
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-clockDivider|out_derived_clock     200.0 MHz     269.7 MHz     5.000         3.707         2.586     derived (from pll|CLKOP_inferred_clock)     Inferred_clkgroup_0
-pll|CLKOP_inferred_clock           200.0 MHz     668.9 MHz     5.000         1.495         3.505     inferred                                    Inferred_clkgroup_0
+clockDivider|out_derived_clock     200.0 MHz     296.9 MHz     5.000         3.368         3.264     derived (from pll|CLKOP_inferred_clock)     Inferred_clkgroup_0
+pll|CLKOP_inferred_clock           200.0 MHz     653.2 MHz     5.000         1.531         3.469     inferred                                    Inferred_clkgroup_0
 System                             200.0 MHz     NA            5.000         0.000         5.000     system                                      system_clkgroup    
 ====================================================================================================================================================================
 Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
@@ -531,8 +502,8 @@ Clocks                                                          |    rise  to  r
 Starting                        Ending                          |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 System                          System                          |  5.000       5.000  |  No paths    -      |  No paths    -      |  No paths    -    
-pll|CLKOP_inferred_clock        pll|CLKOP_inferred_clock        |  5.000       3.505  |  No paths    -      |  No paths    -      |  No paths    -    
-clockDivider|out_derived_clock  clockDivider|out_derived_clock  |  5.000       4.832  |  5.000       2.586  |  No paths    -      |  2.500       4.673
+pll|CLKOP_inferred_clock        pll|CLKOP_inferred_clock        |  5.000       3.469  |  No paths    -      |  No paths    -      |  No paths    -    
+clockDivider|out_derived_clock  clockDivider|out_derived_clock  |  5.000       4.832  |  5.000       3.264  |  No paths    -      |  2.500       4.673
 ======================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -555,41 +526,41 @@ Detailed Report for Clock: clockDivider|out_derived_clock
 Starting Points with Worst Slack
 ********************************
 
-                            Starting                                                               Arrival          
-Instance                    Reference                          Type        Pin     Net             Time        Slack
-                            Clock                                                                                   
---------------------------------------------------------------------------------------------------------------------
-mySphModule.counter[9]      clockDivider|out_derived_clock     FD1S3AX     Q       counter[9]      0.907       2.586
-mySphModule.counter[10]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[10]     0.907       2.586
-mySphModule.counter[12]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[12]     0.907       2.586
-mySphModule.counter[13]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[13]     0.907       2.586
-mySphModule.counter[14]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[14]     0.907       2.586
-mySphModule.counter[15]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[15]     0.907       2.586
-mySphModule.counter[20]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[20]     0.907       2.586
-mySphModule.counter[21]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[21]     0.907       2.586
-mySphModule.counter[24]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[24]     0.907       2.586
-mySphModule.counter[25]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[25]     0.907       2.586
-====================================================================================================================
+                           Starting                                                               Arrival          
+Instance                   Reference                          Type        Pin     Net             Time        Slack
+                           Clock                                                                                   
+-------------------------------------------------------------------------------------------------------------------
+myLeModule.counter[5]      clockDivider|out_derived_clock     FD1S3AX     Q       counter[5]      0.907       3.264
+myLeModule.counter[7]      clockDivider|out_derived_clock     FD1S3AX     Q       counter[7]      0.907       3.264
+myLeModule.counter[9]      clockDivider|out_derived_clock     FD1S3AX     Q       counter[9]      0.907       3.264
+myLeModule.counter[12]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[12]     0.907       3.264
+myLeModule.counter[13]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[13]     0.907       3.264
+myLeModule.counter[14]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[14]     0.907       3.264
+myLeModule.counter[15]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[15]     0.907       3.264
+myLeModule.counter[24]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[24]     0.907       3.264
+myLeModule.counter[25]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[25]     0.907       3.264
+myLeModule.counter[26]     clockDivider|out_derived_clock     FD1S3AX     Q       counter[26]     0.907       3.264
+===================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                            Starting                                                                             Required          
-Instance                    Reference                          Type        Pin     Net                           Time         Slack
-                            Clock                                                                                                  
------------------------------------------------------------------------------------------------------------------------------------
-mySphModule.counter[31]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_31_0_S0_0     9.946        2.586
-mySphModule.counter[32]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_31_0_S1_0     9.946        2.586
-mySphModule.counter[29]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_29_0_S0_0     9.946        2.647
-mySphModule.counter[30]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_29_0_S1_0     9.946        2.647
-mySphModule.counter[27]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_27_0_S0_0     9.946        2.708
-mySphModule.counter[28]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_27_0_S1_0     9.946        2.708
-mySphModule.counter[25]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_25_0_S0_0     9.946        2.768
-mySphModule.counter[26]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_25_0_S1_0     9.946        2.768
-mySphModule.counter[23]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_23_0_S0_0     9.946        2.829
-mySphModule.counter[24]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_23_0_S1_0     9.946        2.829
-===================================================================================================================================
+                           Starting                                                                           Required          
+Instance                   Reference                          Type        Pin     Net                         Time         Slack
+                           Clock                                                                                                
+--------------------------------------------------------------------------------------------------------------------------------
+myLeModule.counter[31]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_31_0_S0     9.946        3.264
+myLeModule.counter[32]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_31_0_S1     9.946        3.264
+myLeModule.counter[29]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_29_0_S0     9.946        3.325
+myLeModule.counter[30]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_29_0_S1     9.946        3.325
+myLeModule.counter[27]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_27_0_S0     9.946        3.385
+myLeModule.counter[28]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_27_0_S1     9.946        3.385
+myLeModule.counter[25]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_25_0_S0     9.946        3.446
+myLeModule.counter[26]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_25_0_S1     9.946        3.446
+myLeModule.counter[23]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_23_0_S0     9.946        3.507
+myLeModule.counter[24]     clockDivider|out_derived_clock     FD1S3AX     D       un6_counter_cry_23_0_S1     9.946        3.507
+================================================================================================================================
 
 
 
@@ -603,90 +574,87 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.946
 
-    - Propagation time:                      7.361
+    - Propagation time:                      6.683
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     2.585
+    = Slack (critical) :                     3.263
 
-    Number of logic level(s):                22
-    Starting point:                          mySphModule.counter[9] / Q
-    Ending point:                            mySphModule.counter[32] / D
+    Number of logic level(s):                21
+    Starting point:                          myLeModule.counter[5] / Q
+    Ending point:                            myLeModule.counter[32] / D
     The start point is clocked by            clockDivider|out_derived_clock [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            clockDivider|out_derived_clock [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
     -Timing constraint applied as multi cycle path with factor 2 (from c:clockDivider|out_derived_clock to c:clockDivider|out_derived_clock)
 
-Instance / Net                                    Pin      Pin               Arrival     No. of    
-Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------
-mySphModule.counter[9]               FD1S3AX      Q        Out     0.907     0.907 r     -         
-counter[9]                           Net          -        -       -         -           2         
-mySphModule.sph_1_sqmuxa_i_a2_17     ORCALUT4     A        In      0.000     0.907 r     -         
-mySphModule.sph_1_sqmuxa_i_a2_17     ORCALUT4     Z        Out     0.606     1.513 f     -         
-sph_1_sqmuxa_i_a2_17                 Net          -        -       -         -           1         
-mySphModule.sph_1_sqmuxa_i_a2_21     ORCALUT4     D        In      0.000     1.513 f     -         
-mySphModule.sph_1_sqmuxa_i_a2_21     ORCALUT4     Z        Out     0.606     2.119 f     -         
-sph_1_sqmuxa_i_a2_21                 Net          -        -       -         -           1         
-mySphModule.sph_1_sqmuxa_i_a2        ORCALUT4     D        In      0.000     2.119 f     -         
-mySphModule.sph_1_sqmuxa_i_a2        ORCALUT4     Z        Out     0.660     2.779 f     -         
-N_36                                 Net          -        -       -         -           2         
-mySphModule.sph4_0_a2                ORCALUT4     A        In      0.000     2.779 f     -         
-mySphModule.sph4_0_a2                ORCALUT4     Z        Out     0.708     3.487 f     -         
-N_38                                 Net          -        -       -         -           3         
-mySphModule.counter_2_i_a2[7]        ORCALUT4     A        In      0.000     3.487 f     -         
-mySphModule.counter_2_i_a2[7]        ORCALUT4     Z        Out     0.762     4.249 f     -         
-N_39                                 Net          -        -       -         -           5         
-mySphModule.counter_2_i_a2[2]        ORCALUT4     A        In      0.000     4.249 f     -         
-mySphModule.counter_2_i_a2[2]        ORCALUT4     Z        Out     0.660     4.909 f     -         
-N_43                                 Net          -        -       -         -           2         
-mySphModule.un6_counter_cry_1_0      CCU2C        B1       In      0.000     4.909 f     -         
-mySphModule.un6_counter_cry_1_0      CCU2C        COUT     Out     0.900     5.809 r     -         
-un6_counter_cry_2                    Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_3_0      CCU2C        CIN      In      0.000     5.809 r     -         
-mySphModule.un6_counter_cry_3_0      CCU2C        COUT     Out     0.061     5.870 r     -         
-un6_counter_cry_4                    Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_5_0      CCU2C        CIN      In      0.000     5.870 r     -         
-mySphModule.un6_counter_cry_5_0      CCU2C        COUT     Out     0.061     5.931 r     -         
-un6_counter_cry_6                    Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_7_0      CCU2C        CIN      In      0.000     5.931 r     -         
-mySphModule.un6_counter_cry_7_0      CCU2C        COUT     Out     0.061     5.992 r     -         
-un6_counter_cry_8                    Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_9_0      CCU2C        CIN      In      0.000     5.992 r     -         
-mySphModule.un6_counter_cry_9_0      CCU2C        COUT     Out     0.061     6.053 r     -         
-un6_counter_cry_10                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_11_0     CCU2C        CIN      In      0.000     6.053 r     -         
-mySphModule.un6_counter_cry_11_0     CCU2C        COUT     Out     0.061     6.114 r     -         
-un6_counter_cry_12                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_13_0     CCU2C        CIN      In      0.000     6.114 r     -         
-mySphModule.un6_counter_cry_13_0     CCU2C        COUT     Out     0.061     6.175 r     -         
-un6_counter_cry_14                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_15_0     CCU2C        CIN      In      0.000     6.175 r     -         
-mySphModule.un6_counter_cry_15_0     CCU2C        COUT     Out     0.061     6.236 r     -         
-un6_counter_cry_16                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_17_0     CCU2C        CIN      In      0.000     6.236 r     -         
-mySphModule.un6_counter_cry_17_0     CCU2C        COUT     Out     0.061     6.297 r     -         
-un6_counter_cry_18                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_19_0     CCU2C        CIN      In      0.000     6.297 r     -         
-mySphModule.un6_counter_cry_19_0     CCU2C        COUT     Out     0.061     6.358 r     -         
-un6_counter_cry_20                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_21_0     CCU2C        CIN      In      0.000     6.358 r     -         
-mySphModule.un6_counter_cry_21_0     CCU2C        COUT     Out     0.061     6.419 r     -         
-un6_counter_cry_22                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_23_0     CCU2C        CIN      In      0.000     6.419 r     -         
-mySphModule.un6_counter_cry_23_0     CCU2C        COUT     Out     0.061     6.480 r     -         
-un6_counter_cry_24                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_25_0     CCU2C        CIN      In      0.000     6.480 r     -         
-mySphModule.un6_counter_cry_25_0     CCU2C        COUT     Out     0.061     6.541 r     -         
-un6_counter_cry_26                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_27_0     CCU2C        CIN      In      0.000     6.541 r     -         
-mySphModule.un6_counter_cry_27_0     CCU2C        COUT     Out     0.061     6.602 r     -         
-un6_counter_cry_28                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_29_0     CCU2C        CIN      In      0.000     6.602 r     -         
-mySphModule.un6_counter_cry_29_0     CCU2C        COUT     Out     0.061     6.663 r     -         
-un6_counter_cry_30                   Net          -        -       -         -           1         
-mySphModule.un6_counter_cry_31_0     CCU2C        CIN      In      0.000     6.663 r     -         
-mySphModule.un6_counter_cry_31_0     CCU2C        S1       Out     0.698     7.361 r     -         
-un6_counter_cry_31_0_S1_0            Net          -        -       -         -           1         
-mySphModule.counter[32]              FD1S3AX      D        In      0.000     7.361 r     -         
-===================================================================================================
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+myLeModule.counter[5]               FD1S3AX      Q        Out     0.907     0.907 r     -         
+counter[5]                          Net          -        -       -         -           2         
+myLeModule.le10_0_a2_19             ORCALUT4     A        In      0.000     0.907 r     -         
+myLeModule.le10_0_a2_19             ORCALUT4     Z        Out     0.606     1.513 f     -         
+le10_0_a2_19                        Net          -        -       -         -           1         
+myLeModule.le10_0_a2_25             ORCALUT4     D        In      0.000     1.513 f     -         
+myLeModule.le10_0_a2_25             ORCALUT4     Z        Out     0.606     2.119 f     -         
+le10_0_a2_25                        Net          -        -       -         -           1         
+myLeModule.le10_0_a2                ORCALUT4     D        In      0.000     2.119 f     -         
+myLeModule.le10_0_a2                ORCALUT4     Z        Out     0.738     2.857 f     -         
+N_45                                Net          -        -       -         -           4         
+myLeModule.le16_0_a3_0_a2           ORCALUT4     A        In      0.000     2.857 f     -         
+myLeModule.le16_0_a3_0_a2           ORCALUT4     Z        Out     0.768     3.625 f     -         
+N_29                                Net          -        -       -         -           6         
+myLeModule.counter_2_i_0_a3[2]      ORCALUT4     A        In      0.000     3.625 f     -         
+myLeModule.counter_2_i_0_a3[2]      ORCALUT4     Z        Out     0.606     4.231 f     -         
+N_25                                Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_1_0      CCU2C        B1       In      0.000     4.231 f     -         
+myLeModule.un6_counter_cry_1_0      CCU2C        COUT     Out     0.900     5.131 r     -         
+un6_counter_cry_2                   Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_3_0      CCU2C        CIN      In      0.000     5.131 r     -         
+myLeModule.un6_counter_cry_3_0      CCU2C        COUT     Out     0.061     5.192 r     -         
+un6_counter_cry_4                   Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_5_0      CCU2C        CIN      In      0.000     5.192 r     -         
+myLeModule.un6_counter_cry_5_0      CCU2C        COUT     Out     0.061     5.253 r     -         
+un6_counter_cry_6                   Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_7_0      CCU2C        CIN      In      0.000     5.253 r     -         
+myLeModule.un6_counter_cry_7_0      CCU2C        COUT     Out     0.061     5.314 r     -         
+un6_counter_cry_8                   Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_9_0      CCU2C        CIN      In      0.000     5.314 r     -         
+myLeModule.un6_counter_cry_9_0      CCU2C        COUT     Out     0.061     5.375 r     -         
+un6_counter_cry_10                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_11_0     CCU2C        CIN      In      0.000     5.375 r     -         
+myLeModule.un6_counter_cry_11_0     CCU2C        COUT     Out     0.061     5.436 r     -         
+un6_counter_cry_12                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_13_0     CCU2C        CIN      In      0.000     5.436 r     -         
+myLeModule.un6_counter_cry_13_0     CCU2C        COUT     Out     0.061     5.497 r     -         
+un6_counter_cry_14                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_15_0     CCU2C        CIN      In      0.000     5.497 r     -         
+myLeModule.un6_counter_cry_15_0     CCU2C        COUT     Out     0.061     5.558 r     -         
+un6_counter_cry_16                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_17_0     CCU2C        CIN      In      0.000     5.558 r     -         
+myLeModule.un6_counter_cry_17_0     CCU2C        COUT     Out     0.061     5.619 r     -         
+un6_counter_cry_18                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_19_0     CCU2C        CIN      In      0.000     5.619 r     -         
+myLeModule.un6_counter_cry_19_0     CCU2C        COUT     Out     0.061     5.680 r     -         
+un6_counter_cry_20                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_21_0     CCU2C        CIN      In      0.000     5.680 r     -         
+myLeModule.un6_counter_cry_21_0     CCU2C        COUT     Out     0.061     5.741 r     -         
+un6_counter_cry_22                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_23_0     CCU2C        CIN      In      0.000     5.741 r     -         
+myLeModule.un6_counter_cry_23_0     CCU2C        COUT     Out     0.061     5.802 r     -         
+un6_counter_cry_24                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_25_0     CCU2C        CIN      In      0.000     5.802 r     -         
+myLeModule.un6_counter_cry_25_0     CCU2C        COUT     Out     0.061     5.863 r     -         
+un6_counter_cry_26                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_27_0     CCU2C        CIN      In      0.000     5.863 r     -         
+myLeModule.un6_counter_cry_27_0     CCU2C        COUT     Out     0.061     5.924 r     -         
+un6_counter_cry_28                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_29_0     CCU2C        CIN      In      0.000     5.924 r     -         
+myLeModule.un6_counter_cry_29_0     CCU2C        COUT     Out     0.061     5.985 r     -         
+un6_counter_cry_30                  Net          -        -       -         -           1         
+myLeModule.un6_counter_cry_31_0     CCU2C        CIN      In      0.000     5.985 r     -         
+myLeModule.un6_counter_cry_31_0     CCU2C        S1       Out     0.698     6.683 r     -         
+un6_counter_cry_31_0_S1             Net          -        -       -         -           1         
+myLeModule.counter[32]              FD1S3AX      D        In      0.000     6.683 r     -         
+==================================================================================================
 
 
 
@@ -700,29 +668,23 @@ Detailed Report for Clock: pll|CLKOP_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                       Starting                                                        Arrival          
-Instance               Reference                    Type        Pin     Net            Time        Slack
-                       Clock                                                                            
---------------------------------------------------------------------------------------------------------
-clckDiv.out            pll|CLKOP_inferred_clock     FD1S3AX     Q       out_i          1.051       3.505
-clckDiv.counter[1]     pll|CLKOP_inferred_clock     FD1S3IX     Q       counter[1]     0.985       3.571
-clckDiv.counter[0]     pll|CLKOP_inferred_clock     FD1S3IX     Q       CO0            0.907       3.613
-========================================================================================================
+                Starting                                                   Arrival          
+Instance        Reference                    Type        Pin     Net       Time        Slack
+                Clock                                                                       
+--------------------------------------------------------------------------------------------
+clckDiv.out     pll|CLKOP_inferred_clock     FD1S3AX     Q       out_i     1.051       3.469
+============================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                       Starting                                                          Required          
-Instance               Reference                    Type        Pin     Net              Time         Slack
-                       Clock                                                                               
------------------------------------------------------------------------------------------------------------
-clckDiv.out            pll|CLKOP_inferred_clock     FD1S3AX     D       out_0            4.946        3.505
-clckDiv.counter[1]     pll|CLKOP_inferred_clock     FD1S3IX     D       counter_1[1]     4.946        3.571
-clckDiv.counter[0]     pll|CLKOP_inferred_clock     FD1S3IX     D       CO0_i            4.946        3.613
-clckDiv.counter[0]     pll|CLKOP_inferred_clock     FD1S3IX     CD      counter[1]       4.919        3.934
-clckDiv.counter[1]     pll|CLKOP_inferred_clock     FD1S3IX     CD      counter[1]       4.919        3.934
-===========================================================================================================
+                Starting                                                     Required          
+Instance        Reference                    Type        Pin     Net         Time         Slack
+                Clock                                                                          
+-----------------------------------------------------------------------------------------------
+clckDiv.out     pll|CLKOP_inferred_clock     FD1S3AX     D       out_i_i     4.946        3.469
+===============================================================================================
 
 
 
@@ -736,9 +698,9 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         4.946
 
-    - Propagation time:                      1.441
+    - Propagation time:                      1.477
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 3.505
+    = Slack (non-critical) :                 3.469
 
     Number of logic level(s):                1
     Starting point:                          clckDiv.out / Q
@@ -747,14 +709,14 @@ Path information for path number 1:
     The end   point is clocked by            pll|CLKOP_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
 Instance / Net                  Pin      Pin               Arrival     No. of    
-Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+Name                Type        Name     Dir     Delay     Time        Fan Out(s)
 ---------------------------------------------------------------------------------
-clckDiv.out        FD1S3AX      Q        Out     1.051     1.051 r     -         
-out_i              Net          -        -       -         -           11        
-clckDiv.out_0      ORCALUT4     B        In      0.000     1.051 r     -         
-clckDiv.out_0      ORCALUT4     Z        Out     0.390     1.441 r     -         
-out_0              Net          -        -       -         -           1         
-clckDiv.out        FD1S3AX      D        In      0.000     1.441 r     -         
+clckDiv.out         FD1S3AX     Q        Out     1.051     1.051 r     -         
+out_i               Net         -        -       -         -           11        
+clckDiv.out_RNO     INV         A        In      0.000     1.051 r     -         
+clckDiv.out_RNO     INV         Z        Out     0.426     1.477 f     -         
+out_i_i             Net         -        -       -         -           1         
+clckDiv.out         FD1S3AX     D        In      0.000     1.477 f     -         
 =================================================================================
 
 
@@ -815,7 +777,7 @@ Instance / Net                  Pin       Pin               Arrival     No. of
 Name                Type        Name      Dir     Delay     Time        Fan Out(s)
 ----------------------------------------------------------------------------------
 myPll.PLLInst_0     EHXPLLL     CLKOP     Out     0.000     0.000 r     -         
-CLKOP_i             Net         -         -       -         -           4         
+CLKOP_i             Net         -         -       -         -           2         
 myPll.PLLInst_0     EHXPLLL     CLKFB     In      0.000     0.000 r     -         
 ==================================================================================
 
@@ -825,16 +787,16 @@ myPll.PLLInst_0     EHXPLLL     CLKFB     In      0.000     0.000 r     -
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 186MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 185MB peak: 185MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 186MB)
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 185MB peak: 185MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lfe5u_12f-6
 
-Register bits: 148 of 12096 (1%)
+Register bits: 146 of 12096 (1%)
 PIC Latch:       0
 I/O cells:       23
 
@@ -845,7 +807,6 @@ EHXPLLL:        1
 FD1P3AX:        7
 FD1P3JX:        1
 FD1S3AX:        135
-FD1S3IX:        2
 GSR:            1
 IB:             2
 INV:            3
@@ -853,7 +814,7 @@ OB:             15
 OBZ:            6
 OFS1P3IX:       1
 OFS1P3JX:       2
-ORCALUT4:       123
+ORCALUT4:       119
 PUR:            1
 ROM32X1A:       8
 ROM64X1A:       8
@@ -861,10 +822,10 @@ VHI:            8
 VLO:            2
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 64MB peak: 186MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 64MB peak: 185MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Sun Jan 22 00:18:46 2023
+# Fri Mar  3 23:46:19 2023
 
 ###########################################################]
 
@@ -907,7 +868,7 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
 
 Design Results:
-    398 blocks expanded
+    392 blocks expanded
 Complete the first expansion.
 Writing 'epaper_impl1.ngd' ...
 Total CPU Time: 0 secs 
@@ -1282,15 +1243,15 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:    148 out of 12687 (1%)
-      PFU registers:          145 out of 12096 (1%)
+   Number of registers:    146 out of 12687 (1%)
+      PFU registers:          143 out of 12096 (1%)
       PIO registers:            3 out of   591 (1%)
-   Number of SLICEs:       167 out of  6048 (3%)
-      SLICEs as Logic/ROM:    167 out of  6048 (3%)
+   Number of SLICEs:       164 out of  6048 (3%)
+      SLICEs as Logic/ROM:    164 out of  6048 (3%)
       SLICEs as RAM:            0 out of  4536 (0%)
       SLICEs as Carry:         73 out of  6048 (1%)
-   Number of LUT4s:        308 out of 12096 (3%)
-      Number used as logic LUTs:        162
+   Number of LUT4s:        304 out of 12096 (3%)
+      Number used as logic LUTs:        158
       Number used as distributed RAM:     0
       Number used as ripple logic:      146
       Number used as shift registers:     0
@@ -1330,20 +1291,19 @@ Design Summary:
    Number of clocks:  4
      Net gp_c[4]: 72 loads, 0 rising, 72 falling (Driver: myCtrlModule/clkOutMainModule )
      Net clk_divOut: 6 loads, 6 rising, 0 falling (Driver: clckDiv/out )
-     Net clk_100mhz: 4 loads, 4 rising, 0 falling (Driver: myPll/PLLInst_0 )
+     Net clk_100mhz: 2 loads, 2 rising, 0 falling (Driver: myPll/PLLInst_0 )
      Net myPll/buf_CLKI: 1 loads, 1 rising, 0 falling (Driver: PIO clk_25mhz )
    Number of Clock Enables:  5
      Net myCkvModule.ckv_1_sqmuxa_i: 1 loads, 0 LSLICEs
-     Net le_en: 1 loads, 0 LSLICEs
-     Net N_16: 1 loads, 0 LSLICEs
+     Net le_en_0_a3_0: 1 loads, 0 LSLICEs
+     Net mySphModule.sph_1_sqmuxa_i: 1 loads, 0 LSLICEs
      Net mySpvModule/spv_2_sqmuxa_i: 1 loads, 1 LSLICEs
      Net myCtrlModule/frame14: 4 loads, 4 LSLICEs
-   Number of LSRs:  5
+   Number of LSRs:  4
      Net myCkvModule.ckv16: 1 loads, 0 LSLICEs
      Net myLeModule.le16: 1 loads, 0 LSLICEs
      Net mySphModule.sph16: 1 loads, 0 LSLICEs
      Net mySpvModule/spv22: 1 loads, 1 LSLICEs
-     Net clckDiv/counter[1]: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net myCtrlModule/frame[2]: 33 loads
@@ -1352,10 +1312,10 @@ Design Summary:
      Net myCtrlModule/frame[1]: 25 loads
      Net myCtrlModule/frame[5]: 25 loads
      Net myCtrlModule/frame[0]: 11 loads
-     Net myLeModule/le4_30: 10 loads
+     Net mySphModule/sph4_30: 10 loads
      Net myCkvModule/ckv4_30: 9 loads
      Net myCtrlModule/frame[6]: 9 loads
-     Net mySpvModule/spv22: 8 loads
+     Net myLeModule/counter[3]: 9 loads
  
 
    Number of warnings:  333
@@ -1364,7 +1324,7 @@ Design Summary:
 
 
 Total CPU Time: 2 secs  
-Total REAL Time: 2 secs  
+Total REAL Time: 3 secs  
 Peak Memory Usage: 110 MB
 
 Dumping design to file epaper_impl1_map.ncd.
@@ -1392,7 +1352,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Sun Jan 22 00:18:51 2023
+Fri Mar 03 23:46:24 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1421,11 +1381,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 38028 paths, 5 nets, and 889 connections (79.16% coverage)
+Constraints cover 37968 paths, 5 nets, and 878 connections (79.24% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Sun Jan 22 00:18:51 2023
+Fri Mar 03 23:46:24 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1454,7 +1414,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 38028 paths, 5 nets, and 912 connections (81.21% coverage)
+Constraints cover 37968 paths, 5 nets, and 897 connections (80.96% coverage)
 
 
 
@@ -1469,8 +1429,8 @@ Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 166 MB
+Total REAL Time: 2 secs 
+Peak Memory Usage: 165 MB
 
 
 mpartrce -p "epaper_impl1.p2t" -f "epaper_impl1.p3t" -tf "epaper_impl1.pt" "epaper_impl1_map.ncd" "epaper_impl1.ncd"
@@ -1480,7 +1440,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "epaper_impl1_map.ncd"
-Sun Jan 22 00:18:52 2023
+Fri Mar 03 23:46:25 2023
 
 PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset E:/Projects/FPGA/Learning/epaper/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1 epaper_impl1_map.ncd epaper_impl1.dir/5_1.ncd epaper_impl1.prf
@@ -1508,37 +1468,37 @@ Device utilization summary:
                      23/197          11% bonded
    IOLOGIC            3/199           1% used
 
-   SLICE            167/6048          2% used
+   SLICE            164/6048          2% used
 
    PLL                1/2            50% used
 
 
-Number of Signals: 512
-Number of Connections: 1123
+Number of Signals: 506
+Number of Connections: 1108
 
 Pin Constraint Summary:
    23 out of 23 pins locked (100% locked).
 
 The following 3 signals are selected to use the primary clock routing resources:
-    clk_100mhz (driver: myPll/PLLInst_0, clk/ce/sr load #: 4/0/0)
-    gp_c[4] (driver: myCtrlModule/SLICE_151, clk/ce/sr load #: 72/0/0)
-    clk_divOut (driver: clckDiv/SLICE_75, clk/ce/sr load #: 6/0/0)
+    clk_100mhz (driver: myPll/PLLInst_0, clk/ce/sr load #: 2/0/0)
+    gp_c[4] (driver: myCtrlModule/SLICE_147, clk/ce/sr load #: 72/0/0)
+    clk_divOut (driver: clckDiv/SLICE_73, clk/ce/sr load #: 6/0/0)
 
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
-.........
-Finished Placer Phase 0.  REAL time: 3 secs 
+............
+Finished Placer Phase 0.  REAL time: 4 secs 
 
 Starting Placer Phase 1.
 ....................
-Placer score = 61304.
-Finished Placer Phase 1.  REAL time: 6 secs 
+Placer score = 69270.
+Finished Placer Phase 1.  REAL time: 12 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  60262
-Finished Placer Phase 2.  REAL time: 7 secs 
+Placer score =  67828
+Finished Placer Phase 2.  REAL time: 12 secs 
 
 
 ------------------ Clock Report ------------------
@@ -1552,25 +1512,27 @@ Global Clock Resources:
   CLKDIV     : 0 out of 4 (0%)
 
 Quadrant TL Clocks:
-  PRIMARY "gp_c[4]" from F1 on comp "myCtrlModule/SLICE_151" on site "R38C31A", CLK/CE/SR load = 46
+  PRIMARY "gp_c[4]" from F1 on comp "myCtrlModule/SLICE_147" on site "R38C31A", CLK/CE/SR load = 19
 
   PRIMARY  : 1 out of 16 (6%)
 
 Quadrant TR Clocks:
-  PRIMARY "gp_c[4]" from F1 on comp "myCtrlModule/SLICE_151" on site "R38C31A", CLK/CE/SR load = 26
+  PRIMARY "gp_c[4]" from F1 on comp "myCtrlModule/SLICE_147" on site "R38C31A", CLK/CE/SR load = 19
 
   PRIMARY  : 1 out of 16 (6%)
 
 Quadrant BL Clocks:
   PRIMARY "clk_100mhz" from CLKOP on comp "myPll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1
-  PRIMARY "clk_divOut" from Q0 on comp "clckDiv/SLICE_75" on site "R38C32A", CLK/CE/SR load = 6
+  PRIMARY "gp_c[4]" from F1 on comp "myCtrlModule/SLICE_147" on site "R38C31A", CLK/CE/SR load = 33
+  PRIMARY "clk_divOut" from Q0 on comp "clckDiv/SLICE_73" on site "R38C32A", CLK/CE/SR load = 6
 
-  PRIMARY  : 2 out of 16 (12%)
+  PRIMARY  : 3 out of 16 (18%)
 
 Quadrant BR Clocks:
-  PRIMARY "clk_100mhz" from CLKOP on comp "myPll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 3
+  PRIMARY "clk_100mhz" from CLKOP on comp "myPll/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1
+  PRIMARY "gp_c[4]" from F1 on comp "myCtrlModule/SLICE_147" on site "R38C31A", CLK/CE/SR load = 1
 
-  PRIMARY  : 1 out of 16 (6%)
+  PRIMARY  : 2 out of 16 (12%)
 
 Edge Clocks:
 
@@ -1600,16 +1562,16 @@ I/O Bank Usage Summary:
 | 8        | 1 / 13 (  7%)  | 3.3V       | -          | -          |
 +----------+----------------+------------+------------+------------+
 
-Total placer CPU time: 6 secs 
+Total placer CPU time: 12 secs 
 
 Dumping design to file epaper_impl1.dir/5_1.ncd.
 
-0 connections routed; 1123 unrouted.
+0 connections routed; 1108 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 10 secs 
+Completed router resource preassignment. Real time: 16 secs 
 
-Start NBR router at 00:19:02 01/22/23
+Start NBR router at 23:46:41 03/03/23
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1624,50 +1586,47 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 00:19:02 01/22/23
+Start NBR special constraint process at 23:46:41 03/03/23
 
-Start NBR section for initial routing at 00:19:03 01/22/23
+Start NBR section for initial routing at 23:46:42 03/03/23
 Level 1, iteration 1
-0(0.00%) conflict; 806(71.77%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.608ns/0.000ns; real time: 11 secs 
+0(0.00%) conflict; 796(71.84%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.299ns/0.000ns; real time: 17 secs 
 Level 2, iteration 1
-2(0.00%) conflicts; 801(71.33%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.667ns/0.000ns; real time: 11 secs 
+0(0.00%) conflict; 796(71.84%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.299ns/0.000ns; real time: 17 secs 
 Level 3, iteration 1
-0(0.00%) conflict; 803(71.50%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.624ns/0.000ns; real time: 11 secs 
+0(0.00%) conflict; 796(71.84%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.299ns/0.000ns; real time: 17 secs 
 Level 4, iteration 1
 8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.667ns/0.000ns; real time: 11 secs 
+Estimated worst slack/total negative slack<setup>: 9.291ns/0.000ns; real time: 17 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 00:19:03 01/22/23
+Start NBR section for normal routing at 23:46:42 03/03/23
 Level 4, iteration 1
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.667ns/0.000ns; real time: 11 secs 
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.291ns/0.000ns; real time: 17 secs 
 Level 4, iteration 2
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.667ns/0.000ns; real time: 11 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.291ns/0.000ns; real time: 17 secs 
 Level 4, iteration 3
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.667ns/0.000ns; real time: 11 secs 
+Estimated worst slack/total negative slack<setup>: 9.291ns/0.000ns; real time: 17 secs 
 Level 4, iteration 4
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.667ns/0.000ns; real time: 11 secs 
-Level 4, iteration 5
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.667ns/0.000ns; real time: 11 secs 
+Estimated worst slack/total negative slack<setup>: 9.291ns/0.000ns; real time: 17 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 00:19:03 01/22/23
+Start NBR section for setup/hold timing optimization with effort level 3 at 23:46:42 03/03/23
 
-Start NBR section for re-routing at 00:19:04 01/22/23
+Start NBR section for re-routing at 23:46:43 03/03/23
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 8.667ns/0.000ns; real time: 12 secs 
+Estimated worst slack/total negative slack<setup>: 9.291ns/0.000ns; real time: 18 secs 
 
-Start NBR section for post-routing at 00:19:04 01/22/23
+Start NBR section for post-routing at 23:46:43 03/03/23
 
 End NBR router with 0 unrouted connection
 
@@ -1675,17 +1634,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 8.667ns
+  Estimated worst slack<setup> : 9.291ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 13 secs 
-Total REAL time: 13 secs 
+Total CPU time 18 secs 
+Total REAL time: 19 secs 
 Completely routed.
-End of route.  1123 routed (100.00%); 0 unrouted.
+End of route.  1108 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -1696,14 +1655,14 @@ Dumping design to file epaper_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 8.667
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 9.291
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.167
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.168
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 13 secs 
-Total REAL time to completion: 13 secs 
+Total CPU  time to completion: 19 secs 
+Total REAL time to completion: 19 secs 
 
 par done!
 
@@ -1740,7 +1699,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Sun Jan 22 00:19:07 2023
+Fri Mar 03 23:46:46 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1769,11 +1728,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 38028 paths, 5 nets, and 912 connections (81.21% coverage)
+Constraints cover 37968 paths, 5 nets, and 897 connections (80.96% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Sun Jan 22 00:19:07 2023
+Fri Mar 03 23:46:46 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1802,7 +1761,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 38028 paths, 5 nets, and 912 connections (81.21% coverage)
+Constraints cover 37968 paths, 5 nets, and 897 connections (80.96% coverage)
 
 
 
@@ -1816,8 +1775,8 @@ Cumulative negative slack: 0 (0+0)
 
 --------------------------------------------------------------------------------
 
-Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
 Peak Memory Usage: 165 MB
 
 

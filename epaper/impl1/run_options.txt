@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
 #--  Project file E:\Projects\FPGA\Learning\epaper\impl1\run_options.txt
-#--  Written on Sun Jan 22 00:18:38 2023
+#--  Written on Fri Mar  3 23:46:11 2023
 
 
 #project files

@@ -1,6 +1,27 @@
 `ifndef __VERTICAL_EPAPER_DRIVER__
 `define __VERTICAL_EPAPER_DRIVER__
 
+// Modify resolution to suit you epaper dispaly.
+`define EPAPER_W 1024
+`define EPAPER_H 758
+
+// Define for clock cycles for each of the lines. Do not modify if it's not needed!
+`define EPAPER_CKV_1 ((`EPAPER_W / 4) + 16)
+`define EPAPER_CKV_2 ((`EPAPER_W / 4) + 29)
+
+`define EPAPER_SPV_1 (92)
+// I guess this is proper formula??
+`define EPAPER_SPV_2 (320 + (`EPAPER_W / 4) - 200)
+`define EPAPER_SPV_3 (`EPAPER_CKV_2 * (`EPAPER_H + 4))
+
+`define EPAPER_LE_1 ((`EPAPER_W / 4) + 17)
+`define EPAPER_LE_2 ((`EPAPER_W / 4) + 20)
+`define EPAPER_LE_3 ((`EPAPER_W / 4) + 29)
+
+`define EPAPER_SPH_1 ((`EPAPER_W / 4) + 23)
+`define EPAPER_SPH_2 ((`EPAPER_W / 4) + 25)
+`define EPAPER_SPH_3 ((`EPAPER_W / 4) + 29)
+
 module ckvModule(input clock, input reset, output reg ckv);
 	reg [32:0] counter = 0;
 	
@@ -8,9 +29,9 @@ module ckvModule(input clock, input reset, output reg ckv);
 		begin
 			if (counter == 0)
 				ckv = 1;
-			if (counter == 216)
+			if (counter == `EPAPER_CKV_1)
 				ckv = 0;
-			if (counter == 229)
+			if (counter == `EPAPER_CKV_2)
 				begin
 					ckv = 1;
 					counter = 0;
@@ -25,9 +46,9 @@ module spvModule(input clock, input reset, output reg spv);
 	always @(negedge clock)
 		begin
 			if (counter == 0) spv = 1;
-			if (counter == 92) spv = 0;
-			if (counter == 320) spv = 1;
-			if (counter == 138316)
+			if (counter == `EPAPER_SPV_1) spv = 0;
+			if (counter == `EPAPER_SPV_2) spv = 1;
+			if (counter == `EPAPER_SPV_3)
 				begin
 					spv = 1;
 					counter = 0;
@@ -42,9 +63,9 @@ module latchModule(input clock, input reset, output reg le);
 	always @(negedge clock)
 		begin
 			if (counter == 0) le = 0;
-			if (counter == 217) le = 1;
-			if (counter == 220) le = 0;
-			if (counter == 229) counter = 0;
+			if (counter == `EPAPER_LE_1) le = 1;
+			if (counter == `EPAPER_LE_2) le = 0;
+			if (counter == `EPAPER_LE_3) counter = 0;
 			
 			counter = counter + 1;
 		end
@@ -57,9 +78,9 @@ module sphModule(input clock, input reset, output reg sph);
 	always @(negedge clock)
 		begin
 			if (counter == 0) sph = 1;
-			if (counter == 223) sph = 0;
-			if (counter == 225) sph = 1;
-			if (counter == 229) counter = 0;
+			if (counter == `EPAPER_SPH_1) sph = 0;
+			if (counter == `EPAPER_SPH_2) sph = 1;
+			if (counter == `EPAPER_SPH_3) counter = 0;
 			
 			counter = counter + 1;
 		end

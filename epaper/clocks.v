@@ -8,7 +8,7 @@ module clockDivider(input clock, output reg out);
 		begin
 			counter = counter + 1;
 			
-			if (counter > 2)
+			if (counter > 0)
 				begin
 					counter = 0;
 					out = out ^ 1;

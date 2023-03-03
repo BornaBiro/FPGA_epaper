@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 22 00:19:08 2023
+Fri Mar 03 23:46:47 2023
 
 
 Command: bitgen -w -g CfgMode:Disable -g RamCfg:Reset -g DisableUES:FALSE -g ES:No -e -s E:/Projects/FPGA/Learning/epaper/epaper.sec -k E:/Projects/FPGA/Learning/epaper/epaper.bek -gui -msgset E:/Projects/FPGA/Learning/epaper/promote.xml epaper_impl1.ncd epaper_impl1.prf 

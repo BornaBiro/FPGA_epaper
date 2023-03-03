@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Sun Jan 22 00:18:51 2023
+Fri Mar 03 23:46:24 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -38,7 +38,7 @@ BLOCK RESETPATHS
 
 ================================================================================
 Preference: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
-            7 items scored, 0 timing errors detected.
+            1 item scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -52,30 +52,32 @@ Passed:  The following path meets requirements by 7.912ns
    Delay:               2.088ns -- based on Minimum Pulse Width
 
 
-Passed: The following path meets requirements by 8.484ns
+Passed: The following path meets requirements by 9.293ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              clckDiv/counter[1]  (from clk_100mhz +)
-   Destination:    FF         Data in        clckDiv/counter[0]  (to clk_100mhz +)
+   Source:         FF         Q              clckDiv/out  (from clk_100mhz +)
+   Destination:    FF         Data in        clckDiv/out  (to clk_100mhz +)
 
-   Delay:               1.095ns  (47.7% logic, 52.3% route), 1 logic levels.
+   Delay:               0.965ns  (78.3% logic, 21.7% route), 2 logic levels.
 
  Constraint Details:
 
-      1.095ns physical path delay clckDiv/SLICE_74 to clckDiv/SLICE_73 meets
+      0.965ns physical path delay clckDiv/SLICE_73 to clckDiv/SLICE_73 meets
      10.000ns delay constraint less
-      0.421ns LSR_SET requirement (totaling 9.579ns) by 8.484ns
+     -0.258ns DIN_SET requirement (totaling 10.258ns) by 9.293ns
 
  Physical Path Details:
 
-      Data path clckDiv/SLICE_74 to clckDiv/SLICE_73:
+      Data path clckDiv/SLICE_73 to clckDiv/SLICE_73:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.522 */SLICE_74.CLK to *v/SLICE_74.Q0 clckDiv/SLICE_74 (from clk_100mhz)
-ROUTE         4   e 0.573 *v/SLICE_74.Q0 to */SLICE_73.LSR clckDiv/counter[1] (to clk_100mhz)
+REG_DEL     ---     0.522 */SLICE_73.CLK to *v/SLICE_73.Q0 clckDiv/SLICE_73 (from clk_100mhz)
+ROUTE         8   e 0.208 *v/SLICE_73.Q0 to *v/SLICE_73.A0 clk_divOut
+CTOF_DEL    ---     0.234 *v/SLICE_73.A0 to *v/SLICE_73.F0 clckDiv/SLICE_73
+ROUTE         1   e 0.001 *v/SLICE_73.F0 to */SLICE_73.DI0 clckDiv/out_i_i (to clk_100mhz)
                   --------
-                    1.095   (47.7% logic, 52.3% route), 1 logic levels.
+                    0.965   (78.3% logic, 21.7% route), 2 logic levels.
 
 Report:  478.927MHz is the maximum frequency for this preference.
 
@@ -92,76 +94,74 @@ Preference: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
 --------------------------------------------------------------------------------
 
 
-Passed: The following path meets requirements by 32.410ns
+Passed: The following path meets requirements by 33.217ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              mySphModule/counter[21]  (from gp_c[4] -)
-   Destination:    FF         Data in        mySphModule/counter[32]  (to gp_c[4] -)
+   Source:         FF         Q              myLeModule/counter[13]  (from gp_c[4] -)
+   Destination:    FF         Data in        myLeModule/counter[32]  (to gp_c[4] -)
 
-   Delay:               7.814ns  (48.5% logic, 51.5% route), 23 logic levels.
+   Delay:               7.007ns  (50.7% logic, 49.3% route), 22 logic levels.
 
  Constraint Details:
 
-      7.814ns physical path delay mySphModule/SLICE_11 to mySphModule/SLICE_16 meets
+      7.007ns physical path delay myLeModule/SLICE_24 to myLeModule/SLICE_33 meets
      40.000ns delay constraint less
-     -0.224ns DIN_SET requirement (totaling 40.224ns) by 32.410ns
+     -0.224ns DIN_SET requirement (totaling 40.224ns) by 33.217ns
 
  Physical Path Details:
 
-      Data path mySphModule/SLICE_11 to mySphModule/SLICE_16:
+      Data path myLeModule/SLICE_24 to myLeModule/SLICE_33:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.488 */SLICE_11.CLK to *e/SLICE_11.Q0 mySphModule/SLICE_11 (from gp_c[4])
-ROUTE         2   e 0.573 *e/SLICE_11.Q0 to */SLICE_154.C0 mySphModule/counter[21]
-CTOF_DEL    ---     0.234 */SLICE_154.C0 to */SLICE_154.F0 mySphModule/SLICE_154
-ROUTE         1   e 0.573 */SLICE_154.F0 to */SLICE_115.C0 mySphModule/sph_1_sqmuxa_i_a2_12
-CTOF_DEL    ---     0.234 */SLICE_115.C0 to */SLICE_115.F0 mySphModule/SLICE_115
-ROUTE         1   e 0.573 */SLICE_115.F0 to */SLICE_114.D0 mySphModule/sph_1_sqmuxa_i_a2_21
-CTOF_DEL    ---     0.234 */SLICE_114.D0 to */SLICE_114.F0 mySphModule/SLICE_114
-ROUTE         2   e 0.573 */SLICE_114.F0 to */SLICE_112.A1 mySphModule/N_36
-CTOF_DEL    ---     0.234 */SLICE_112.A1 to */SLICE_112.F1 mySphModule/SLICE_112
-ROUTE         3   e 0.573 */SLICE_112.F1 to */SLICE_109.A1 mySphModule/N_38
-CTOF_DEL    ---     0.234 */SLICE_109.A1 to */SLICE_109.F1 mySphModule/SLICE_109
-ROUTE         5   e 0.573 */SLICE_109.F1 to */SLICE_110.A1 mySphModule/N_39
-CTOF_DEL    ---     0.234 */SLICE_110.A1 to */SLICE_110.F1 mySphModule/SLICE_110
-ROUTE         2   e 0.573 */SLICE_110.F1 to *le/SLICE_1.B1 mySphModule/N_43
-C1TOFCO_DE  ---     0.444 *le/SLICE_1.B1 to *e/SLICE_1.FCO mySphModule/SLICE_1
-ROUTE         1   e 0.001 *e/SLICE_1.FCO to *e/SLICE_2.FCI mySphModule/un6_counter_cry_2
-FCITOFCO_D  ---     0.070 *e/SLICE_2.FCI to *e/SLICE_2.FCO mySphModule/SLICE_2
-ROUTE         1   e 0.001 *e/SLICE_2.FCO to *e/SLICE_3.FCI mySphModule/un6_counter_cry_4
-FCITOFCO_D  ---     0.070 *e/SLICE_3.FCI to *e/SLICE_3.FCO mySphModule/SLICE_3
-ROUTE         1   e 0.001 *e/SLICE_3.FCO to *e/SLICE_4.FCI mySphModule/un6_counter_cry_6
-FCITOFCO_D  ---     0.070 *e/SLICE_4.FCI to *e/SLICE_4.FCO mySphModule/SLICE_4
-ROUTE         1   e 0.001 *e/SLICE_4.FCO to *e/SLICE_5.FCI mySphModule/un6_counter_cry_8
-FCITOFCO_D  ---     0.070 *e/SLICE_5.FCI to *e/SLICE_5.FCO mySphModule/SLICE_5
-ROUTE         1   e 0.001 *e/SLICE_5.FCO to *e/SLICE_6.FCI mySphModule/un6_counter_cry_10
-FCITOFCO_D  ---     0.070 *e/SLICE_6.FCI to *e/SLICE_6.FCO mySphModule/SLICE_6
-ROUTE         1   e 0.001 *e/SLICE_6.FCO to *e/SLICE_7.FCI mySphModule/un6_counter_cry_12
-FCITOFCO_D  ---     0.070 *e/SLICE_7.FCI to *e/SLICE_7.FCO mySphModule/SLICE_7
-ROUTE         1   e 0.001 *e/SLICE_7.FCO to *e/SLICE_8.FCI mySphModule/un6_counter_cry_14
-FCITOFCO_D  ---     0.070 *e/SLICE_8.FCI to *e/SLICE_8.FCO mySphModule/SLICE_8
-ROUTE         1   e 0.001 *e/SLICE_8.FCO to *e/SLICE_9.FCI mySphModule/un6_counter_cry_16
-FCITOFCO_D  ---     0.070 *e/SLICE_9.FCI to *e/SLICE_9.FCO mySphModule/SLICE_9
-ROUTE         1   e 0.001 *e/SLICE_9.FCO to */SLICE_10.FCI mySphModule/un6_counter_cry_18
-FCITOFCO_D  ---     0.070 */SLICE_10.FCI to */SLICE_10.FCO mySphModule/SLICE_10
-ROUTE         1   e 0.001 */SLICE_10.FCO to */SLICE_11.FCI mySphModule/un6_counter_cry_20
-FCITOFCO_D  ---     0.070 */SLICE_11.FCI to */SLICE_11.FCO mySphModule/SLICE_11
-ROUTE         1   e 0.001 */SLICE_11.FCO to */SLICE_12.FCI mySphModule/un6_counter_cry_22
-FCITOFCO_D  ---     0.070 */SLICE_12.FCI to */SLICE_12.FCO mySphModule/SLICE_12
-ROUTE         1   e 0.001 */SLICE_12.FCO to */SLICE_13.FCI mySphModule/un6_counter_cry_24
-FCITOFCO_D  ---     0.070 */SLICE_13.FCI to */SLICE_13.FCO mySphModule/SLICE_13
-ROUTE         1   e 0.001 */SLICE_13.FCO to */SLICE_14.FCI mySphModule/un6_counter_cry_26
-FCITOFCO_D  ---     0.070 */SLICE_14.FCI to */SLICE_14.FCO mySphModule/SLICE_14
-ROUTE         1   e 0.001 */SLICE_14.FCO to */SLICE_15.FCI mySphModule/un6_counter_cry_28
-FCITOFCO_D  ---     0.070 */SLICE_15.FCI to */SLICE_15.FCO mySphModule/SLICE_15
-ROUTE         1   e 0.001 */SLICE_15.FCO to */SLICE_16.FCI mySphModule/un6_counter_cry_30
-FCITOF1_DE  ---     0.471 */SLICE_16.FCI to *e/SLICE_16.F1 mySphModule/SLICE_16
-ROUTE         1   e 0.001 *e/SLICE_16.F1 to */SLICE_16.DI1 mySphModule/un6_counter_cry_31_0_S1_0 (to gp_c[4])
+REG_DEL     ---     0.488 */SLICE_24.CLK to *e/SLICE_24.Q0 myLeModule/SLICE_24 (from gp_c[4])
+ROUTE         2   e 0.573 *e/SLICE_24.Q0 to */SLICE_140.B0 myLeModule/counter[13]
+CTOF_DEL    ---     0.234 */SLICE_140.B0 to */SLICE_140.F0 myLeModule/SLICE_140
+ROUTE         1   e 0.573 */SLICE_140.F0 to */SLICE_118.C0 myLeModule/le10_0_a2_18
+CTOF_DEL    ---     0.234 */SLICE_118.C0 to */SLICE_118.F0 myLeModule/SLICE_118
+ROUTE         1   e 0.573 */SLICE_118.F0 to */SLICE_117.D1 myLeModule/le10_0_a2_25
+CTOF_DEL    ---     0.234 */SLICE_117.D1 to */SLICE_117.F1 myLeModule/SLICE_117
+ROUTE         4   e 0.573 */SLICE_117.F1 to */SLICE_114.A1 myLeModule/N_45
+CTOF_DEL    ---     0.234 */SLICE_114.A1 to */SLICE_114.F1 myLeModule/SLICE_114
+ROUTE         6   e 0.573 */SLICE_114.F1 to */SLICE_149.A1 myLeModule/N_29
+CTOF_DEL    ---     0.234 */SLICE_149.A1 to */SLICE_149.F1 myLeModule/SLICE_149
+ROUTE         1   e 0.573 */SLICE_149.F1 to *e/SLICE_18.B1 myLeModule/N_25
+C1TOFCO_DE  ---     0.444 *e/SLICE_18.B1 to */SLICE_18.FCO myLeModule/SLICE_18
+ROUTE         1   e 0.001 */SLICE_18.FCO to */SLICE_19.FCI myLeModule/un6_counter_cry_2
+FCITOFCO_D  ---     0.070 */SLICE_19.FCI to */SLICE_19.FCO myLeModule/SLICE_19
+ROUTE         1   e 0.001 */SLICE_19.FCO to */SLICE_20.FCI myLeModule/un6_counter_cry_4
+FCITOFCO_D  ---     0.070 */SLICE_20.FCI to */SLICE_20.FCO myLeModule/SLICE_20
+ROUTE         1   e 0.001 */SLICE_20.FCO to */SLICE_21.FCI myLeModule/un6_counter_cry_6
+FCITOFCO_D  ---     0.070 */SLICE_21.FCI to */SLICE_21.FCO myLeModule/SLICE_21
+ROUTE         1   e 0.001 */SLICE_21.FCO to */SLICE_22.FCI myLeModule/un6_counter_cry_8
+FCITOFCO_D  ---     0.070 */SLICE_22.FCI to */SLICE_22.FCO myLeModule/SLICE_22
+ROUTE         1   e 0.001 */SLICE_22.FCO to */SLICE_23.FCI myLeModule/un6_counter_cry_10
+FCITOFCO_D  ---     0.070 */SLICE_23.FCI to */SLICE_23.FCO myLeModule/SLICE_23
+ROUTE         1   e 0.001 */SLICE_23.FCO to */SLICE_24.FCI myLeModule/un6_counter_cry_12
+FCITOFCO_D  ---     0.070 */SLICE_24.FCI to */SLICE_24.FCO myLeModule/SLICE_24
+ROUTE         1   e 0.001 */SLICE_24.FCO to */SLICE_25.FCI myLeModule/un6_counter_cry_14
+FCITOFCO_D  ---     0.070 */SLICE_25.FCI to */SLICE_25.FCO myLeModule/SLICE_25
+ROUTE         1   e 0.001 */SLICE_25.FCO to */SLICE_26.FCI myLeModule/un6_counter_cry_16
+FCITOFCO_D  ---     0.070 */SLICE_26.FCI to */SLICE_26.FCO myLeModule/SLICE_26
+ROUTE         1   e 0.001 */SLICE_26.FCO to */SLICE_27.FCI myLeModule/un6_counter_cry_18
+FCITOFCO_D  ---     0.070 */SLICE_27.FCI to */SLICE_27.FCO myLeModule/SLICE_27
+ROUTE         1   e 0.001 */SLICE_27.FCO to */SLICE_28.FCI myLeModule/un6_counter_cry_20
+FCITOFCO_D  ---     0.070 */SLICE_28.FCI to */SLICE_28.FCO myLeModule/SLICE_28
+ROUTE         1   e 0.001 */SLICE_28.FCO to */SLICE_29.FCI myLeModule/un6_counter_cry_22
+FCITOFCO_D  ---     0.070 */SLICE_29.FCI to */SLICE_29.FCO myLeModule/SLICE_29
+ROUTE         1   e 0.001 */SLICE_29.FCO to */SLICE_30.FCI myLeModule/un6_counter_cry_24
+FCITOFCO_D  ---     0.070 */SLICE_30.FCI to */SLICE_30.FCO myLeModule/SLICE_30
+ROUTE         1   e 0.001 */SLICE_30.FCO to */SLICE_31.FCI myLeModule/un6_counter_cry_26
+FCITOFCO_D  ---     0.070 */SLICE_31.FCI to */SLICE_31.FCO myLeModule/SLICE_31
+ROUTE         1   e 0.001 */SLICE_31.FCO to */SLICE_32.FCI myLeModule/un6_counter_cry_28
+FCITOFCO_D  ---     0.070 */SLICE_32.FCI to */SLICE_32.FCO myLeModule/SLICE_32
+ROUTE         1   e 0.001 */SLICE_32.FCO to */SLICE_33.FCI myLeModule/un6_counter_cry_30
+FCITOF1_DE  ---     0.471 */SLICE_33.FCI to *e/SLICE_33.F1 myLeModule/SLICE_33
+ROUTE         1   e 0.001 *e/SLICE_33.F1 to */SLICE_33.DI1 myLeModule/un6_counter_cry_31_0_S1 (to gp_c[4])
                   --------
-                    7.814   (48.5% logic, 51.5% route), 23 logic levels.
+                    7.007   (50.7% logic, 49.3% route), 22 logic levels.
 
-Report:  131.752MHz is the maximum frequency for this preference.
+Report:  147.427MHz is the maximum frequency for this preference.
 
 Report Summary
 --------------
@@ -176,7 +176,7 @@ FREQUENCY NET "myPll/buf_CLKI"          |             |             |
 25.000000 MHz ;                         |            -|            -|   0  
                                         |             |             |
 FREQUENCY PORT "clk_25mhz" 25.000000    |             |             |
-MHz ;                                   |   25.000 MHz|  131.752 MHz|  23  
+MHz ;                                   |   25.000 MHz|  147.427 MHz|  22  
                                         |             |             |
 ----------------------------------------------------------------------------
 
@@ -192,17 +192,17 @@ Found 4 clocks:
 Clock Domain: myPll/buf_CLKI   Source: clk_25mhz.PAD   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: gp_c[4]   Source: myCtrlModule/SLICE_151.F1   Loads: 74
+Clock Domain: gp_c[4]   Source: myCtrlModule/SLICE_147.F1   Loads: 74
    Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
 
-Clock Domain: clk_divOut   Source: clckDiv/SLICE_75.Q0   Loads: 8
+Clock Domain: clk_divOut   Source: clckDiv/SLICE_73.Q0   Loads: 8
    Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
 
    Data transfers from:
-   Clock Domain: gp_c[4]   Source: myCtrlModule/SLICE_151.F1
+   Clock Domain: gp_c[4]   Source: myCtrlModule/SLICE_147.F1
       Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;   Transfers: 1
 
-Clock Domain: clk_100mhz   Source: myPll/PLLInst_0.CLKOP   Loads: 4
+Clock Domain: clk_100mhz   Source: myPll/PLLInst_0.CLKOP   Loads: 2
    Covered under: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
 
 
@@ -212,11 +212,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 38028 paths, 5 nets, and 889 connections (79.16% coverage)
+Constraints cover 37968 paths, 5 nets, and 878 connections (79.24% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Sun Jan 22 00:18:51 2023
+Fri Mar 03 23:46:24 2023
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -241,7 +241,7 @@ BLOCK RESETPATHS
 
 ================================================================================
 Preference: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
-            7 items scored, 0 timing errors detected.
+            1 item scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -249,8 +249,8 @@ Passed: The following path meets requirements by 0.178ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              clckDiv/counter[0]  (from clk_100mhz +)
-   Destination:    FF         Data in        clckDiv/counter[0]  (to clk_100mhz +)
+   Source:         FF         Q              clckDiv/out  (from clk_100mhz +)
+   Destination:    FF         Data in        clckDiv/out  (to clk_100mhz +)
 
    Delay:               0.296ns  (80.1% logic, 19.9% route), 2 logic levels.
 
@@ -266,9 +266,9 @@ Passed: The following path meets requirements by 0.178ns
 
    Name    Fanout   Delay (ns)          Site               Resource
 REG_DEL     ---     0.162 */SLICE_73.CLK to *v/SLICE_73.Q0 clckDiv/SLICE_73 (from clk_100mhz)
-ROUTE         2   e 0.058 *v/SLICE_73.Q0 to *v/SLICE_73.A0 clckDiv/CO0
+ROUTE         8   e 0.058 *v/SLICE_73.Q0 to *v/SLICE_73.A0 clk_divOut
 CTOF_DEL    ---     0.075 *v/SLICE_73.A0 to *v/SLICE_73.F0 clckDiv/SLICE_73
-ROUTE         1   e 0.001 *v/SLICE_73.F0 to */SLICE_73.DI0 clckDiv/CO0_i (to clk_100mhz)
+ROUTE         1   e 0.001 *v/SLICE_73.F0 to */SLICE_73.DI0 clckDiv/out_i_i (to clk_100mhz)
                   --------
                     0.296   (80.1% logic, 19.9% route), 2 logic levels.
 
@@ -341,17 +341,17 @@ Found 4 clocks:
 Clock Domain: myPll/buf_CLKI   Source: clk_25mhz.PAD   Loads: 1
    No transfer within this clock domain is found
 
-Clock Domain: gp_c[4]   Source: myCtrlModule/SLICE_151.F1   Loads: 74
+Clock Domain: gp_c[4]   Source: myCtrlModule/SLICE_147.F1   Loads: 74
    Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
 
-Clock Domain: clk_divOut   Source: clckDiv/SLICE_75.Q0   Loads: 8
+Clock Domain: clk_divOut   Source: clckDiv/SLICE_73.Q0   Loads: 8
    Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;
 
    Data transfers from:
-   Clock Domain: gp_c[4]   Source: myCtrlModule/SLICE_151.F1
+   Clock Domain: gp_c[4]   Source: myCtrlModule/SLICE_147.F1
       Covered under: FREQUENCY PORT "clk_25mhz" 25.000000 MHz ;   Transfers: 1
 
-Clock Domain: clk_100mhz   Source: myPll/PLLInst_0.CLKOP   Loads: 4
+Clock Domain: clk_100mhz   Source: myPll/PLLInst_0.CLKOP   Loads: 2
    Covered under: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
 
 
@@ -361,7 +361,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 38028 paths, 5 nets, and 912 connections (81.21% coverage)
+Constraints cover 37968 paths, 5 nets, and 897 connections (80.96% coverage)
 
 
 

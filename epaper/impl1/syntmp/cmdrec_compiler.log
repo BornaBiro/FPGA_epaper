@@ -1,16 +1,16 @@
 C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\bin64\c_hdl.exe  -osyn  E:\Projects\FPGA\Learning\epaper\impl1\synwork\epaper_impl1_comp.srs  -top  top  -hdllog  E:\Projects\FPGA\Learning\epaper\impl1\synlog\epaper_impl1_compiler.srr  -encrypt  -mp  1  -verification_mode 0  -verilog  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver   -I E:\Projects\FPGA\Learning\epaper  -I E:\Projects\FPGA\Learning\epaper\impl1\  -I "C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib"   -v2001  -devicelib  "C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v"  -devicelib  "C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\pmi_def.v"  -encrypt  -pro    -DSBP_SYNTHESIS    -dmgen  E:\Projects\FPGA\Learning\epaper\impl1\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -D_MULTIPLE_FILE_COMPILATION_UNIT_  -lib work -fv2001 E:\Projects\FPGA\Learning\epaper\topModule.v -lib work -fv2001 E:\Projects\FPGA\Learning\epaper\clocks.v -lib work -fv2001 E:\Projects\FPGA\Learning\epaper\pll\pll.v -lib work -fv2001 E:\Projects\FPGA\Learning\epaper\epaperDriver.v  -jobname  "compiler" 
 relcom:C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\bin64\c_hdl.exe -osyn ..\synwork\epaper_impl1_comp.srs -top top -hdllog ..\synlog\epaper_impl1_compiler.srr -encrypt -mp 1 -verification_mode 0 -verilog -prodtype synplify_pro -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver -I ..\..\..\epaper -I ..\ -I "C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib" -v2001 -devicelib "C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v" -devicelib "C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\pmi_def.v" -encrypt -pro -DSBP_SYNTHESIS -dmgen ..\dm -ui -fid2 -ram -sharing on -ll 2000 -autosm -D_MULTIPLE_FILE_COMPILATION_UNIT_ -lib work -fv2001 ..\..\topModule.v -lib work -fv2001 ..\..\clocks.v -lib work -fv2001 ..\..\pll\pll.v -lib work -fv2001 ..\..\epaperDriver.v -jobname "compiler"
 rc:0 success:1 runtime:3
-file:..\synwork\epaper_impl1_comp.srs|io:o|time:1674343120|size:15470|exec:0|csum:
-file:..\synlog\epaper_impl1_compiler.srr|io:o|time:1674343120|size:12682|exec:0|csum:
+file:..\synwork\epaper_impl1_comp.srs|io:o|time:1677883573|size:15292|exec:0|csum:
+file:..\synlog\epaper_impl1_compiler.srr|io:o|time:1677883573|size:9727|exec:0|csum:
 file:C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\ecp5u.v|io:i|time:1603959654|size:89974|exec:0|csum:85BD439A14EE708460D98A7CDD285D98
 file:C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\lib\lucent\pmi_def.v|io:i|time:1603959654|size:40584|exec:0|csum:62845CEC2BB6FEBE1BA059B1E18015F4
 file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
 file:..\..\topModule.v|io:i|time:1674336780|size:1099|exec:0|csum:654420DB2D144FD64D5439F306EE0264
 file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
-file:..\..\clocks.v|io:i|time:1674343115|size:1310|exec:0|csum:45734FF0558614D21B267088C1635077
+file:..\..\clocks.v|io:i|time:1677882248|size:1310|exec:0|csum:31B5603767F3EAF61813370D5A5DEB49
 file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
 file:..\..\pll\pll.v|io:i|time:1673382094|size:3305|exec:0|csum:562B186C2A71D3C8B99763BADA2D0B73
 file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
-file:..\..\epaperDriver.v|io:i|time:1674343028|size:2871|exec:0|csum:109EBB13779245B7A60E96551EF7196D
+file:..\..\epaperDriver.v|io:i|time:1677883566|size:3594|exec:0|csum:658CAD1E0CBE2CD0F534CEED247540EF
 file:C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\bin64\c_hdl.exe|io:i|time:1603959522|size:5736448|exec:1|csum:F3379711CDC83CA310869A1D9BD9BABE

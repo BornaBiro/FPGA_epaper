@@ -7,49 +7,19 @@
 @N: CG364 :"E:\Projects\FPGA\Learning\epaper\pll\pll.v":8:7:8:9|Synthesizing module pll in library work.
 @N: CG364 :"E:\Projects\FPGA\Learning\epaper\clocks.v":4:7:4:18|Synthesizing module clockDivider in library work.
 @N: CG364 :"E:\Projects\FPGA\Learning\epaper\clocks.v":34:7:34:16|Synthesizing module posEdgeDet in library work.
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":79:7:79:22|Synthesizing module mainEpaperModule in library work.
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":4:7:4:15|Synthesizing module ckvModule in library work.
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":22:7:22:15|Synthesizing module spvModule in library work.
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":39:7:39:17|Synthesizing module latchModule in library work.
-@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":54:7:54:15|Synthesizing module sphModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":100:7:100:22|Synthesizing module mainEpaperModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":25:7:25:15|Synthesizing module ckvModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":43:7:43:15|Synthesizing module spvModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":60:7:60:17|Synthesizing module latchModule in library work.
+@N: CG364 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":75:7:75:15|Synthesizing module sphModule in library work.
 @N: CG364 :"E:\Projects\FPGA\Learning\epaper\topModule.v":19:7:19:9|Synthesizing module top in library work.
-@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":54:36:54:40|Input reset is unused.
-@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":39:38:39:42|Input reset is unused.
-@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":22:36:22:40|Input reset is unused.
-@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":4:36:4:40|Input reset is unused.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[7] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[8] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":88:1:88:6|Register bit frame[9] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[2] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[3] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[4] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[5] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[6] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[7] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[8] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[9] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[10] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[11] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[12] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[13] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[14] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[15] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[16] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[17] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[18] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[19] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[20] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[21] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[22] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[23] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[24] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[25] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[26] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[27] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[28] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[29] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[30] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[31] is always 0.
-@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[32] is always 0.
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":75:36:75:40|Input reset is unused.
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":60:38:60:42|Input reset is unused.
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":43:36:43:40|Input reset is unused.
+@N: CL159 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":25:36:25:40|Input reset is unused.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":109:1:109:6|Register bit frame[7] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":109:1:109:6|Register bit frame[8] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":109:1:109:6|Register bit frame[9] is always 0.
+@N: CL189 :"E:\Projects\FPGA\Learning\epaper\clocks.v":7:1:7:6|Register bit counter[0] is always 0.
 @N|Running in 64-bit mode
 

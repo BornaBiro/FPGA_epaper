@@ -1,7 +1,7 @@
 C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  E:\Projects\FPGA\Learning\epaper\impl1\synwork\epaper_impl1_comp.srs  -osyn  E:\Projects\FPGA\Learning\epaper\impl1\synwork\epaper_impl1_mult.srs  -log  E:\Projects\FPGA\Learning\epaper\impl1\synlog\epaper_impl1_multi_srs_gen.srr 
 relcom:C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\epaper_impl1_comp.srs -osyn ..\synwork\epaper_impl1_mult.srs -log ..\synlog\epaper_impl1_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\epaper_impl1_comp.srs|io:i|time:1674343120|size:15470|exec:0|csum:C2BEC9738D37639576D6DC2DE3EBD2EC
-file:..\synwork\epaper_impl1_mult.srs|io:o|time:1674343121|size:3684|exec:0|csum:
-file:..\synlog\epaper_impl1_multi_srs_gen.srr|io:o|time:1674343121|size:1161|exec:0|csum:
+file:..\synwork\epaper_impl1_comp.srs|io:i|time:1677883573|size:15292|exec:0|csum:17E5E5A3F3CFF3F9D5EF85B4EBA8A2B9
+file:..\synwork\epaper_impl1_mult.srs|io:o|time:1677883574|size:3606|exec:0|csum:
+file:..\synlog\epaper_impl1_multi_srs_gen.srr|io:o|time:1677883574|size:1161|exec:0|csum:
 file:C:\Program Files (x86)\Lattice\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603959522|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

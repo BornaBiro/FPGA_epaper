@@ -1,2 +1,2 @@
-@E: CG1348 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":82:23:82:86|Incomplete array intialization
+@E: CG457 :"E:\Projects\FPGA\Learning\epaper\epaperDriver.v":50:7:50:31|Cannot synthesize expression
 
